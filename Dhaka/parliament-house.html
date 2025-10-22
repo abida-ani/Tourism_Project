@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>জাতীয় সংসদ ভবন — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="জাতীয় সংসদ ভবন — লুই আই কาห์ন ডিজাইন করা এক স্থাপত্যকীর্তি; নীল-শ্বেত আকাশে বেড়ে ওঠা বাংলাদেশ সংসদ ভবন। ভ্রমণ গাইড, ইতিহাস ও দর্শনীয় স্থানের তথ্য।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="জাতীয় সংসদ ভবন — ExploreBangla">
+  <meta property="og:description" content="জাতীয় সংসদ ভবন — লুই আই কাহনের ডিজাইন করা আর্কিটেকচারাল মাস্টারপিস; বাংলাদেশ গণতন্ত্রের প্রতীক।">
+  <meta property="og:image" content="../../images/dhaka/parliament/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#0EA5A4}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.86),rgba(255,255,255,0.75));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+    .focus-ring:focus{outline:3px solid rgba(14,165,164,0.18);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Jatiya Sangsad Bhaban",
+    "description":"Jatiya Sangsad Bhaban — designed by Louis I. Kahn; the monumental parliament complex of Bangladesh located in Sher-e-Bangla Nagar, Dhaka.",
+    "image":["../../images/dhaka/parliament/hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Sher-e-Bangla Nagar, Dhaka","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-teal-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../dhaka/index.html" class="hover:underline">Dhaka</a></li>
+            <li>›</li>
+            <li class="font-medium">জাতীয় সংসদ ভবন</li>
+          </ol>
+        </nav>
+        <a href="../dhaka/index.html" class="px-4 py-2 bg-teal-400 hover:bg-teal-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/dhaka/parliament/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/50 via-black/15 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">জাতীয় সংসদ ভবন</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">লুই আই কাহনের নকশায় নির্মিত — আর্কিটেকচারের একটি আন্তর্জাতিক স্মারক ও বাংলাদেশের গণতন্ত্রের কেন্দ্র।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-teal-400 hover:bg-teal-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> জাতীয় সংসদ ভবন (Jatiya Sangsad Bhaban)</li>
+              <li><strong>স্থাপত্য:</strong> Louis I. Kahn (যুক্তরাষ্ট্র)</li>
+              <li><strong>অবস্থান:</strong> শের-ই-বাংলা নগর, ঢাকা</li>
+              <li><strong>উদ্ভোধন:</strong> ১৯৮২ (নানান পর্যায়ে নির্মাণ ১৯৬২–১৯৮২)</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">এই কমপ্লেক্সটি আন্তর্জাতিকভাবে স্বীকৃত আধুনিক স্থাপত্যশৈলীর নিদর্শন। কাহনের জ্যামিতিক ফর্ম, কংক্রিট ও আলো–ছায়ার মিশ্রণ এখানে লক্ষণীয়।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">পরিদর্শন সীমিত রুট এবং অনুমতি-ভিত্তিক — ট্যুর বুক করলে গাইডেড ট্যুর পাওয়া যায়।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History & Design -->
+    <section id="history" class="py-12 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">ইতিহাস ও স্থপতি কাহন</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow leading-relaxed text-lg">
+          <p class="mb-4">জাতীয় সংসদ ভবন ডিজাইন করেছেন আন্তর্জাতিক খ্যাতিসম্পন্ন স্থপতি লুই আই কাহন (Louis I. Kahn)। ১৯৬২ সালে নির্মাণ কার্যক্রম শুরু হলেও রাজনৈতিক ও অর্থনৈতিক কারণে প্রকল্পটি কয়েকদফায় বিলম্বিত হয় এবং ১৯৮২ সালে আনুষ্ঠানিক কার্যক্রম শুরু করে।</p>
+          <p class="mb-4">কাহনের নকশা কংক্রিটের জ্যামিতিক আকার, বৃহৎ ভলিউম এবং আলো–ছায়ার কৌশল ব্যবহার করে একটি সম্মানজনক ও আবদ্ধ পরিবেশ সৃষ্টি করে; যা সরকারী গঠন ও জাতীয় পরিচয় প্রদর্শনে গুরুত্বপূর্ণ ভূমিকা রাখে।</p>
+          <p>কমপ্লেক্সে সাংসদ ভবন, সাংবাদিক ভবন, লাইব্রেরি ও ওয়াটার সিমুলেটেড ল্যান্ডস্কেপসহ একাধিক উপাদান আছে।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & gallery -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">স্থাপত্য ও দর্শনীয় দিক</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">জ্যামিতিক ফর্ম</h3>
+            <p class="text-sm text-gray-600">বর্গাকার ও বৃত্তাকার কংক্রিট ফর্মের খেলায় কাহনের স্বাক্ষর দেখা যায়।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">আলোকচিত্র ও আলো-ছায়া</h3>
+            <p class="text-sm text-gray-600">দিনভর কংক্রিটের ছায়া দৃশ্যের ভাষা পরিবর্তন করে, যা স্থাপত্যকে প্রাণবন্ত করে।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">ল্যান্ডস্কেপিং</h3>
+            <p class="text-sm text-gray-600">পুল, লন ও রাস্তাগুলোর সমন্বয় দর্শনীয় অভিজ্ঞতা যোগ করে।</p>
+          </div>
+        </div>
+
+        <!-- Gallery swiper -->
+        <div class="swiper mySwiper relative" aria-label="Parliament gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/parliament/hero.jpg" class="glightbox" data-gallery="parliament" data-title="Parliament - facade">
+                <img src="../../images/dhaka/parliament/hero.jpg" alt="Parliament facade" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">ফাসাদ ভিউ</h3>
+              <p class="text-gray-700">রঙিন আকাশের নিচে বিশাল কংক্রিট ভলিউম—আন্তর্জাতিকভাবে স্বীকৃত স্থাপত্য নিদর্শন।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/parliament/interior1.jpg" class="glightbox" data-gallery="parliament" data-title="Interior space">
+                <img src="../../images/dhaka/parliament/interior1.jpg" alt="Interior" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">অভ্যন্তরীন পরিসর</h3>
+              <p class="text-gray-700">কাহনের ফর্ম ও আলো-ছায়া অভ্যন্তরে ভিন্ন রূপ ধারণ করে।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/parliament/landscape.jpg" class="glightbox" data-gallery="parliament" data-title="Landscape & water features">
+                <img src="../../images/dhaka/parliament/landscape.jpg" alt="Landscape" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">ল্যান্ডস্কেপ ও পুল</h3>
+              <p class="text-gray-700">জল ও ল্যান্ডস্কেপ উপাদান স্থাপত্যের সঙ্গে মিশে পরিবেশকে আরামদায়ক করে।</p>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit tips -->
+    <section id="visit" class="py-12 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">ভ্রমণ তথ্য ও টিপস</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">পরিদর্শন নীতি</h3>
+              <p class="text-gray-700 mb-3">পার্লামেন্ট ভবনে সাধারণত অনুমতি-ভিত্তিক ভিজিট চলে। অফিসিয়াল ট্যুরের জন্য আগাম বুকিং করো—আইডি ও নিরাপত্তা চেক করতে হতে পারে।</p>
+
+              <h3 class="text-xl font-semibold mb-2">কীভাবে যাবেন</h3>
+              <p class="text-gray-700 mb-3">শের-ই-বাংলা নগর এলাকা — ট্যাক্সি/রাইডশেয়ার বা ব্যক্তিগত গাড়ি দিয়ে সহজে পৌঁছানো যায়। নিকটস্থ বাস রুট ও মেট্রো রুট যাচাই করো।</p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">নিরাপত্তা ও আচরণ</h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-2 mb-3">
+                <li>নিরাপত্তা অঞ্চলে প্রবেশে কঠোর নিয়ম—নিরাপত্তা কর্মকর্তাদের নির্দেশ মেনে চলো।</li>
+                <li>ফটোগ্রাফি ও ড্রোন ব্যবহারে সীমাবদ্ধতা থাকতে পারে—আগেই জেনে নাও।</li>
+                <li>আড্ডা বা গাইড ছাড়া রুট পরিবর্তন করা উচিত নয়।</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-2">প্যাকিং টিপস</h3>
+              <p class="text-gray-700">আইডি কার্ড, পানি, হালকা জ্যাকেট ও মোবাইল চার্জার নিলে সুবিধা হবে।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby spots -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Shaheed Minar</h4>
+            <p class="text-sm text-gray-600">ভাষা শহীদদের স্মৃতিসংক্রান্ত স্থান; দেশের সাংস্কৃতিক প্রতীক।</p>
+            <a href="../dhaka/shaheed-minar.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Curzon Hall</h4>
+            <p class="text-sm text-gray-600">ঢাকা বিশ্ববিদ্যালয়ের ঐতিহাসিক বিল্ডিং; ক্যাম্পাসের নিকটবর্তী আর্কিটেকচারাল নিদর্শন।</p>
+            <a href="../dhaka/curzon-hall.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Lalmatia & Residential areas</h4>
+            <p class="text-sm text-gray-600">ঘুরে দেখার জন্য নিকটস্থ শান্ত আবাসিক এলাকা ও ক্যাফে।</p>
+            <a href="../dhaka/lalmatia.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.123456789!2d90.376000!3d23.780000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzM2LjAiTiA5MMKwMjMnMDUuMCJF!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Parliament map"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — জাতীয় সংসদ ভবন
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3200, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]'); if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

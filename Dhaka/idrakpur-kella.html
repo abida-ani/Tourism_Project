@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ইদ্রাকপুর কেল্লা — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-orange-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/idrakpur-kella/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">ইদ্রাকপুর কেল্লা</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          মেঘনা নদীর তীরে অবস্থিত মুঘল আমলের এক গুরুত্বপূর্ণ দুর্গ — মুনশিগঞ্জের ঐতিহাসিক রত্ন।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. ইতিহাস ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          ইদ্রাকপুর কেল্লা বাংলাদেশের মুনশিগঞ্জ শহরে অবস্থিত একটি ঐতিহাসিক মুঘল দুর্গ। 
+          এটি ১৬৬০ খ্রিষ্টাব্দে সুবেদার মীর জমান দ্বারা নির্মিত হয়, 
+          মুঘল সাম্রাজ্যের দক্ষিণ বাংলায় প্রতিরক্ষা ব্যবস্থার অংশ হিসেবে।
+        </p>
+        <p>
+          কেল্লাটি নদীপথে জলদস্যুদের আক্রমণ প্রতিহত করার উদ্দেশ্যে তৈরি করা হয়েছিল। 
+          এর দেয়াল, বুরুজ এবং উঁচু প্ল্যাটফর্ম মুঘল সামরিক স্থাপত্যের অনন্য নিদর্শন। 
+          এখন এটি বাংলাদেশের প্রত্নতত্ত্ব বিভাগের সংরক্ষিত ঐতিহ্যবাহী স্থানগুলোর একটি।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- স্থাপত্য ও আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. স্থাপত্য ও মূল আকর্ষণ
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/idrakpur-kella/main-gate.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">প্রধান প্রবেশদ্বার</h3>
+            <p>কেল্লার প্রবেশদ্বারটি মুঘল স্থাপত্যের সূক্ষ্ম কারুকার্য ও পাথরের কাজে নির্মিত।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/idrakpur-kella/walls.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">দুর্গের দেয়াল</h3>
+            <p>কেল্লার চারপাশে উঁচু দেয়াল ও বুরুজ রয়েছে যা নদী আক্রমণ প্রতিরোধে ব্যবহার হতো।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/idrakpur-kella/tower.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">প্রহরী টাওয়ার</h3>
+            <p>উঁচু প্রহরী টাওয়ার থেকে সৈন্যরা আশেপাশের এলাকা পর্যবেক্ষণ করত।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/idrakpur-kella/pond.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">কেল্লার পুকুর</h3>
+            <p>কেল্লার ভেতরের পুকুরটি ছিল সৈন্যদের পানি সরবরাহ ও বিশ্রামের জায়গা।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে মাওয়া রোডে বাস বা প্রাইভেট গাড়িতে প্রায় ১ ঘণ্টায় মুনশিগঞ্জ পৌঁছানো যায়। 
+          শহরের কেন্দ্র থেকে রিকশা বা সিএনজি যোগে সহজেই ইদ্রাকপুর কেল্লায় যাওয়া যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল (নভেম্বর থেকে ফেব্রুয়ারি) ভ্রমণের জন্য আদর্শ সময়, তখন আবহাওয়া মনোরম থাকে। 
+          সকাল বা বিকেল বেলায় কেল্লা ঘোরা সবচেয়ে উপভোগ্য।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>কেল্লার ভেতরে ঢোকার আগে টিকিট সংগ্রহ করুন।</li>
+          <li>ছবি তোলার সময় ঐতিহাসিক স্থাপনা সংরক্ষণে সচেতন থাকুন।</li>
+          <li>নদীর তীরে সূর্যাস্ত দেখা মিস করবেন না।</li>
+          <li>গাইড নিলে ইতিহাস ভালোভাবে জানতে পারবেন।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ইদ্রাকপুর কেল্লার মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0591848804574!2d90.52950227544566!3d23.558026694659135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ad1532dfd83f%3A0x5a579b502a3d991a!2sIdrakpur%20Fort!5e0!3m2!1sen!2sbd!4v1697467894113!5m2!1sen!2sbd"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — ইদ্রাকপুর কেল্লা
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

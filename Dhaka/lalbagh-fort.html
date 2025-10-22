@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>লালবাগ কেল্লা — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="লালবাগ কেল্লা — মুঘল স্থাপত্যের এক অপূর্ব নিদর্শন। পরী-বিবির সমাধি, মসজিদ, বাগান ও ঐতিহাসিক নথি। ভ্রমণ গাইড ও টিপস।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="লালবাগ কেল্লা — ExploreBangla">
+  <meta property="og:description" content="লালবাগ কেল্লা — মুঘল স্থাপত্য ও রাজকীয় ইতিহাস; ঢাকার অন্যতম ঐতিহাসিক দর্শনীয় স্থান।">
+  <meta property="og:image" content="../../images/dhaka/Lalbagh-fort/img4.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#F6C44E}
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 88px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#111827; }
+    .font-playfair{ font-family: 'Playfair Display', serif; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    .glass { background: linear-gradient(135deg, rgba(255,255,255,0.86), rgba(255,255,255,0.75)); backdrop-filter: blur(6px); }
+    .focus-ring:focus { outline: 3px solid rgba(246,196,78,0.22); outline-offset: 3px; }
+    .card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+    .small-meta { font-size: .95rem; color: #374151; }
+    .tag { background: rgba(59,130,246,0.08); color:#1e40af; padding:.25rem .5rem; border-radius:9999px; font-weight:600; font-size:.85rem; }
+  </style>
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Lalbagh Fort",
+    "description":"Lalbagh Fort — an unfinished Mughal fort in Old Dhaka, notable for Pari Bibi's tomb, the mosque, gardens and historic structures.",
+    "image":["../../images/dhaka/Lalbagh-fort/img4.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Old Dhaka","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-orange-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar / Breadcrumb -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../dhaka/index.html" class="hover:underline">Dhaka</a></li>
+            <li>›</li>
+            <li class="font-medium">লালবাগ কেল্লা</li>
+          </ol>
+        </nav>
+        <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold focus-ring">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[540px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/dhaka/Lalbagh-fort/img4.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/30 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full px-6">
+        <h1 class="text-5xl md:text-6xl font-playfair font-extrabold mb-3 drop-shadow-lg">লালবাগ কেল্লা</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-3xl px-4">মুঘল স্থাপত্যের অসমাপ্ত রাজপ্রাসাদ — ইতিহাস, রাজনীতি ও লোককথার মিলনস্থল।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#quick" class="px-5 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow focus-ring">Quick facts</a>
+          <a href="#visit" class="px-5 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10 focus-ring">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts & timeline -->
+    <section id="quick" class="py-10 -mt-6">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6 items-start">
+          <div class="glass rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="space-y-2 small-meta">
+              <li><strong>নাম:</strong> লালবাগ কেল্লা</li>
+              <li><strong>প্রতিষ্ঠা:</strong> নির্মাণ শুরু ১৬৭৮ খ্রিস্টাব্দ</li>
+              <li><strong>অবস্থান:</strong> পুরান ঢাকা (বুড়িগঙ্গার তীর)</li>
+              <li><strong>প্রধান আকর্ষণ:</strong> পরী-বিবি সমাধি, মসজিদ, হাম্মাম, বাগান</li>
+              <li><strong>ভ্রমণ সময়:</strong> সকাল ১০টা — বিকাল ৫টা (স্থানীয়ভাবে পরিবর্তিত হতে পারে)</li>
+            </ul>
+
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="px-4 py-2 bg-black text-white rounded-md font-semibold">Printable leaflet</a>
+              <a href="#" class="px-4 py-2 border border-gray-300 rounded-md">Book guide</a>
+            </div>
+          </div>
+
+          <div class="glass rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত টাইমলাইন</h3>
+            <ol class="list-inside list-decimal small-meta space-y-2">
+              <li>১৬৭৮ — কেল্লার নির্মাণ কাজ শুরু</li>
+              <li>শায়েস্তা খাঁর যুগ — কাজের নেতৃত্ব</li>
+              <li>পরী-বিবি মৃত্যুর পর কাজ অসম্পূর্ণে বন্ধ</li>
+              <li>বর্ণাঢ্য মুঘল স্থাপত্য ও স্থানীয় সংস্কৃতি রক্ষিত</li>
+            </ol>
+          </div>
+
+          <div class="glass rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor essentials</h3>
+            <p class="small-meta mb-2">Entry fee: স্থানীয় নীতি অনুযায়ী পরিবর্তিত — অনুগ্রহ করে আগেই চেক করো।</p>
+            <p class="small-meta mb-2">Best photo spots: পরীবির সমাধির সামনে, মসজিদের কক্ষে প্রবেশপথ, বাগানের ফোয়ারার পাশে।</p>
+            <p class="small-meta">Accessibility: পাকা গলি আছে; তবে কিছু স্থানে সূর্যের আলো/কমানো দাঁড়ানোর সুবিধা সীমিত।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History & description (enriched) -->
+    <section id="history" class="py-12 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">ইতিহাস ও পটভূমি</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow leading-relaxed text-lg">
+          <p class="mb-4">লালবাগ কেল্লা (Lalbagh Fort) — ১৭ শতকের মুঘল স্থাপত্যশৈলীর অদ্ভুত উদাহরণ। যুবরাজ আজম শাহের অনুপ্রেরণায় নির্মাণ কাজ শুরু হলেও পরে শায়েস্তা খাঁ দায়িত্ব নেন। কেল্লাটির নির্মাণ কর্ম পরী-বিবির শোকের কারণে অসম্পূর্ণে থেমে যায়।</p>
+          <p class="mb-4">কেল্লার ভেতরে রয়েছে মার্বেল সমাধি (পরী-বিবি), একটি সুদৃশ্য মসজিদ, দেওয়ান-ই-আম, হাম্মাম (সৌন্দর্যচর্চার ঘর) ও পরিকল্পিত বাগান। প্রতিটি স্থাপনাতে সূক্ষ্ম মুঘল মোজাইক, নকশা এবং স্থানীয় নির্মাণশৈলীর সমন্বয় দেখা যায়।</p>
+          <p>মুঘল আমল থেকে শুরু করে ব্রিটিশ ঔপনিবেশিক সময় পর্যন্ত কেল্লা নানা রাজনৈতিক ও সামাজিক ঘটনার সাক্ষী থেকেছে — পুরান ঢাকার সংস্কৃতি ও ইতিহাস বুঝতে এখানে সময় দাও।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & gallery (kept supplied images) -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">স্থাপত্য ও মূল আকর্ষণ</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">পরী-বিবির সমাধি</h3>
+            <p class="text-sm text-gray-600">মার্বেল ও ব্যাসল্ট পাথরের সূক্ষ্ম নির্মাণ; কেল্লার প্রাণ।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">দেওয়ান-ই-আম ও হাম্মাম</h3>
+            <p class="text-sm text-gray-600">দারুন অলংকরণ ও বিলাসিতা—সুবেদারদের দরবার ও বিশ্রামকক্ষ।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">মসজিদ ও বাগান</h3>
+            <p class="text-sm text-gray-600">মসজিদের মিনার ও কাটা-সাজানো ঢালে মুঘল চেতনা বোঝা যায়; বাগান শান্তির স্পর্শ দেয়।</p>
+          </div>
+        </div>
+
+        <!-- Swiper gallery with GLightbox -->
+        <div class="swiper mySwiper relative" aria-label="Lalbagh gallery">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/Lalbagh-fort/pari-bibi.jpg" class="glightbox" data-gallery="lalbag" data-title="পরীবির সমাধি">
+                <img src="../../images/dhaka/Lalbagh-fort/pari-bibi.jpg"
+                     srcset="../../images/dhaka/Lalbagh-fort/pari-bibi.jpg 800w"
+                     sizes="(max-width:768px) 100vw, 33vw"
+                     alt="পরীবির সমাধি — লালবাগ কেল্লা"
+                     loading="lazy"
+                     class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">পরীবির সমাধি</h3>
+              <p class="text-gray-700">লালবাগ কেল্লার হৃদয় — মার্বেলের মিনিয়েচার এবং জটিল নক্সা এখানে চোখ কপাল খোলে।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/Lalbagh-fort/diwan-hammam.jpg" class="glightbox" data-gallery="lalbag" data-title="দেওয়ান-ই-আম ও হাম্মাম">
+                <img src="../../images/dhaka/Lalbagh-fort/diwan-hammam.jpg" alt="দেওয়ান-ই-আম ও হাম্মাম" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">দেওয়ান-ই-আম ও হাম্মাম</h3>
+              <p class="text-gray-700">দরবার ও স্নানঘর—মুঘল বিলাসিতা ও দৈনন্দিন জীবনচিত্রের নিদর্শন।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/Lalbagh-fort/Lalbag_Fort_mos.jpg" class="glightbox" data-gallery="lalbag" data-title="লালবাগ কেল্লা মসজিদ">
+                <img src="../../images/dhaka/Lalbagh-fort/Lalbag_Fort_mos.jpg" alt="লালবাগ কেল্লা মসজিদ" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">লালবাগ কেল্লা মসজিদ</h3>
+              <p class="text-gray-700">দিনে কয়েকবার আড়ো-আলোতে মসজিদের খোদাই সহজেই খেয়াল করা যায়।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/Lalbagh-fort/img5.jpg" class="glightbox" data-gallery="lalbag" data-title="বাগান ও ফোয়ারা">
+                <img src="../../images/dhaka/Lalbagh-fort/img5.jpg" alt="লালবাগ কেল্লা বাগান ও ফোয়ারা" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">বাগান ও ফোয়ারা</h3>
+              <p class="text-gray-700">নকশায় সাজানো লন ও ফোয়ারার পাশে বসে বিশ্রাম নাও।</p>
+            </div>
+
+          </div>
+
+          <!-- Navigation -->
+          <div class="swiper-button-prev flex items-center justify-center text-gray-700" aria-hidden="true"></div>
+          <div class="swiper-button-next flex items-center justify-center text-gray-700" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical visit tips -->
+    <section id="visit" class="py-12 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">কিভাবে যাবেন</h3>
+              <p class="text-gray-700 mb-3">পুরান ঢাকার যে কোনো দিকে থেকে সিএনজি, বাস বা রাইড-শেয়ার দ্বারা আসা যায়। প্রধান গেট থেকে কিলómetro-স্টেপিং কম, কিন্তু হাঁটার সময় গরম/আবহাওয়া বিবেচনা করো।</p>
+
+              <h3 class="text-xl font-semibold mb-2">ওপেনিং ও টিকিট</h3>
+              <p class="text-gray-700 mb-3">ভ্রমণকালে অফিসিয়াল টাইম ও এন্ট্রি ফি আগে যাচাই করো; প্রায় সাধারণত সকাল ১০টা থেকে বিকেল ৫টা।</p>
+
+              <h3 class="text-xl font-semibold mb-2">সেরা সময়</h3>
+              <p class="text-gray-700">সকাল বা বিকেল — ফটোগ্রাফির জন্য সোনালি আলো (golden hour)। সপ্তাহান্তে ভিড় বেশি হতে পারে।</p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">নিরাপত্তা ও আচরণ</h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-2 mb-3">
+                <li>ঐতিহাসিক স্থানে সম্মান দেখাও — খোঁচা বা লেকচার না করো।</li>
+                <li>কোথাও ছবি তুলতে হলে লোকের অনুমতি নাও।</li>
+                <li>রাতের সময় একা ঘোরা এড়িয়ে চলা বুদ্ধিমত্তা।</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mb-2">প্যাকিং টিপস</h3>
+              <p class="text-gray-700">পানি, হালকা হেট/ক্যাপ, আরামদায়ক জুতা, ফোন চার্জার নিলে সুবিধা হবে।</p>
+            </div>
+          </div>
+
+          <div class="mt-6 flex justify-between items-center">
+            <div class="text-sm text-gray-600">Need a local guide? — <a href="#" class="text-blue-600 underline">Book here</a></div>
+            <div>
+              <a href="#" class="px-4 py-2 bg-black text-white rounded-md">Printable leaflet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby tourist spots (like sonargaon.html style) -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">আশেপাশের দর্শনীয় স্থান</h2>
+
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Ahsan Manzil</h4>
+            <p class="text-sm text-gray-600">রাজপরিবারের প্রাসাদ; মিউজিয়াম হিসেবে খুলে আছে — পুরান ঢাকার নিকটবর্তী অন্যতম স্পট।</p>
+            <a href="../dhaka/ahsan-manzil.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Sadarghat (পাটুরঘাট)</h4>
+            <p class="text-sm text-gray-600">বুড়িগঙ্গা নদীর পাড়, লঞ্চ/নৌযাত্রার কেন্দ্র — নৌপথ দেখার জন্য জনপ্রিয়।</p>
+            <a href="../dhaka/sadarghat.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Armenian Church & Shankharibazar</h4>
+            <p class="text-sm text-gray-600">ঐতিহাসিক আর্মেনিয়ান চার্চ ও শঙ্করীবাজার — পুরান ঢাকা'র জলচিত্র ও হস্তশিল্পের কেন্দ্র।</p>
+            <a href="../dhaka/armenia-church.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Dhakeshwari Temple</h4>
+            <p class="text-sm text-gray-600">জাতীয় মন্দির; সাংস্কৃতিক ও ধর্মীয় গুরুত্ব রয়েছে।</p>
+            <a href="../dhaka/dhakeshwari.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Panam Nagar (আরও দূরে)</h4>
+            <p class="text-sm text-gray-600">ঐতিহাসিক পানাম নগর — কলোনিয়াল ইটভবন ও সরু গলি; ফটোগ্রাফির স্বর্গ।</p>
+            <a href="../dhaka/panam-nagar.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Victorian-era buildings</h4>
+            <p class="text-sm text-gray-600">পুরান ঢাকার এক্সতিহাসিক বন্দর-ভিত্তিক ভিক্টোরিয়ান ও ঔপনিবেশিক কাঠামো দেখতে পাওয়া যাবে।</p>
+            <a href="../dhaka/old-architecture.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map (lazy) -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5299319282126!2d90.36021357484313!3d23.72193679461309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77f95aa9ff3%3A0x8bfe5f3d0e503328!2sLalbagh%20Fort!5e0!3m2!1sen!2sbd!4v1697424340191!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Lalbagh Fort map"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — লালবাগ কেল্লা
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Swiper init
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 18,
+      loop: true,
+      autoplay: { delay: 3200, disableOnInteraction: false },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      pagination: { el: ".swiper-pagination", clickable: true }
+    });
+
+    // GLightbox
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    // Lazy-load map iframe on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src) { ifr.src = ifr.dataset.src; }
+    });
+
+    // Keyboard accessibility: Enter opens lightbox on slides
+    document.querySelectorAll('.swiper-slide').forEach(slide => {
+      slide.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const a = slide.querySelector('.glightbox');
+          if (a) a.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

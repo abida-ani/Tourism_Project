@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>গোয়ালন্দ ঘাট — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/goalanda-ghat/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">গোয়ালন্দ ঘাট</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          পদ্মা ও গড়াই নদীর মিলনস্থলে অবস্থিত ঐতিহ্যবাহী নদীবন্দর ও ঐতিহাসিক স্থান।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. ইতিহাস ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          গোয়ালন্দ ঘাট রাজবাড়ী জেলার দক্ষিণাংশে অবস্থিত এবং এটি বাংলাদেশের প্রাচীনতম নদীবন্দরগুলোর একটি। 
+          ঊনবিংশ শতাব্দীর শেষ দিকে এখানে নদীপথে কলকাতা ও আসামগামী স্টিমার সার্ভিস চালু ছিল। 
+          নদীপথে এটি তৎকালীন পূর্ববাংলার বাণিজ্যিক যোগাযোগের গুরুত্বপূর্ণ কেন্দ্র ছিল।
+        </p>
+        <p>
+          পদ্মা ও গড়াই নদীর মিলনস্থলে এই ঘাটের অবস্থান হওয়ায় এর প্রাকৃতিক সৌন্দর্য অত্যন্ত মনোমুগ্ধকর। 
+          আজও নদীর তীরে দাঁড়িয়ে সূর্যাস্ত দেখা কিংবা নৌভ্রমণ পর্যটকদের আকর্ষণ করে।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও দর্শনীয় স্থান
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/goalanda-ghat/river.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">নদীর মিলনস্থল</h3>
+            <p>পদ্মা ও গড়াই নদীর মিলনস্থল বাংলাদেশের অন্যতম চিত্তাকর্ষক প্রাকৃতিক দৃশ্য।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/goalanda-ghat/boat.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">নৌভ্রমণ</h3>
+            <p>পর্যটকরা স্থানীয় নৌকা বা ইঞ্জিনচালিত ট্রলার ভাড়া করে নদীতে ভ্রমণ করতে পারেন।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/goalanda-ghat/sunset.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">সূর্যাস্তের দৃশ্য</h3>
+            <p>সন্ধ্যায় নদীর তীরে দাঁড়িয়ে সূর্যাস্ত দেখা সত্যিই মনোমুগ্ধকর অভিজ্ঞতা।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/goalanda-ghat/market.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">স্থানীয় বাজার</h3>
+            <p>নদীপথের আশেপাশে তাজা মাছ ও স্থানীয় পণ্যের বাজার পর্যটকদের কাছে আকর্ষণীয়।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে রাজবাড়ী জেলার গোয়ালন্দে পৌঁছাতে গাড়ি বা বাসে ৩–৪ ঘণ্টা সময় লাগে। 
+          মাওয়া এক্সপ্রেসওয়ে ও পদ্মা সেতু হয়ে সহজেই যাওয়া যায়। গোয়ালন্দ মোড় থেকে অটো বা রিকশায় ঘাটে পৌঁছানো যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল ও বসন্তকাল নদী ভ্রমণের জন্য উপযুক্ত সময়। গ্রীষ্মে পানি বেড়ে গেলে কিছু এলাকায় যাতায়াত সীমিত থাকে।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>স্থানীয় নৌকা ভাড়া করার আগে দরদাম ঠিক করে নিন।</li>
+          <li>সন্ধ্যার আগে ফেরত আসা নিরাপদ।</li>
+          <li>স্থানীয় বাজার থেকে পদ্মার ইলিশ চেখে দেখতে ভুলবেন না।</li>
+          <li>প্রচুর পানি ও সানস্ক্রিন সঙ্গে রাখুন।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">গোয়ালন্দ ঘাটের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.434395821426!2d89.78393917540582!3d23.805692186301444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbc2fdc8a7bde1%3A0x2e4efae009011bbf!2sGoalanda%20Ghat!5e0!3m2!1sen!2sbd!4v1697454367880!5m2!1sen!2sbd" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — গোয়ালন্দ ঘাট
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

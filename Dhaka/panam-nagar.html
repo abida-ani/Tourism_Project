@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>পানাম নগর — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="পানাম নগর — পুরনো স্থাপত্য, ফটোগ্রাফি স্পট ও ঐতিহাসিক গল্প। ভ্রমণ টিপস, মানচিত্র ও দর্শনীয় স্থান।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="পানাম নগর — ExploreBangla">
+  <meta property="og:description" content="পুরনো ইটভবন, সরু গলি ও অনন্য স্থাপত্য। ভ্রমণ গাইড ও ছবি গ্যালারি।">
+  <meta property="og:image" content="../../images/dhaka/panam-nagar/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#F6C44E}
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 84px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .font-playfair{ font-family: 'Playfair Display', serif; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    .glass { background: linear-gradient(135deg, rgba(255,255,255,0.75), rgba(255,255,255,0.6)); backdrop-filter: blur(6px); }
+    /* Focus visible for accessibility */
+    :focus{ outline: 2px solid rgba(246,196,78,0.25); outline-offset: 2px; }
+  </style>
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Panam Nagar",
+    "description":"Panam Nagar — historic settlement known for colonial-era architecture and photogenic alleys.",
+    "image":["../../images/dhaka/panam-nagar/hero.jpg"],
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Dhaka Division",
+      "addressCountry":"BD"
+    }
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-amber-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar / Breadcrumb -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../dhaka/index.html" class="hover:underline">Dhaka</a></li>
+            <li>›</li>
+            <li class="font-medium">Panam Nagar</li>
+          </ol>
+        </nav>
+        <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/dhaka/panam-nagar/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/30 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6">
+        <h1 class="font-playfair text-5xl md:text-6xl text-white leading-tight drop-shadow-lg">পানাম নগর</h1>
+        <p class="mt-4 text-lg md:text-xl text-white/90 max-w-3xl">ইতিহাস, স্থাপত্য ও ফটোগ্রাফির এক নিঃশব্দ গল্প — সরু গলি, নকশায় ভরপুর বারান্দা।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#history" class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow">পরিচিতি দেখুন</a>
+          <a href="#plan" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">পরিকল্পনা &amp; টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- পরিচিতি ও ইতিহাস -->
+  <main>
+    <section id="history" class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ক. পরিচিতি ও ইতিহাস</h2>
+        <div class="max-w-4xl mx-auto glass shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+          <p class="mb-4">পানাম নগর ১৮-১৯ শতকের শেষভাগে গড়ে উঠেছিল — বাণিজ্য ও সাংস্কৃতিক মিলনকেন্দ্র হিসেবে এলাকায় অনন্য পরিচিতি ছিল। আজ এটি স্থাপত্যপ্রেমীদের ও ফটোগ্রাফারদের জন্য একটি অবশ্যপাঠ্য গন্তব্য।</p>
+          <p>পুরনো ইটের ভবন, ছাদ-বারান্দা, এবং সরু গলিপথগুলো এখানে ভ্রমণকে স্মরণীয় করে তোলে। নীতি: প্রাচীন স্থাপত্যকে সম্মান করুন — অনাবশ্যক খোঁচা বা লিখাই থেকে বিরত থাকুন।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- আকর্ষণ -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">খ. বিশেষ আকর্ষণ</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-amber-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2 focus:outline-none">
+            <h3 class="text-xl font-semibold mb-2">পুরনো বাসভবন ও বারান্দা</h3>
+            <p class="text-gray-700">প্রতিটি বাড়ির সামনের নকশা ও বারান্দা — স্থাপত্যবিদদের কাছে অমূল্য।</p>
+          </article>
+
+          <article class="bg-amber-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">ফটোগ্রাফি স্পট</h3>
+            <p class="text-gray-700">স্বর্ণালী সময় (Golden hour) এ এখানে আলোর খেলা অসাধারণ।</p>
+          </article>
+
+          <article class="bg-amber-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">লোকাল কফি ও আড্ডা</h3>
+            <p class="text-gray-700">ক্ষুদ্র কফিশপগুলোতে স্থানীয় চা ও খাবারের স্বাদ নিন।</p>
+          </article>
+        </div>
+
+        <!-- Gallery with GLightbox + Swiper -->
+        <div class="mt-10 swiper mySwiperGallery" aria-label="Panam image gallery">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/panam-nagar/street-1@1200.webp" class="glightbox" data-gallery="panam" data-title="পানাম নগরের সরু রাস্তা">
+                <img src="../../images/dhaka/panam-nagar/street-1@800.webp"
+                     srcset="../../images/dhaka/panam-nagar/street-1@480.webp 480w, ../../images/dhaka/panam-nagar/street-1@800.webp 800w, ../../images/dhaka/panam-nagar/street-1@1200.webp 1200w"
+                     sizes="(max-width: 768px) 100vw, 50vw"
+                     alt="পানাম নগরের সরু রাস্তা এবং পুরনো ভবন" loading="lazy" class="w-full h-56 object-cover"/>
+              </a>
+            </div>
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/panam-nagar/house-detail@1200.webp" class="glightbox" data-gallery="panam" data-title="পুরনো বাড়ির বারান্দা">
+                <img src="../../images/dhaka/panam-nagar/house-detail@800.webp"
+                     srcset="../../images/dhaka/panam-nagar/house-detail@480.webp 480w, ../../images/dhaka/panam-nagar/house-detail@800.webp 800w, ../../images/dhaka/panam-nagar/house-detail@1200.webp 1200w"
+                     sizes="(max-width: 768px) 100vw, 50vw"
+                     alt="বাড়ির সূক্ষ্ম নকশা" loading="lazy" class="w-full h-56 object-cover"/>
+              </a>
+            </div>
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/panam-nagar/arches@1200.webp" class="glightbox" data-gallery="panam" data-title="আর্কিটেকচারাল আর্চেস">
+                <img src="../../images/dhaka/panam-nagar/arches@800.webp"
+                     srcset="../../images/dhaka/panam-nagar/arches@480.webp 480w, ../../images/dhaka/panam-nagar/arches@800.webp 800w, ../../images/dhaka/panam-nagar/arches@1200.webp 1200w"
+                     sizes="(max-width: 768px) 100vw, 50vw"
+                     alt="পুরনো আর্কস" loading="lazy" class="w-full h-56 object-cover"/>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ভ্রমণ পরিকল্পনা -->
+    <section id="plan" class="py-20 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 text-yellow-700">কিভাবে যাবেন</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">ঢাকা থেকে প্রায় ৫০ কিমি; বাস বা প্রাইভেট গাড়িতে সহজে পৌঁছানো যায়। স্থানীয় গাইড নিয়ে গেলে গোপন গলি-ঘুরে দেখানোর সুবিধা থাকে।</p>
+
+              <h3 class="text-2xl font-semibold mb-3 text-yellow-700">সেরা সময়</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">শীতে (নভেম্বর–ফেব্রুয়ারি) সকাল ও সন্ধ্যায় আলোর জন্য আদর্শ। Golden hour-এ ফটোগ্রাফির সুবিধা নাও।</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 text-yellow-700">টিকিট ও নিয়ম</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>প্রবেশ সাধারণত মুক্ত; কিছু প্রাইভেট বাড়ি অনুমতিতে খোলা থাকে — সম্মান দেখিয়ে অনুমতি নিন।</li>
+                <li>সাইলেন্স বজায় রাখুন ও স্থাপত্যের সম্মান করুন।</li>
+                <li>ক্যামেরা ব্যবহার করলে লোকদের সম্মতি নিন।</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-3 text-yellow-700">প্যাকিং টিপস</h3>
+              <p class="text-gray-700">আরামদায়ক জুতো, হ্যাট, পানি, মোবাইল চার্জার ও একটি ছোট ক্যামেরা ব্যাগ নিন।</p>
+            </div>
+          </div>
+
+          <div class="mt-6 text-center">
+            <a href="#" class="inline-block px-6 py-3 bg-black text-white rounded-full font-semibold shadow">স্থানীয় গাইড বুক করুন</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- টাইমলাইন -->
+    <section class="py-20 bg-amber-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ঘ. টাইমলাইন &amp; গল্প</h2>
+        <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow p-6">
+          <ol class="relative border-l border-gray-200 ml-4">
+            <li class="mb-10 ml-6">
+              <span class="absolute -left-3 top-0 bg-yellow-500 rounded-full w-6 h-6" aria-hidden="true"></span>
+              <h4 class="text-lg font-semibold">১৮০০s — ব্যবসায়িক উত্থান</h4>
+              <p class="text-gray-700">স্থানীয় ব্যবসায়ী ও বণিকদের দ্বারা এলাকা উন্নীত হয়।</p>
+            </li>
+            <li class="mb-10 ml-6">
+              <span class="absolute -left-3 top-0 bg-yellow-500 rounded-full w-6 h-6" aria-hidden="true"></span>
+              <h4 class="text-lg font-semibold">১৯০০s — স্থাপত্য নির্মাণ</h4>
+              <p class="text-gray-700">নকশা সম্পন্ন বাড়ি ও বারান্দা তৈরি হয়, যা আজকের দর্শনীয় স্থাপনাগুলো।</p>
+            </li>
+            <li class="mb-10 ml-6">
+              <span class="absolute -left-3 top-0 bg-yellow-500 rounded-full w-6 h-6" aria-hidden="true"></span>
+              <h4 class="text-lg font-semibold">আজ — সাংস্কৃতিক গন্তব্য</h4>
+              <p class="text-gray-700">পানাম নগর এখন সারা বছরই ফটোগ্রাফি ও চলচ্চিত্রশিল্পের জন্য আকর্ষণের কেন্দ্র।</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- মানচিত্র ও আশেপাশ -->
+    <section class="py-20 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ঙ. মানচিত্র ও আশেপাশ</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <!-- Lazy-load iframe -->
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.000000000000!2d90.000000000000!3d24.000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjR4wqAxMCwgOTB4wqAxMCI!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd"
+                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Panam Nagar map"></iframe>
+        </div>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">নিকটবর্তী স্পট</h4>
+            <p class="text-sm text-gray-600">বদরগঞ্জ নদী, পুরনো বাজার, স্থানীয় ওয়ার্কশপ</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">খাওয়ার পরামর্শ</h4>
+            <p class="text-sm text-gray-600">স্থানীয় ভাজা-ভাত, মিষ্টি ও চা ট্রাই করুন—শহরের ছোট ক্যাফেতে মজা আছে।</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">গাইড পাওয়া যায়</h4>
+            <p class="text-sm text-gray-600">স্থানীয় গাইড নিয়োগ করলে ইতিহাস-গল্প সহজে জানা যায়।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — পানাম নগর
+  </footer>
+
+  <!-- Scripts: Swiper & GLightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Initialize Swiper
+    const gallery = new Swiper('.mySwiperGallery', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      }
+    });
+
+    // Initialize GLightbox
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    // Lazy-load map iframe (simple)
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr){ ifr.src = ifr.dataset.src; }
+    });
+
+    // Simple mobile menu toggle placeholder for your project
+    const menuBtn = document.getElementById('menu-btn');
+    menuBtn?.addEventListener('click', () => {
+      alert('মেনু: Home, About, Divisions, Contact — আপনার প্রকল্পে navbar সম্পূর্ণ করুন।');
+    });
+  </script>
+</body>
+</html>

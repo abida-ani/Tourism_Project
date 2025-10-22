@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>রামনা পার্ক — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="রামনা পার্ক — ঢাকার হৃদয়ে শান্তি ও সবুজের অবশেষ। হাঁটবোটা, প্রাচীন বৃক্ষ ও পিকনিক স্পটের জন্য আদর্শ।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="রামনা পার্ক — ExploreBangla">
+  <meta property="og:description" content="রামনা পার্ক — ঢাকার হৃদয়ে শান্তি ও সবুজের অবশেষ। হাঁটা, পিকনিক ও ফটোগ্রাফির জন্য আদর্শ।">
+  <meta property="og:image" content="../../images/dhaka/ramna-park/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#59A14F}
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 84px; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .font-playfair{ font-family: 'Playfair Display', serif; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    .glass { background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.65)); backdrop-filter: blur(6px); }
+    :focus{ outline: 2px solid rgba(89,161,79,0.2); outline-offset: 2px; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Ramna Park",
+    "description":"Ramna Park — a historic and lush urban park in Dhaka, ideal for walking, picnics and photography.",
+    "image":["../../images/dhaka/ramna-park/hero.jpg"],
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Dhaka",
+      "addressCountry":"BD"
+    }
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-green-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar / Breadcrumb -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../dhaka/index.html" class="hover:underline">Dhaka</a></li>
+            <li>›</li>
+            <li class="font-medium">Ramna Park</li>
+          </ol>
+        </nav>
+        <a href="../dhaka/index.html" class="px-4 py-2 bg-green-400 hover:bg-green-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[480px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/dhaka/ramna-park/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/50 via-black/20 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6">
+        <h1 class="font-playfair text-5xl md:text-6xl text-white leading-tight drop-shadow-lg">রামনা পার্ক</h1>
+        <p class="mt-4 text-lg md:text-xl text-white/90 max-w-3xl">ঢাকার হৃদয়ে সবুজের নিঃশ্বাস — হাঁটা, পিকনিক ও স্নিগ্ধ সন্ধ্যার জন্য আদর্শ।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-green-400 hover:bg-green-500 rounded-full font-semibold text-black shadow">ওভারভিউ দেখুন</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ পরিকল্পনা</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Overview -->
+    <section id="overview" class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ক. পরিচিতি ও গুরুত্ব</h2>
+        <div class="max-w-4xl mx-auto glass shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+          <p class="mb-4">রামনা পার্ক ঢাকার কেন্দ্রে অবস্থিত একটি প্রাচীন ও বনানুকূল উদ্যান, যা শহরের ব্যস্ততা থেকে মুক্তির শান্ত আশ্রয় দেয়। এখানে ব্যাপক সবুজ পরিবেশ, খোলা মাঠ, এবং পুরোনো বৃক্ষগুলো আছে।</p>
+          <p>পার্কটি পরিবার, দম্পতি ও বন্ধুদের জন্য পিকনিক করার উপযুক্ত — সাইক্লিং, হাঁটা ও ফটোগ্রাফির জন্য এটি আদর্শ গন্তব্য।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Attractions -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">খ. মূল আকর্ষণ</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-green-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">বিস্তৃত লনের মাঠ</h3>
+            <p class="text-gray-700">পিকনিক ও খেলার জন্য বড় খোলা লন।</p>
+          </article>
+
+          <article class="bg-green-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">প্রাচীন বৃক্ষসমূহ</h3>
+            <p class="text-gray-700">শতবর্ষী বৃক্ষগুলো ছায়া ও ঐতিহ্যের অনুভূতি দেয়।</p>
+          </article>
+
+          <article class="bg-green-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">পাতাল ও খাঁজ</h3>
+            <p class="text-gray-700">শান্ত পিকনিক কোণ এবং ছবি তোলার স্পট।</p>
+          </article>
+        </div>
+
+        <!-- Gallery -->
+        <div class="mt-10 swiper mySwiperGallery" aria-label="Ramna image gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/ramna-park/lawn@1200.webp" class="glightbox" data-gallery="ramna" data-title="রামনা পার্কের লন">
+                <img src="../../images/dhaka/ramna-park/lawn@800.webp" srcset="../../images/dhaka/ramna-park/lawn@480.webp 480w, ../../images/dhaka/ramna-park/lawn@800.webp 800w, ../../images/dhaka/ramna-park/lawn@1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="রামনা পার্কের লন" loading="lazy" class="w-full h-56 object-cover" />
+              </a>
+            </div>
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/ramna-park/trees@1200.webp" class="glightbox" data-gallery="ramna" data-title="রামনা পার্কের বৃক্ষ">
+                <img src="../../images/dhaka/ramna-park/trees@800.webp" srcset="../../images/dhaka/ramna-park/trees@480.webp 480w, ../../images/dhaka/ramna-park/trees@800.webp 800w, ../../images/dhaka/ramna-park/trees@1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="রামনা পার্কের বৃক্ষ" loading="lazy" class="w-full h-56 object-cover" />
+              </a>
+            </div>
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/ramna-park/path@1200.webp" class="glightbox" data-gallery="ramna" data-title="পার্কের পথ">
+                <img src="../../images/dhaka/ramna-park/path@800.webp" srcset="../../images/dhaka/ramna-park/path@480.webp 480w, ../../images/dhaka/ramna-park/path@800.webp 800w, ../../images/dhaka/ramna-park/path@1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="পার্কের পথ" loading="lazy" class="w-full h-56 object-cover" />
+              </a>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visit tips -->
+    <section id="visit" class="py-20 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 text-green-700">কিভাবে যাবেন</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">রামনা পার্ক শহরের কেন্দ্রস্থলে হওয়ায় ট্যাক্সি, রাইড-শেয়ার বা ব্যক্তিগত গাড়িতে সহজে পৌঁছানো যায়। নিকটস্থ মেট্রো স্টেশন থেকে হাঁটলেই পৌঁছানো সম্ভব।</p>
+
+              <h3 class="text-2xl font-semibold mb-3 text-green-700">সেরা সময়</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">সকাল ও সন্ধ্যা — শীতকালে সকালে রোদের নরম আলোকে ছবি নেওয়ার জন্য আদর্শ।</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 text-green-700">নিয়ম ও নিরাপত্তা</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>পার্কের কাজে-কারণে নির্ধারিত নিয়ম পালন করুন ও পরিবেশে সর্তকতা নিন।</li>
+                <li>অতিরিক্ত কোলাহল ও ভাঙচুর থেকে বিরত থাকুন।</li>
+                <li>রাতে একা ভ্রমণ এড়িয়ে চলা উত্তম।</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-3 text-green-700">প্যাকিং টিপস</h3>
+              <p class="text-gray-700">বেসিক: পানি, হ্যাট, সানস্ক্রিন, আরামদায়ক জুতো ও ফোন চার্জার।</p>
+            </div>
+          </div>
+
+          <div class="mt-6 text-center">
+            <a href="#" class="inline-block px-6 py-3 bg-black text-white rounded-full font-semibold shadow">পিকনিক স্পট বুক করুন</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-20 bg-green-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ঘ. মানচিত্র ও আশেপাশ</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.123456789!2d90.389400!3d23.737000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1a1a1a1a1a1%3A0x0!2sRamna%20Park!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Ramna Park map"></iframe>
+        </div>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">নিকটবর্তী স্পট</h4>
+            <p class="text-sm text-gray-600">জাতীয় ক্রীড়া স্টেডিয়াম, বনানী এলাকা, পিকনিক স্পট</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">খাওয়ার পরামর্শ</h4>
+            <p class="text-sm text-gray-600">পাঁচ-পাঁচ মিনিট হাঁটলে স্থানীয় কফি শপ ও রেস্টুরেন্ট পাওয়া যায়।</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">গাইড ও সার্ভিস</h4>
+            <p class="text-sm text-gray-600">স্থানীয় ইভেন্ট/পিকনিক সার্ভিস অনুরোধ করা যেতে পারে।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — রামনা পার্ক
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const gallery = new Swiper('.mySwiperGallery', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr){ ifr.src = ifr.dataset.src; }
+    });
+
+    const menuBtn = document.getElementById('menu-btn');
+    menuBtn?.addEventListener('click', () => {
+      alert('মেনু: Home, About, Divisions, Contact — আপনার প্রকল্পে navbar সম্পূর্ণ করুন।');
+    });
+  </script>
+</body>
+</html>

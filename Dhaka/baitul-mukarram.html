@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>বায়তুল মুকাররাম — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="বায়তুল মুকাররাম — বাংলাদেশের প্রধান জাতীয় মসজিদ; ঢাকা শহরের ধর্মীয় ও সাংস্কৃতিক কেন্দ্র। ভ্রমণ তথ্য, ইতিহাস ও পরিদর্শন টিপস।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="বায়তুল মুকাররাম — ExploreBangla">
+  <meta property="og:description" content="বায়তুল মুকাররাম — জাতীয় মসজিদ; নিখুঁত জ্যামিতি ও স্থাপত্যের সুসজ্জিত উদাহরণ। ভ্রমণ নির্দেশনা ও গ্যালারি।">
+  <meta property="og:image" content="../../images/dhaka/baitul-mukarram/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#0EA5A4}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.86),rgba(255,255,255,0.75));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+    .focus-ring:focus{outline:3px solid rgba(14,165,164,0.18);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"PlaceOfWorship",
+    "name":"Baitul Mukarram National Mosque",
+    "description":"Baitul Mukarram — the national mosque of Bangladesh located in Dhaka; major religious centre and architectural landmark.",
+    "image":["../../images/dhaka/baitul-mukarram/hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Motijheel/Old Dhaka","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-teal-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../Dhaka/index.html" class="hover:underline">Dhaka</a></li>
+            <li>›</li>
+            <li class="font-medium">বায়তুল মুকাররাম</li>
+          </ol>
+        </nav>
+        <a href="../Dhaka/index.html" class="px-4 py-2 bg-teal-400 hover:bg-teal-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/dhaka/baitul-mukarram/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/50 via-black/15 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">বায়তুল মুকাররাম</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">বাংলাদেশের জাতীয় মসজিদ — আধ্যাত্মিক কেন্দ্র, নির্দিষ্ট জ্যামিতিক নকশা ও সম্প্রদায়িক উৎসবের প্রধান স্থান।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-teal-400 hover:bg-teal-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">দর্শন &amp; টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> বায়তুল মুকাররাম (Baitul Mukarram)</li>
+              <li><strong>প্রতিষ্ঠা:</strong> ১৯৫৯–১৯৬৮ (বর্তমান কাঠামো)</li>
+              <li><strong>অবস্থান:</strong> মতিঝিল, ঢাকা</li>
+              <li><strong>ধর্ম:</strong> ইসলাম; দেশের প্রধান জাতীয় মসজিদ</li>
+            </ul>
+            <div class="mt-4">
+              <a href="#" class="px-4 py-2 bg-black text-white rounded-md">Printable leaflet</a>
+            </div>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">বায়তুল মুকাররাম आधुनिक ও ঐতিহ্যবাহী স্থাপত্যের মিশ্রণ; বিশাল গম্বুজ-ছাবি সহ বৃহৎ প্রার্থনা হল রয়েছে। এটি দেশের জাতীয় ধর্মীয় অনুষ্ঠান ও জুমার নামাজের কেন্দ্র।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">মসজিদ সাধারণত প্রত্যেককে স্বাগত জানায় — কিন্তু ধর্মীয় অনুষ্ঠানে অংশ নেয়ার সময় স্থানীয় নিয়ম মনে রাখো (কাপড়, স্ত্রীর/পুরুষের পৃথক প্রবেশ ইত্যাদি)।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History & significance -->
+    <section id="history" class="py-12 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">ইতিহাস ও তাৎপর্য</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow leading-relaxed text-lg">
+          <p class="mb-4">বায়তুল মুকাররামের বর্তমান কাঠামো ১৯৫৯ থেকে ১৯৬৮ সালের মধ্যে নির্মিত হয়; পূর্বের একটি পুরনো মসজিদের স্থানে এটি স্থাপিত হয়। বিশাল প্রার্থনা কক্ষ, সৌন্দর্যপূর্ণ মিনার এবং গঠনতন্ত্রের কারণে এটি দেশের গুরুত্বপূর্ণ ধর্মীয় ও নান্দনিক নিদর্শন।</p>
+          <p class="mb-4">মসজিদটি শুধুই ধর্মীয় কার্যক্রমের জায়গা নয়—এটি সামাজিক ও সাংস্কৃতিক মেলারও কেন্দ্র, যেখানে ঈদ, রোজা ও বিশেষ মোনাজাতের সময় লক্ষাধিক মানুষ একত্রিত হয়।</p>
+          <p>স্থাপত্যগতভাবে আধুনিক জ্যামিতিক নকশা ও স্থানীয় নির্মাণশৈলীর সংমিশ্রণে বায়তুল মুকাররাম তৈরি হয়েছে—যা দর্শনার্থীদের জন্য আর্কিটেকচারাল শিক্ষা ও শৈল্পিক অনুপ্রেরণা সরবরাহ করে।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & gallery -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">স্থাপত্য ও দৃষ্টিনন্দন অংশ</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">গম্বুজ ও প্রার্থনা হল</h3>
+            <p class="text-sm text-gray-600">বৃহৎ কেন্দ্রীয় প্রার্থনা হল ও সমান্তরাল গম্বুজ-রূপের নকশা শক্তিশালী দৃশ্য উপহার দেয়।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">মিনার ও ফ্যাসাদ</h3>
+            <p class="text-sm text-gray-600">সরল কিন্তু শক্তিশালী লাইনের মধ্যে মিনারগুলো স্থাপত্যকে ভারবহ করে।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow card-hover">
+            <h3 class="text-lg font-semibold mb-2">জ্যামিতিক নকশা</h3>
+            <p class="text-sm text-gray-600">ভিতরে- বাহিরে জ্যামিতিক বর্ণনা ও আলো-ছায়ার খেলা লক্ষ্য করো।</p>
+          </div>
+        </div>
+
+        <!-- Gallery swiper -->
+        <div class="swiper mySwiper relative" aria-label="Baitul Mukarram gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/baitul-mukarram/hero.jpg" class="glightbox" data-gallery="baitul" data-title="Baitul Mukarram - facade">
+                <img src="../../images/dhaka/baitul-mukarram/hero.jpg" alt="Baitul Mukarram facade" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">ফাসাদ ভিউ</h3>
+              <p class="text-gray-700">সামনের বিশাল ফেস ও মিনার সমন্বয় শহরের মধ্যে অনন্য আলোক-ছাঁচ উপহার দেয়।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/baitul-mukarram/interior1.jpg" class="glightbox" data-gallery="baitul" data-title="Interior prayer hall">
+                <img src="../../images/dhaka/baitul-mukarram/interior1.jpg" alt="Interior prayer hall" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">প্রার্থনা হলের অভ্যন্তর</h3>
+              <p class="text-gray-700">বিশাল প্রার্থনা রুমে আলো-ছায়ার সুনিপুণ বিন্যাস।</p>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/dhaka/baitul-mukarram/minaret.jpg" class="glightbox" data-gallery="baitul" data-title="Minaret view">
+                <img src="../../images/dhaka/baitul-mukarram/minaret.jpg" alt="Minaret" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+              <h3 class="text-xl font-semibold mb-2">মিনার</h3>
+              <p class="text-gray-700">ঐতিহ্যবাহী মিনার ও সাদামাটা ফ্যাসাদ—স্থাপত্যের সরল সৌন্দর্য।</p>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit tips -->
+    <section id="visit" class="py-12 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">ভ্রমণ নির্দেশ ও টিপস</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">কিভাবে যাবেন</h3>
+              <p class="text-gray-700 mb-3">মতিঝিল ও বাণিজ্যিক কেন্দ্রের নিকটবর্তী—ট্যাক্সি, সিএনজি বা রাইডশেয়ার সহজেই পৌঁছে দেয়। পাবলিক ট্রান্সপোর্ট ও নিকটস্থ স্টপগুলো দেখুন।</p>
+
+              <h3 class="text-xl font-semibold mb-2">বস্ত্র ও প্রবেশনীতি</h3>
+              <p class="text-gray-700 mb-3">ধর্মীয় স্থানে উপযুক্ত পোশাক পরিধান করো; প্রার্থনার সময়ে প্রবেশে ভক্ত-নির্দিষ্ট অংশ থাকতে পারে। ছবি তোলার আগে স্থানীয় নির্দেশনা মানো।</p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">ভিড় ও শ্রেষ্ঠ সময়</h3>
+              <p class="text-gray-700 mb-3">জুমা ও ধর্মীয় উৎসবে ভীড় বেশি থাকে—সকাল বা বিকেল আগে যাওয়াই ভাল।</p>
+
+              <h3 class="text-xl font-semibold mb-2">প্যাকিং টিপস</h3>
+              <p class="text-gray-700">পানি, হালকা কাপড়, ওয়ার্কি ব্যাগ ও মোবাইল চার্জার রাখলে সুবিধা হবে।</p>
+            </div>
+          </div>
+
+          <div class="mt-6 text-center">
+            <a href="#" class="inline-block px-6 py-3 bg-black text-white rounded-full font-semibold shadow">গাইড বুক করো</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby spots -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Dhakeshwari Temple</h4>
+            <p class="text-sm text-gray-600">জাতীয় মন্দির—পুরান ঢাকার ধর্মীয় কেন্দ্র।</p>
+            <a href="../Dhaka/dhakeshwari-temple.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Motijheel</h4>
+            <p class="text-sm text-gray-600">ঢাকার বাণিজ্যিক কেন্দ্র—কর্মস্থল ও নগরজীবনের কেন্দ্র।</p>
+            <a href="../dhaka/motijheel.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Old Dhaka lanes</h4>
+            <p class="text-sm text-gray-600">ঐতিহ্যবাহী খাবার ও পুরনো গলি—শহরের প্রাণ।</p>
+            <a href="../Dhaka/lalbagh-fort.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.234567890!2d90.412345!3d23.727890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ0JzM2LjAiTiA5MMKwMjQnMDUuMCJF!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Baitul Mukarram map"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — বায়তুল মুকাররাম
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3200, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]'); if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

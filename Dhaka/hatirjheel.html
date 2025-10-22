@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>হাতিরঝিল — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/hatirjheel/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">হাতিরঝিল</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          ঢাকার হৃদয়ে অবস্থিত এক মনোরম জলাশয় ও বিনোদন কেন্দ্র — শহরের সৌন্দর্যের প্রতীক।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. ইতিহাস ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          হাতিরঝিল ঢাকার অন্যতম আধুনিক ও দৃষ্টিনন্দন নগর উন্নয়ন প্রকল্প। 
+          রাজধানী উন্নয়ন কর্তৃপক্ষ (রাজউক) কর্তৃক এটি বাস্তবায়িত হয় এবং ২০১৩ সালে সাধারণের জন্য উন্মুক্ত করা হয়। 
+          এর উদ্দেশ্য ছিল শহরের যানজট নিরসন, জলাবদ্ধতা নিয়ন্ত্রণ এবং নাগরিকদের জন্য একটি আধুনিক বিনোদন স্থান তৈরি করা।
+        </p>
+        <p>
+          বর্তমানে হাতিরঝিল শুধু একটি সংযোগ সড়ক নয়, বরং এটি ঢাকার মানুষের প্রিয় বিনোদন কেন্দ্র ও পর্যটন গন্তব্যে পরিণত হয়েছে।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও সৌন্দর্য
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/hatirjheel/bridge.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">রাতের আলো ঝলমলে ব্রিজ</h3>
+            <p>রাতের বেলা ঝলমলে আলোকসজ্জায় হাতিরঝিলের সেতুগুলো শহরের এক ভিন্ন রূপ উপহার দেয়।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/hatirjheel/boat.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">বোট রাইড</h3>
+            <p>হাতিরঝিলে বোট রাইড করে পুরো লেক ঘুরে দেখা যায় — এটি পর্যটকদের জন্য সবচেয়ে আকর্ষণীয় অভিজ্ঞতা।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/hatirjheel/restaurant.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">লেকসাইড রেস্টুরেন্ট</h3>
+            <p>লেকের ধারে কফি শপ ও রেস্টুরেন্টে বসে হাতিরঝিলের দৃশ্য উপভোগ করা যায়।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/hatirjheel/sunset.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">সূর্যাস্তের দৃশ্য</h3>
+            <p>সন্ধ্যাবেলায় সূর্যাস্তের আলো লেকের পানিতে প্রতিফলিত হয়ে এক অপূর্ব দৃশ্য সৃষ্টি করে।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          হাতিরঝিল ঢাকার কেন্দ্রে অবস্থিত — তেজগাঁও, গুলশান, বনানী, রমনা ও মগবাজার এলাকা থেকে সহজেই যাতায়াত করা যায়। 
+          ব্যক্তিগত গাড়ি, রিকশা বা পাবলিক ট্রান্সপোর্টে পৌঁছানো যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          বিকেল থেকে রাত পর্যন্ত সময়টি হাতিরঝিল ভ্রমণের জন্য সবচেয়ে উপযুক্ত — বিশেষ করে রাতে আলোকসজ্জা মনোমুগ্ধকর।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>সন্ধ্যায় যানজট এড়াতে কিছুটা আগে পৌঁছান।</li>
+          <li>বোট রাইডের সময় নিরাপত্তা জ্যাকেট পরা বাধ্যতামূলক।</li>
+          <li>পার্কিং এর জন্য নির্ধারিত স্থানে গাড়ি রাখুন।</li>
+          <li>পরিবেশ পরিষ্কার রাখুন ও আবর্জনা ফেলবেন না।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">হাতিরঝিলের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.678457888516!2d90.40855447544101!3d23.730478794602146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b89775d7b85f%3A0x627ce08440e44d7d!2sHatirjheel!5e0!3m2!1sen!2sbd!4v1697461561276!5m2!1sen!2sbd"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — হাতিরঝিল
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

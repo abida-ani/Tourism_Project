@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>জাতীয় জাদুঘর — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-orange-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/national-museum/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">জাতীয় জাদুঘর</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          বাংলাদেশের ইতিহাস, সংস্কৃতি ও ঐতিহ্যের এক অমূল্য নিদর্শন।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. ইতিহাস ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          জাতীয় জাদুঘর বাংলাদেশ জাতীয় ইতিহাস ও সংস্কৃতির সংরক্ষণে অন্যতম প্রধান কেন্দ্র। 
+          এটি ১৯৬৩ সালে প্রতিষ্ঠিত হয় এবং ঢাকার শহরের শাহবাগ এলাকায় অবস্থিত। 
+          জাদুঘরটি বিভিন্ন ধরণের প্রাচীন নিদর্শন, চিত্রকলা, হস্তশিল্প, প্রত্নতাত্ত্বিক সামগ্রী, 
+          এবং বাংলাদেশের মুক্তিযুদ্ধ সংক্রান্ত ইতিহাস প্রদর্শন করে।
+        </p>
+        <p>
+          শিক্ষার্থী, গবেষক এবং পর্যটকরা জাদুঘরে এসে বাংলাদেশের সমৃদ্ধ সাংস্কৃতিক ঐতিহ্য ও ইতিহাস সম্পর্কে ধারণা লাভ করতে পারেন। 
+          এটি দেশের সাংস্কৃতিক ও ঐতিহাসিক শিক্ষা বৃদ্ধির একটি গুরুত্বপূর্ণ কেন্দ্র।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- স্থাপত্য ও মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. স্থাপত্য ও মূল আকর্ষণ
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/national-museum/exterior.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">জাদুঘর ভবন</h3>
+            <p>বৃহৎ বহুতল ভবনে বিভিন্ন প্রদর্শনী হলে বাংলাদেশের প্রাচীন ইতিহাস, শিল্প ও সংস্কৃতি প্রদর্শিত হয়।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/national-museum/exhibit.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">প্রদর্শনী কক্ষ</h3>
+            <p>প্রদর্শনী কক্ষে প্রত্নতাত্ত্বিক নিদর্শন, হস্তশিল্প এবং চিত্রকলা সংরক্ষিত রয়েছে।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/national-museum/memorial.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">মুক্তিযুদ্ধ ও স্মৃতিসৌধ</h3>
+            <p>বাংলাদেশের মুক্তিযুদ্ধের সময়কার গুরুত্বপূর্ণ সামগ্রী এবং স্মৃতিচিহ্ন এখানে প্রদর্শিত হয়।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/national-museum/auditorium.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">অডিটোরিয়াম ও শিক্ষা কেন্দ্র</h3>
+            <p>জাদুঘরের অডিটোরিয়াম এবং শিক্ষা কেন্দ্র গবেষণা ও সেমিনারের জন্য ব্যবহৃত হয়।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকার যে কোনো স্থান থেকে বাস, রিকশা বা সিএনজি যোগে শাহবাগ এলাকার জাতীয় জাদুঘরে আসা যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          সকাল ১০টা থেকে বিকেল ৫টা পর্যন্ত — সপ্তাহের সাধারণ দিনগুলো ভ্রমণের জন্য উপযুক্ত।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>প্রবেশ ফি প্রাপ্তবয়স্কদের জন্য ৩০ টাকা।</li>
+          <li>ফটোগ্রাফি করার আগে অনুমতি নেওয়া প্রয়োজন।</li>
+          <li>শিশুদের সাথে গেলে বিশেষ নিরাপত্তা ব্যবস্থা বিবেচনা করুন।</li>
+          <li>ভ্রমণ করার সময় জাদুঘরের শান্ত পরিবেশ বজায় রাখুন।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">জাতীয় জাদুঘরের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.079226247413!2d90.39848527544092!3d23.740423694609146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7f7a6a51d9b%3A0xa1cfa2d5b6c4f18a!2sBangladesh%20National%20Museum!5e0!3m2!1sen!2sbd!4v1697445123456!5m2!1sen!2sbd" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — জাতীয় জাদুঘর
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

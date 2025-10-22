@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>মাওয়া ঘাট — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/mawa-ghat/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">মাওয়া ঘাট</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          পদ্মা নদীর তীরে অবস্থিত এক ঐতিহ্যবাহী নৌঘাট — নদী, সূর্যাস্ত ও ইলিশের জন্য বিখ্যাত।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. পরিচিতি ও ইতিহাস</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          মাওয়া ঘাট মুন্সিগঞ্জ জেলার লৌহজং উপজেলায় অবস্থিত। 
+          এটি বাংলাদেশের অন্যতম জনপ্রিয় নদীবন্দর এবং ঢাকার কাছাকাছি অবস্থিত হওয়ায় শহরবাসীর প্রিয় ভ্রমণস্থান। 
+          পদ্মা নদীর তীরে গড়ে ওঠা এই ঘাট বহুদিন ধরেই ফেরিঘাট, মাছ বাজার এবং নদীপথ ভ্রমণের কেন্দ্রবিন্দু হিসেবে পরিচিত।
+        </p>
+        <p>
+          বর্তমানে পদ্মা সেতু চালুর পর এই ঘাটে আধুনিক অবকাঠামো যুক্ত হয়েছে। 
+          তবুও এর প্রাকৃতিক সৌন্দর্য, নদীর ঢেউ, আর ইলিশ মাছের সুবাস আজও ভ্রমণপিপাসুদের আকর্ষণ করে।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও দর্শনীয় স্থান
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mawa-ghat/river.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">পদ্মা নদীর তীর</h3>
+            <p>মাওয়া ঘাট থেকে পদ্মার বিশাল বিস্তৃতি দেখা যায় — সূর্যাস্তের দৃশ্য মনোমুগ্ধকর।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mawa-ghat/boat.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">নৌভ্রমণ</h3>
+            <p>স্থানীয় নৌকায় করে নদী ভ্রমণ পর্যটকদের জন্য এক অনন্য অভিজ্ঞতা।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mawa-ghat/fish-market.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">ইলিশ বাজার</h3>
+            <p>মাওয়া ঘাটের ইলিশ মাছের খ্যাতি দেশজুড়ে — এখানে পাওয়া যায় তাজা পদ্মার ইলিশ।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mawa-ghat/bridge.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">পদ্মা সেতু দর্শন</h3>
+            <p>ঘাট থেকে পদ্মা সেতুর দৃষ্টিনন্দন দৃশ্য পর্যটকদের জন্য এক বিশাল আকর্ষণ।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে মাওয়া ঘাটের দূরত্ব প্রায় ৪০ কিলোমিটার। গাড়ি, বাস, বা সিএনজি যোগে ঢাকা-মাওয়া এক্সপ্রেসওয়ে ধরে ১ ঘণ্টায় পৌঁছানো যায়। 
+          পদ্মা সেতুর আগেই ঘাটটি অবস্থিত।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল ও গ্রীষ্মের বিকেলবেলা নদীর সৌন্দর্য উপভোগের জন্য উপযুক্ত। 
+          বর্ষায় নদীর জলস্রোত আরও মনোমুগ্ধকর হয়, তবে নিরাপত্তা মেনে চলা জরুরি।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>নৌভ্রমণের আগে নৌকার ভাড়া নির্ধারণ করুন।</li>
+          <li>স্থানীয় রেস্টুরেন্টে পদ্মার ইলিশ অবশ্যই চেখে দেখুন।</li>
+          <li>সূর্যাস্তের সময় ঘাটে থাকলে অসাধারণ দৃশ্য দেখা যায়।</li>
+          <li>লাইফ জ্যাকেট ব্যবহার করা নিরাপত্তার জন্য আবশ্যক।</li>
+          <li>প্লাস্টিক ও আবর্জনা নদীতে ফেলবেন না।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">মাওয়া ঘাটের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.058144707013!2d90.2578074754433!3d23.871420484527265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b92b7c00c6c1%3A0x3f9f6a78d4cbb2c5!2sMawa%20Ghat!5e0!3m2!1sen!2sbd!4v1697474440093!5m2!1sen!2sbd"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — মাওয়া ঘাট
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

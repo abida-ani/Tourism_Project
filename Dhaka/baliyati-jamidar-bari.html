@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>বালিয়াটি জমিদার বাড়ি — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/baliati-palace/baliati-hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">বালিয়াটি জমিদার বাড়ি</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          মানিকগঞ্জের প্রাচীন জমিদার ঐতিহ্যের এক অনন্য সাক্ষী — শতবর্ষের ইতিহাসে ভরপুর রাজপ্রাসাদ।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. ইতিহাস ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          মানিকগঞ্জ জেলার সাটুরিয়া উপজেলার বালিয়াটি গ্রামে অবস্থিত এই বিশাল প্রাসাদটি ১৯শ শতাব্দীতে
+          “বালিয়াটি জমিদার পরিবার” দ্বারা নির্মিত হয়। এটি বাংলাদেশের অন্যতম বৃহত্তম জমিদার বাড়ি, যেখানে
+          প্রায় ২০০ কক্ষ, ৭টি প্রাসাদভবন, এবং ৪টি অভ্যন্তরীণ আঙিনা রয়েছে।
+        </p>
+        <p>
+          এই প্রাসাদটি নির্মাণ করেছিলেন জমিদার গোবিন্দ রাম সাহা এবং তাঁর বংশধরেরা। ব্রিটিশ আমলে এ পরিবার ব্যবসা ও
+          প্রশাসনে প্রভাবশালী ছিল। বর্তমানে এটি প্রত্নতত্ত্ব অধিদপ্তরের অধীনে সংরক্ষিত একটি ঐতিহাসিক নিদর্শন এবং
+          জনপ্রিয় পর্যটন কেন্দ্র।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- স্থাপত্য ও মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. স্থাপত্য ও মূল আকর্ষণ
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/baliati-palace/front-view.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">প্রাসাদের মূল প্রবেশদ্বার</h3>
+            <p>গ্রীক-রোমান স্থাপত্যশৈলীর অনুপ্রেরণায় তৈরি এই বিশাল প্রবেশদ্বার বালিয়াটির অন্যতম আকর্ষণ।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/baliati-palace/corridor.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">প্রাসাদের করিডোর</h3>
+            <p>দীর্ঘ করিডোর ও বড় জানালাগুলো প্রাচীন ইউরোপীয় স্থাপত্যের ধাঁচে নির্মিত।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/baliati-palace/interior.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">অভ্যন্তরীণ সজ্জা</h3>
+            <p>অন্দরমহলে এখনো টিকে আছে জমিদার পরিবারের ঐতিহ্যবাহী নকশা ও স্থাপত্য বৈচিত্র্য।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/baliati-palace/pond.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">পুকুর ও বাগান</h3>
+            <p>প্রাসাদের চারপাশে রয়েছে সুন্দর বাগান, পুকুর ও প্রশান্ত পরিবেশ যা ভ্রমণকারীদের মুগ্ধ করে।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে মানিকগঞ্জ পর্যন্ত বাসে যেতে প্রায় ১.৫ ঘণ্টা সময় লাগে। মানিকগঞ্জ সদর থেকে সাটুরিয়া উপজেলার
+          বালিয়াটি গ্রাম পর্যন্ত সিএনজি বা বাসে সহজেই পৌঁছানো যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল ও বসন্তকাল ঘোরার জন্য উপযুক্ত। সকাল বা বিকেল বেলায় গেলে আবহাওয়া মনোরম থাকে এবং ছবি তোলার জন্য আদর্শ সময়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>প্রবেশ ফি দিতে হয় (প্রাপ্তবয়স্কদের জন্য প্রায় ২০ টাকা)।</li>
+          <li>সোমবার বন্ধ থাকে, শুক্রবার খোলা।</li>
+          <li>জাদুঘরের অভ্যন্তরে ফটোগ্রাফি সীমিত।</li>
+          <li>প্রাসাদের চারপাশে স্থানীয় খাবারের দোকান আছে।</li>
+          <li>গাইড নিয়ে গেলে ইতিহাস জানা সহজ হবে।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">বালিয়াটি জমিদার বাড়ির মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.072173649944!2d90.0619035754399!3d23.81440628608879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db4ab78a72fb%3A0x7c9ffb4c67ccdf6b!2sBaliati%20Palace%20Museum!5e0!3m2!1sen!2sbd!4v1697431101234!5m2!1sen!2sbd" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — বালিয়াটি জমিদার বাড়ি
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
