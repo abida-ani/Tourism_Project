@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExploreBangla - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Swiper Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <style>
+    /* Search Suggestion Box */
+    #suggestionBox {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      z-index: 1000;
+      display: none;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    #suggestionBox div {
+      padding: 10px;
+      cursor: pointer;
+      color: #333;
+    }
+    #suggestionBox div:hover {
+      background-color: #f3f4f6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .gradient-overlay {
+      background: linear-gradient(-45deg, #0f766e, #1e3a8a, #065f46, #047857);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      opacity: 0.65;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #feedbackBtn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: linear-gradient(90deg, #16a34a, #15803d);
+      color: white;
+      padding: 14px 18px;
+      border-radius: 9999px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    #feedbackBtn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(90deg, #15803d, #16a34a);
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 80px;
+      right: 25px;
+      background: #2563eb;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 9999px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: all 0.3s;
+      display: none;
+      z-index: 998;
+    }
+    #backToTop:hover {
+      background: #1d4ed8;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-50">
+  <!-- 🧭 Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between" data-aos="fade-down" data-aos-duration="800">
+      <a href="index.html" class="flex items-center">
+        <img src="images/logo/logo.png" alt="ExploreBangla Logo" class="h-10 transition-transform duration-500 hover:scale-110">
+        <span class="font-semibold text-lg ml-2">ExploreBangla</span>
+      </a>
+
+      <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-green-600 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-600 transition">About</a></li>
+        <li><a href="divisions.html" class="hover:text-green-600 transition">Divisions</a></li>
+        <li><a href="contact.html" class="hover:text-green-600 transition">Contact</a></li>
+      </ul>
+
+      <!-- 🔍 Search -->
+      <div class="relative hidden md:block">
+        <button id="searchToggle" class="p-2 hover:bg-gray-100 rounded-full transition">🔍</button>
+        <div id="searchContainer" class="hidden absolute right-0 mt-2 w-72 bg-white shadow-lg rounded-lg p-3">
+          <input type="text" id="searchInput" placeholder="Search location..." class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 outline-none" autocomplete="off" />
+          <div id="suggestionBox"></div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🏞️ Hero Section -->
+  <section class="relative h-[600px] bg-cover bg-center flex flex-col items-center justify-center" style="background-image: url('images/hero-bg.jpg');">
+    <div class="absolute inset-0 gradient-overlay"></div>
+    <div class="relative text-center text-white px-4 z-10" data-aos="zoom-in">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Welcome to Explore Bangladesh</h1>
+      <p class="text-lg md:text-xl mb-6">Discover the beauty, culture, and heritage of Bangladesh</p>
+      <a href="#featured" class="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">Explore Destinations</a>
+    </div>
+  </section>
+
+  <!-- 🏖️ Featured Destinations Carousel -->
+  <section id="featured" class="py-20 bg-gray-50" data-aos="fade-up">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Featured Destinations</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/Chattogram/Coxs-Bazar/cox3.jpg" class="rounded-xl shadow-lg w-full h-72 object-cover">
+            <h3 class="mt-4 text-xl font-semibold">Cox's Bazar</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Dhaka/Lalbagh-fort/img3.jpg" class="rounded-xl shadow-lg w-full h-72 object-cover">
+            <h3 class="mt-4 text-xl font-semibold">Lalbagh Fort</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Dhaka/ahsan-manzil/Ashan.jpg" class="rounded-xl shadow-lg w-full h-72 object-cover">
+            <h3 class="mt-4 text-xl font-semibold">Ahsan Manzil</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Dhaka/Mohera/mohera-jomidar-bari.jpg" class="rounded-xl shadow-lg w-full h-72 object-cover">
+            <h3 class="mt-4 text-xl font-semibold">Mohera Zamindar Bari</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Dhaka/Panam-Nagar/sonargaon.jpg" class="rounded-xl shadow-lg w-full h-72 object-cover">
+            <h3 class="mt-4 text-xl font-semibold">Panam Nagar</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Dhaka/nikli-haor/img.jpg" class="rounded-xl shadow-lg w-full h-72 object-cover">
+            <h3 class="mt-4 text-xl font-semibold">Bhawal National Park</h3>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌐 Social Media -->
+  <section id="social-media" class="py-16 bg-gray-100" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">Follow Our Travel Documentaries</h2>
+      <div class="flex justify-center gap-10 flex-wrap">
+        <a href="https://www.facebook.com/" target="_blank" class="transform hover:scale-110 transition duration-300">
+          <img src="images/social/Facebook.png" alt="Facebook" class="w-14 h-14 rounded-full shadow-lg hover:shadow-green-300">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="transform hover:scale-110 transition duration-300">
+          <img src="images/social/Instragram.png" alt="Instagram" class="w-14 h-14 rounded-full shadow-lg hover:shadow-pink-300">
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="transform hover:scale-110 transition duration-300">
+          <img src="images/social/Twitter.png" alt="Twitter" class="w-14 h-14 rounded-full shadow-lg hover:shadow-blue-300">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="transform hover:scale-110 transition duration-300">
+          <img src="images/social/LinkedIn.png" alt="LinkedIn" class="w-14 h-14 rounded-full shadow-lg hover:shadow-sky-300">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🇧🇩 About Bangladesh -->
+  <section id="about" class="py-20 bg-gray-50" data-aos="fade-up">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Discover Bangladesh</h2>
+      <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        Bangladesh, a land of rivers, green landscapes, and rich cultural heritage, is a paradise for travelers. 
+        From the bustling streets of Dhaka to the serene beaches of Cox's Bazar, and the tea gardens of Sylhet, 
+        every corner tells a unique story.
+      </p>
+    </div>
+  </section>
+
+  <!-- ⚙️ JavaScript -->
+  <script>
+    AOS.init({ once: true });
+
+    // 🔍 Enhanced Search (your list)
+    const spots = {
+      "dhaka": "divisions/dhaka/index.html",
+      "chattogram": "divisions/chattogram/index.html",
+      "rajshahi": "divisions/rajshahi/index.html",
+      "khulna": "divisions/khulna/index.html",
+      "barishal": "divisions/barishal/index.html",
+      "sylhet": "divisions/sylhet/index.html",
+      "rangpur": "divisions/rangpur/index.html",
+      "mymensingh": "divisions/mymensingh/index.html",
+      "about": "about.html",
+      "divisions": "divisions.html",
+      "home": "index.html",
+      "contact": "contact.html",
+      "lalbagh fort": "divisions/dhaka/lalbagh-fort.html",
+      "ahsan manzil": "divisions/dhaka/ahsan-manzil.html",
+      "baliati palace": "divisions/dhaka/baliyati-jamidar-bari.html",
+      "bhawal national park": "divisions/dhaka/bhawal-udyan.html",
+      "nondon park": "divisions/dhaka/nondon-park.html",
+      "dhakeshwari-temple":"divisions/dhaka/dhakeshwari-temple.html",
+      "sonargaon": "divisions/dhaka/sonargaon.html",
+      "jinda-park":"divisions/dhaka/jinda-park.html",
+      "dream-holiday-park":"divisions/dhaka/dream-holiday-park.html",
+      "goalanda-Ghat":"divisions/dhaka/goalanda-ghat.html",
+      "idrakpur-fort":"divisions/dhaka/idrakpur-kella.html",
+      "mawa-ghat":"divisions/dhaka/mawa-ghat.html",
+      "modhupur-bon":"divisions/dhaka/modhupur-bon.html",
+      "mohera-jamidar-bari":"divisions/dhaka/mohera-jamidar-bari.html",
+      "nikli-haor":"divisions/dhaka/nikli-haor.html",
+      "panam-nagar":"divisions/dhaka/panam-nagar.html",
+      "ramna-park":"divisions/dhaka/ramna-park.html",
+      "shriangan-moth":"divisions/dhaka/shriangan-moth.html",
+      "parliament":"divisions/dhaka/parliament-house.html",
+      "national museum":"divisions/dhaka/national-museum.html",
+      "hatirjheel":"divisions/dhaka/hatirjheel.html",
+      "baitul-mukarram":"divisions/dhaka/baitul-mukarram.html",
+      "patenga beach": "divisions/chattogram/patenga-beach.html",
+      "foy's lake": "divisions/chattogram/foys-lake.html",
+      "kaptai reservoir": "divisions/chattogram/kaptai-reservoir.html",
+      "circuit house": "divisions/chattogram/circuit-house.html",
+      "fatehganj beach": "divisions/chattogram/fatehganj-beach.html",
+      "chandrima lake": "divisions/chattogram/chandrima-lake.html",
+      "agrabad jetty": "divisions/chattogram/agrabad-jetty.html",
+      "nafradi falls": "divisions/chattogram/nafradi-falls.html",
+      "waghlah beach": "divisions/chattogram/waghlah-beach.html",
+      "ramu market": "divisions/chattogram/ramu-market.html",
+      "kuakata point": "divisions/chattogram/kuakata-point.html",
+      "maharani hill": "divisions/chattogram/maharani-hill.html",
+      "foti hill": "divisions/chattogram/foti-hill.html",
+      "mohadevpur beach": "divisions/chattogram/mohadevpur-beach.html",
+      "agrabad park": "divisions/chattogram/agrabad-park.html",
+      "war cemetery": "divisions/chattogram/war-cemetery.html",
+      "muradpur market": "divisions/chattogram/muradpur-market.html",
+      "batika beach": "divisions/chattogram/batika-beach.html",
+      "meghna river view": "divisions/chattogram/meghna-river.html",
+      "batar hill": "divisions/chattogram/batar-hill.html",
+      "coxs bazar": "divisions/chattogram/coxs-bazar.html",
+      "saint martin": "divisions/chattogram/saint-martin.html",
+      "amiakhum": "divisions/chattogram/amiakhum.html",
+      "debotakhum": "divisions/chattogram/debotakhum.html"
+    };
+
+    const searchToggle = document.getElementById("searchToggle");
+    const searchContainer = document.getElementById("searchContainer");
+    const searchInput = document.getElementById("searchInput");
+    const suggestionBox = document.getElementById("suggestionBox");
+
+    searchToggle.addEventListener("click", () => {
+      searchContainer.classList.toggle("hidden");
+      searchInput.focus();
+    });
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase().trim();
+      suggestionBox.innerHTML = "";
+      if (!query) return suggestionBox.style.display = "none";
+      const matches = Object.keys(spots).filter(spot => spot.includes(query));
+      if (matches.length > 0) {
+        suggestionBox.style.display = "block";
+        matches.forEach(match => {
+          const div = document.createElement("div");
+          div.textContent = match.charAt(0).toUpperCase() + match.slice(1);
+          div.onclick = () => window.location.href = spots[match];
+          suggestionBox.appendChild(div);
+        });
+      } else suggestionBox.style.display = "none";
+    });
+
+    // Swiper Initialization
+    new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      autoplay: { delay: 2500 },
+      breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+
+    // Floating Buttons
+    const backToTop = document.createElement("button");
+    backToTop.id = "backToTop";
+    backToTop.textContent = "⬆";
+    document.body.appendChild(backToTop);
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 500 ? "block" : "none";
+    });
+    backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const feedback = document.createElement("button");
+    feedback.id = "feedbackBtn";
+    feedback.textContent = "💬 Feedback";
+    document.body.appendChild(feedback);
+    feedback.addEventListener("click", () => alert("Thank you for your feedback! ❤️"));
+  </script>
+    <!-- 🌍 Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-16" data-aos="fade-up">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- 🏝️ About -->
+      <div>
+        <h3 class="text-white text-xl font-semibold mb-4">ExploreBangla</h3>
+        <p class="text-gray-400 leading-relaxed">
+          Discover the natural beauty, heritage, and culture of Bangladesh through our curated travel experiences and guides.
+        </p>
+      </div>
+
+      <!-- 🔗 Quick Links -->
+      <div>
+        <h3 class="text-white text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-green-400 transition">About</a></li>
+          <li><a href="divisions.html" class="hover:text-green-400 transition">Divisions</a></li>
+          <li><a href="contact.html" class="hover:text-green-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 📱 Follow Us -->
+      <div>
+        <h3 class="text-white text-xl font-semibold mb-4">Follow Us</h3>
+        <div class="flex space-x-5">
+          <a href="https://www.facebook.com/" target="_blank" class="hover:scale-110 transition">
+            <img src="images/social/Facebook.png" alt="Facebook" class="w-10 h-10 rounded-full shadow-lg hover:shadow-green-400" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="hover:scale-110 transition">
+            <img src="images/social/Instragram.png" alt="Instagram" class="w-10 h-10 rounded-full shadow-lg hover:shadow-pink-400" />
+          </a>
+          <a href="https://www.twitter.com/" target="_blank" class="hover:scale-110 transition">
+            <img src="images/social/Twitter.png" alt="Twitter" class="w-10 h-10 rounded-full shadow-lg hover:shadow-blue-400" />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="hover:scale-110 transition">
+            <img src="images/social/LinkedIn.png" alt="LinkedIn" class="w-10 h-10 rounded-full shadow-lg hover:shadow-sky-400" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
+      © 2025 ExploreBangla. All rights reserved. | Designed with ❤️ by Abida
+    </div>
+  </footer>
+
+</body>
+</html>

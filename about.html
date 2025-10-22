@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — ExploreBangla</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small tweak for testimonial quote */
+    .quote-mark { font-size: 3rem; line-height: .6; color: rgba(13,110,253,.12); }
+  </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-800">
+
+  <!-- Fixed Navbar -->
+<nav class="fixed top-0 w-full h-20 md:h-24 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between h-full">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo/logo.png" alt="ExploreBangla" class="h-12 w-auto object-contain">
+      <span class="font-semibold text-lg md:text-xl">ExploreBangla</span>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-6">
+      <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+      <li><a href="divisions.html" class="hover:text-blue-600">Divisions</a></li>
+      <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <!-- mobile menu btn -->
+      <button id="menu-btn" class="md:hidden p-2 rounded hover:bg-gray-100">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="index.html" class="block py-2">Home</a>
+        <a href="about.html" class="block py-2 font-medium text-blue-600">About</a>
+        <a href="divisions.html" class="block py-2">Divisions</a>
+        <a href="contact.html" class="block py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+ <!-- HERO / BANNER -->
+<header class="relative w-full" style="margin-top: 64px;">
+  <div class="relative h-[420px] md:h-[520px] lg:h-[640px] bg-cover bg-center rounded-b-xl overflow-hidden"
+       style="background-image: url('images/logo/about-extra.jpg');">
+    <div class="absolute inset-0 bg-black/45"></div>
+    <div class="relative z-10 container mx-auto px-4 h-full flex items-center">
+      <div class="max-w-3xl text-white">
+        <p class="bg-white/10 inline-block px-3 py-1 rounded text-sm mb-4">About Us</p>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">Discover the Heart of Bangladesh</h1>
+        <p class="text-lg md:text-xl text-white/90 mb-6">
+          ExploreBangla brings you curated travel guides, practical tips and authentic stories from every corner of Bangladesh — its people, culture and landscapes.
+        </p>
+        <div class="flex gap-3">
+          <a href="divisions.html" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-5 py-3 rounded-lg shadow">Explore Divisions</a>
+          <a href="contact.html" class="border border-white/30 text-white px-4 py-3 rounded-lg hover:bg-white/10">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </header>
+
+  <!-- ABOUT CONTENT: text + image -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Explore Bangladesh?</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Bangladesh is a tapestry of rivers, lush green landscapes, rich culture and warm hospitality.
+          From historic Mughal forts to tranquil mangroves, tea gardens and sandy shores, the variety is surprising and delightful.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Our mission is to make exploration easy and safe — providing budget estimates, best seasons, local tips and trusted recommendations.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-1">Local Recommendations</h3>
+            <p class="text-sm text-gray-500">Hand-picked spots and local tips for each division.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-1">Budget Friendly</h3>
+            <p class="text-sm text-gray-500">Estimated costs and transport options to plan smarter.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-1">Authentic Stories</h3>
+            <p class="text-sm text-gray-500">Documentaries & traveler experiences from locals and visitors.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow-sm">
+            <h3 class="font-semibold mb-1">Safe Travel</h3>
+            <p class="text-sm text-gray-500">Seasonal tips and safety notes for a worry-free trip.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ===== About Hero Section ===== -->
+<section class="relative h-[80vh] bg-cover bg-center flex items-center justify-center" 
+         style="background-image: url('images/logo/about-hero.jpg');">
+  
+  <!-- Dark Overlay (text যেন পরিষ্কার দেখা যায়) -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Text Content -->
+  <div class="relative text-center text-white px-4">
+    <h1 class="text-5xl font-bold mb-4">About Bangladesh</h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto">
+      A land of beauty, culture, and adventure. Discover the soul of Bangladesh through its people, traditions, and timeless landscapes.
+    </p>
+  </div>
+</section>
+
+
+
+      <div class="lg:w-1/2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <img src="images/logo/about-1.jpg" alt="Scenery 1" class="rounded-lg shadow-lg object-cover w-full h-48">
+          <img src="images/logo/about-2.jpg" alt="Scenery 2" class="rounded-lg shadow-lg object-cover w-full h-48">
+          <img src="images/logo/about-3.jpg" alt="Scenery 3" class="rounded-lg shadow-lg object-cover w-full h-48">
+          <div class="p-4 rounded-lg bg-white shadow-sm flex items-center justify-center">
+            <div>
+              <h4 class="text-2xl font-bold">8</h4>
+              <p class="text-sm text-gray-500">Divisions covered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION CARDS -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-center mb-8">Our Mission</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-lg shadow-sm text-center">
+          <div class="text-3xl mb-3">🧭</div>
+          <h4 class="font-semibold mb-2">Guide Travelers</h4>
+          <p class="text-sm text-gray-500">Practical routes, timings and transport tips.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-sm text-center">
+          <div class="text-3xl mb-3">🎥</div>
+          <h4 class="font-semibold mb-2">Share Stories</h4>
+          <p class="text-sm text-gray-500">Short documentaries and local narratives.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-sm text-center">
+          <div class="text-3xl mb-3">🌱</div>
+          <h4 class="font-semibold mb-2">Sustainable Travel</h4>
+          <p class="text-sm text-gray-500">Encourage eco-friendly and respectful tourism.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS (animated counters) -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <div class="text-3xl font-extrabold text-blue-600 counter" data-target="8">0</div>
+          <div class="text-sm text-gray-500">Divisions</div>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <div class="text-3xl font-extrabold text-blue-600 counter" data-target="160">0</div>
+          <div class="text-sm text-gray-500">Featured Spots</div>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-sm">
+          <div class="text-3xl font-extrabold text-blue-600 counter" data-target="120">0</div>
+          <div class="text-sm text-gray-500">Travel Tips</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Gallery</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="images/logo/gallery-1.jpg" alt="gallery 1" class="rounded-lg object-cover w-full h-44">
+        <img src="images/logo/gallery-2.jpg" alt="gallery 2" class="rounded-lg object-cover w-full h-44">
+        <img src="images/logo/gallery-3.jpg" alt="gallery 3" class="rounded-lg object-cover w-full h-44">
+        <img src="images/logo/gallery-4.jpg" alt="gallery 4" class="rounded-lg object-cover w-full h-44">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Traveler Stories</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white rounded-lg shadow-sm flex gap-4 items-start">
+          <img src="images/testi-1.jpg" alt="traveler" class="w-14 h-14 rounded-full object-cover">
+          <div>
+            <div class="quote-mark">“</div>
+            <p class="text-gray-600">Amazing experiences — the tea gardens in Srimangal were unforgettable. The local tips saved us time and money.</p>
+            <div class="text-sm text-gray-400 mt-2">— Rahim, Dhaka</div>
+          </div>
+        </div>
+
+        <div class="p-6 bg-white rounded-lg shadow-sm flex gap-4 items-start">
+          <img src="images/testi-2.jpg" alt="traveler" class="w-14 h-14 rounded-full object-cover">
+          <div>
+            <div class="quote-mark">“</div>
+            <p class="text-gray-600">Sundarbans boat trip was well planned. The guide recommendations were spot on.</p>
+            <div class="text-sm text-gray-400 mt-2">— Ayesha, Chattogram</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-2xl md:text-3xl font-bold mb-3">Ready to plan your trip?</h3>
+      <p class="text-white/90 mb-6">Start exploring our curated guides and travel documentaries.</p>
+      <a href="divisions.html" class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg shadow">Explore Divisions</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-white border-t">
+    <div class="container mx-auto px-4 text-center text-sm text-gray-500">
+      &copy; 2025 ExploreBangla — Travel Guides & Documentaries
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // simple counter animation
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const update = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const inc = Math.ceil(target / 100);
+        if (current < target) {
+          counter.innerText = current + inc;
+          setTimeout(update, 15);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      update();
+    });
+  </script>
+</body>
+</html>
