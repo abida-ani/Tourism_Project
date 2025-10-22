@@ -1,0 +1,71 @@
+:root {
+  --brand: #0d6efd;
+  --muted: #6c757d;
+  --hero-height: 78vh;
+}
+
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #212529;
+}
+.logo img {
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* NAV tweaks */
+.navbar .nav-link { color: #333; }
+.navbar .nav-link.active { color: var(--brand); font-weight:600; }
+
+/* HERO */
+.hero {
+  position: relative;
+  height: var(--hero-height);
+  background-image: url('images/hero-bg.jpg'); /* change or use external unsplash link */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35));
+}
+.hero .container { position: relative; z-index: 2; }
+.hero-title {
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  color: #fff;
+}
+.hero-sub {
+  color: rgba(255,255,255,0.9);
+}
+
+/* ----------------------------
+   About section styles
+   ---------------------------- */
+.about-card { background: linear-gradient(180deg, #ffffff, #fbfcff); }
+.about-card .h4 { color: #0d6efd; font-weight:700; }
+@media (max-width: 767px) {
+  .about-card img { max-height: 220px; }
+}
+
+/* button styles */
+.btn-outline-light {
+  border-color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.95);
+}
+
+/* Small screens adjust */
+@media (max-width: 767px) {
+  .hero { height: 60vh; padding-top: 2rem; padding-bottom: 2rem; }
+  .hero-title { font-size: 1.4rem; }
+}
