@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debotakhum — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Debotakhum — বান্দরবানের একটি মনোরম ঝরনা ও প্রকৃতি ভ্রমণের স্পট। ট্রেকিং, ফটোগ্রাফি ও নৈসর্গিক পরিবেশের জন্য বিখ্যাত।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Debotakhum — ExploreBangla">
+  <meta property="og:description" content="Debotakhum — বান্দরবানের জনপ্রিয় ঝরনা, ট্রেকিং-এ আগ্রহী পর্যটকদের জন্য আদর্শ।">
+  <meta property="og:image" content="../../images/Bandarban/Debotakhum/debotakhum-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.86),rgba(255,255,255,0.72));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .focus-ring:focus{outline:3px solid rgba(255,180,0,0.22);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Debotakhum",
+    "description":"Debotakhum — বান্দরবানের প্রাকৃতিক ঝরনা ও ট্রেকিং স্পট।",
+    "image":["../../images/Bandarban/Debotakhum/debotakhum-hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Bandarban","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../Chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Debotakhum</li>
+          </ol>
+        </nav>
+        <a href="../Chattogram/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/Bandarban/Debotakhum/debotakhum-hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">দেবতখুম (Debotakhum)</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">বান্দরবানের একটি হৃদয়গ্রাহী ঝরনা ও ট্রেকিং স্পট — প্রকৃতি, জলধারা ও সবুজ উপত্যকার মিলনস্থল।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Debotakhum (দেবতখুম)</li>
+              <li><strong>অবস্থান:</strong> বান্দরবান (Bandarban), বাংলাদেশ</li>
+              <li><strong>ধরন:</strong> ঝরনা (Waterfall) ও ট্রেকিং স্পট</li>
+              <li><strong>বিশেষত্ব:</strong> ঝরনা, গুহা, উন্নত ট্রেকিং রুট</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">দেবতখুম বান্দরবানের গভীরে অবস্থিত এক মনোরম ঝরনা ও জলপ্রপাত। এটি ঢালে-ঢালে নিচে নেমে থাকা ঝর্ণা ও সবুজ বৃক্ষের মাঝে যে দৃশ্য তৈরি করে তা পর্যটকদের মুগ্ধ করে। ট্রেকিং ও কেম্পিং-এ আগ্রহী ভ্রমণকারীদের জন্য এটি আদর্শ।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সকালে যান — দিনের আলোতে ট্রেকিং সহজ হয়। ট্রেকিং-র সময় হাইকিং শু ও পর্যাপ্ত পানি নিয়ে চলুন। স্থানীয় গাইড নিলে নিরাপদ ও সুবিধাজনক হয়।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History & Importance Two Columns -->
+    <section id="history-importance" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-yellow-600">ইতিহাস ও গুরুত্ব</h2>
+        <div class="flex flex-col md:flex-row md:space-x-8 gap-8">
+          <!-- History -->
+          <div class="flex-1 glass p-8 rounded-3xl shadow min-h-[320px]">
+            <h3 class="text-2xl font-semibold mb-4 text-yellow-600">ইতিহাস</h3>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              দেবতখুম সম্পর্কে স্থানীয় লোককথা রয়েছে—একসময় এই এলাকাটি বনাঞ্চল ও বন্যজীবনের আবাস ছিল। পরবর্তীতে পর্যটন ও ট্রেকিং-র জনপ্রিয়তার কারণে এই ঝরনাটি বহুলপরিচিতি পায়। বার্ষিক পর্যটক ও কেম্পিং-প্রেমীরা এখানে বেড়ে এসেছে এবং স্থানীয় জনগোষ্ঠীর জীবনযাত্রায় পর্যটনের ভূমিকা গুরুত্ব পেয়েছে।
+            </p>
+          </div>
+
+          <!-- Importance -->
+          <div class="flex-1 glass p-8 rounded-3xl shadow min-h-[320px]">
+            <h3 class="text-2xl font-semibold mb-4 text-yellow-600">গুরুত্ব</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+              <li>বান্দরবানের প্রাকৃতিক সৌন্দর্যে গুরুত্বপূর্ণ যোগান দেয়।</li>
+              <li>ট্রেকিং ও অ্যাডভেঞ্চার পর্যটনের জন্য একটি আকর্ষণীয় গন্তব্য।</li>
+              <li>স্থানীয় জনগোষ্ঠীর আয়ের উৎস হিসেবে কাজ করে—গাইড, হোমস্টে ও খুচরা ব্যবসা।</li>
+              <li>প্রাকৃতিক экোসিস্টেম রক্ষা ও ইকো-ট্যুরিজম প্রচারের ক্ষেত্রে গুরুত্ব বহন করে।</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery swiper -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">📸 Gallery</h2>
+        <div class="swiper mySwiper relative" aria-label="Debotakhum gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Bandarban/Debotakhum/debotakhum1.jpg" class="glightbox" data-gallery="debotakhum" data-title="Debotakhum Waterfall">
+                <img src="../../images/Bandarban/Debotakhum/debotakhum1.jpg" alt="Debotakhum" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Bandarban/Debotakhum/debotakhum2.jpg" class="glightbox" data-gallery="debotakhum" data-title="Trail to Debotakhum">
+                <img src="../../images/Bandarban/Debotakhum/debotakhum2.jpg" alt="Trail" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Bandarban/Debotakhum/debotakhum3.jpg" class="glightbox" data-gallery="debotakhum" data-title="Pool below the falls">
+                <img src="../../images/Bandarban/Debotakhum/debotakhum3.jpg" alt="Pool" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit tips -->
+    <section id="visit" class="py-12 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">ভ্রমণ টিপস</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow">
+          <ul class="list-disc list-inside space-y-3 text-gray-700">
+            <li>সকালবেলা বা বিকেলে যাওয়া সময় ভাল—দূরত্ব ও ট্রেইল সুবিধা বিবেচনা করে পরিকল্পনা করো।</li>
+            <li>ট্রেকিং-এ ভালো ট্রেকিং শু/সবল জুতো পরবে, এবং পর্যাপ্ত পানি রাখবে।</li>
+            <li>তুমি যদি জমে থাকা পুকুরে নামতে চাও, আগে স্থানীয়দের সঙ্গে কথা বলে নিরাপত্তা নিশ্চিত করো।</li>
+            <li>স্থানীয় গাইড নিলে পথ পরিচিতি ও নিরাপত্তা বৃদ্ধি পায়—রেট সাধারণত গ্রুপে পর নির্ধারিত হয়।</li>
+            <li>কোনো ধরনের ঝুঁকিপূর্ণ জায়গায় সাইনবোর্ড মেনে চলো; আবর্জনা ফেলে যেও না।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby spots -->
+    <section class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Nilgiri Hills</h4>
+            <p class="text-sm text-gray-600">শহরের ওপর থেকে চমৎকার পাহাড়ি ভিউ ও পাহাড়ি ট্রেকিং রুট।</p>
+            <a href="../bandarban/nilgiri.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Bijoypur/Tribal Villages</h4>
+            <p class="text-sm text-gray-600">স্থানীয় উপজাতি সংস্কৃতি দেখার জন্য উপযুক্ত অঞ্চল।</p>
+            <a href="../bandarban/tribal-village.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Sangu River</h4>
+            <p class="text-sm text-gray-600">নৌকা ভ্রমণ ও নদী পাড়ে বিশ্রামের জন্য খরচ-মতো ভালো গন্তব্য।</p>
+            <a href="../bandarban/sangu-river.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section id="hotels" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">কাছাকাছি হোটেল ও হোমস্টে</h2>
+        <p class="text-gray-700 mb-8">বিভিন্ন বাজেটের জন্য উপযুক্ত কিছু হোটেল ও হোমস্টে (টাকা/রাত আনুমানিক)।</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Luxury / Top choice -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover text-left">
+            <img src="../../images/Bandarban/hotel-lux1.jpg" alt="Bandarban Resort" class="w-full h-44 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Bandarban Resort (লাক্সারি)</h3>
+              <p class="text-gray-600 mb-2">আরামদায়ক রুম, নিরিবিলি অবস্থান ও ভালো সার্ভিস।</p>
+              <ul class="text-gray-700 text-sm mb-3 list-disc list-inside">
+                <li>দূরত্ব (Debotakhum): ≈ 40–60 কিমি (ড্রাইভ + ট্রেক)</li>
+                <li>রুম রেট: ৳৮,০০০ – ৳১৫,০০০ / রাত</li>
+                <li>বৈশিষ্ট্য: রেস্টুরেন্ট, গাইড সার্ভিস, ট্রান্সফার</li>
+              </ul>
+              <a href="https://www.booking.com/city/bd/bandarban.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">Booking দেখুন</a>
+            </div>
+          </div>
+
+          <!-- Mid-range -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover text-left">
+            <img src="../../images/Bandarban/hotel-mid1.jpg" alt="Hill View Hotel" class="w-full h-44 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Hill View Hotel (মধ্যম)</h3>
+              <p class="text-gray-600 mb-2">পরিচ্ছন্ন রুম ও সাশ্রয়ী সার্ভিস—ফ্যামিলি জন্য ভালো।</p>
+              <ul class="text-gray-700 text-sm mb-3 list-disc list-inside">
+                <li>দূরত্ব (Debotakhum): ≈ 35–55 কিমি</li>
+                <li>রুম রেট: ৳৪,০০০ – ৳৭,০০০ / রাত</li>
+                <li>বৈশিষ্ট্য: ব্রেকফাস্ট, ট্রাভেল ডেস্ক</li>
+              </ul>
+              <a href="https://www.booking.com/city/bd/bandarban.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">Booking দেখুন</a>
+            </div>
+          </div>
+
+          <!-- Budget / Homestay -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover text-left">
+            <img src="../../images/Bandarban/homestay1.jpg" alt="Local Homestay" class="w-full h-44 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Local Homestay (বাজেট)</h3>
+              <p class="text-gray-600 mb-2">স্থানীয় পরিবেশে হোমস্টে—সংযোগ করো স্থানীয়দের সঙ্গ ও সংস্কৃতির সাথে।</p>
+              <ul class="text-gray-700 text-sm mb-3 list-disc list-inside">
+                <li>দূরত্ব (Debotakhum): ≈ 30–50 কিমি</li>
+                <li>রুম রেট: ৳১,২০০ – ৳২,৫০০ / রাত</li>
+                <li>বৈশিষ্ট্য: হোম-কুকিং, গাইড ইন্ট্রো</li>
+              </ul>
+              <a href="https://www.booking.com/city/bd/bandarban.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">Booking দেখুন</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities & Rides (Must Enjoy) -->
+    <section id="activities" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">অবশ্যই উপভোগ করতে যা করা যাবে</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h4 class="text-xl font-semibold mb-2">ট্রেকিং & হাইকিং</h4>
+            <p class="text-gray-700">দেবতখুম পর্যন্ত ট্রেকিং মনোরম; পথচারী প্রকৃতির মাঝে বিভিন্ন পয়েন্টে ছবি তোলার সুযোগ পাবে। স্থানীয় গাইড নেয়া ভালো।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h4 class="text-xl font-semibold mb-2">ফটোগ্রাফি</h4>
+            <p class="text-gray-700">ঝরনা, পুকুর ও সবুজ পরিবেশ ফটোগ্রাফি-প্রিয়দের জন্য আদর্শ। সানরাইজ বা সানসেটের আলো ভালো ছবি দেয়।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h4 class="text-xl font-semibold mb-2">কেম্পিং</h4>
+            <p class="text-gray-700">নির্ধারিত ক্যাম্পিং এলাকায় রাত কাটানোর অভিজ্ঞতা নিতে পারো—সবসময় স্থানীয় কর্তৃপক্ষ থেকে অনুমতি নেবে।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-white fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-6">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps?q=Debotakhum,+Bandarban&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Debotakhum map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-gray-500 border-t">
+    <div class="container mx-auto px-6">
+      <p class="mb-2">&copy; 2025 ExploreBangla — Debotakhum</p>
+      <p class="text-sm">ভ্রমণের আগে স্থানীয় পরিবেশ ও আবহাওয়া যাচাই করে নেবেন। গাইড নেওয়া নিরাপদ ও সুবিধাজনক।</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3000, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    // Lazy-load map iframe
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

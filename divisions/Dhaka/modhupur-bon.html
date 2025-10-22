@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>মধুপুর বন — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-green-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/modhupur-bon/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">মধুপুর বন</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          বাংলাদেশের অন্যতম বৃহৎ বনভূমি — প্রকৃতি, বন্যপ্রাণী ও সবুজ সৌন্দর্যের এক অনন্য মিলনস্থল।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. পরিচিতি ও ইতিহাস</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          মধুপুর বন টাঙ্গাইল ও ময়মনসিংহ জেলার মধ্যবর্তী স্থানে অবস্থিত একটি প্রাচীন প্রাকৃতিক শালবন। 
+          এটি বাংলাদেশের দ্বিতীয় বৃহত্তম বনাঞ্চল, যার আয়তন প্রায় ৪৩,৬০০ একর। 
+          এই বন বাংলাদেশের পরিবেশগত ভারসাম্য রক্ষায় গুরুত্বপূর্ণ ভূমিকা পালন করে।
+        </p>
+        <p>
+          বনটির ভেতরে “মধুপুর জাতীয় উদ্যান” অবস্থিত, যেখানে রয়েছে বন্যপ্রাণী, বিরল উদ্ভিদ এবং পর্যটকদের জন্য সুন্দর ভ্রমণ ও পিকনিকের স্থান। 
+          ইতিহাস অনুসারে, এই বন বহু প্রাচীনকাল থেকেই আদিবাসী গারো ও কোচ জনগোষ্ঠীর আবাসস্থল।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও দর্শনীয় স্থান
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/modhupur-bon/forest.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">শালবন</h3>
+            <p>মধুপুর বনের প্রধান আকর্ষণ এর ঘন শালগাছের বন, যা সারাবছর সবুজে ভরে থাকে।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/modhupur-bon/deer.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">বন্যপ্রাণী</h3>
+            <p>বনে রয়েছে বানর, হরিণ, পাখি ও বিভিন্ন প্রজাতির বন্যপ্রাণী — যা প্রকৃতিপ্রেমীদের জন্য স্বর্গ।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/modhupur-bon/trail.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">প্রকৃতি পথ</h3>
+            <p>বনের ভেতর দিয়ে হেঁটে যাওয়ার জন্য রয়েছে প্রকৃতি পথ ও ছোট ছোট ট্রেইল।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/modhupur-bon/tower.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">ওয়াচ টাওয়ার</h3>
+            <p>বনের ওপরে থেকে দৃশ্য উপভোগের জন্য নির্মিত হয়েছে সুন্দর দর্শন টাওয়ার।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে মধুপুর বনের দূরত্ব প্রায় ১৫০ কিলোমিটার। গাজীপুর, ময়মনসিংহ বা টাঙ্গাইল হয়ে সহজেই বাস বা প্রাইভেট গাড়িতে পৌঁছানো যায়। 
+          টাঙ্গাইল শহর থেকে প্রায় ৪০ কিলোমিটার দূরে মধুপুর।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল ও বসন্তকাল ভ্রমণের জন্য আদর্শ সময়। বর্ষাকালে বনের রঙ আরও গাঢ় সবুজ হয়, তবে রাস্তা কাদা থাকতে পারে।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>প্রবেশ ফি: প্রাপ্তবয়স্ক ৩০ টাকা, শিশু ২০ টাকা।</li>
+          <li>স্থানীয় গাইড নিলে বনের ভেতরের ট্রেইল ভালোভাবে ঘোরা যায়।</li>
+          <li>বন্যপ্রাণীকে বিরক্ত করা নিষেধ।</li>
+          <li>খাবার ও পানি সঙ্গে রাখুন।</li>
+          <li>বনের পরিচ্ছন্নতা বজায় রাখুন এবং প্লাস্টিক ব্যবহার থেকে বিরত থাকুন।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">মধুপুর বনের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.697004514647!2d90.03503177544619!3d24.68925678412294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fef34238a7c9b7%3A0x2e7a8a9c1ff1b87!2sModhupur%20National%20Park!5e0!3m2!1sen!2sbd!4v1697477011195!5m2!1sen!2sbd"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — মধুপুর বন
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandrima Lake — ExploreBangla</title>
+
+  <meta name="description" content="Chandrima Lake — চট্টগ্রামের Chandrima Lake; প্রাকৃতিক সৌন্দর্য, বোটিং, পিকনিক ও পরিবারিক ভ্রমণের জন্য জনপ্রিয়।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chandrima Lake — ExploreBangla">
+  <meta property="og:description" content="Chandrima Lake — চট্টগ্রামের Chandrima Lake; প্রাকৃতিক সৌন্দর্য, বোটিং, পিকনিক ও পরিবারিক ভ্রমণের জন্য জনপ্রিয়।">
+  <meta property="og:image" content="../../images/Chattogram/Chandrima-Lake/chandrima-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{--accent:#0EA5A4}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#04263b}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.92),rgba(255,255,255,0.85));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,0.08)}
+    .hero-overlay{background: linear-gradient(180deg, rgba(2,6,23,0.25), rgba(2,6,23,0.0));}
+    .accent{color:var(--accent)}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Chandrima Lake",
+    "description":"Chandrima Lake — চট্টগ্রামের Chandrima Lake; প্রাকৃতিক সৌন্দর্য, বোটিং ও পিকনিকের জন্য বিখ্যাত।",
+    "image":["../../images/Chattogram/Chandrima-Lake/chandrima-hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Chattogram","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-sky-50 via-white to-emerald-50">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Chandrima Lake</li>
+          </ol>
+        </nav>
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-emerald-400 hover:bg-emerald-500 rounded-lg text-white font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner relative" style="background-image: url('../../images/Chattogram/Chandrima-Lake/chandrima-hero.jpg');">
+      <div class="absolute inset-0 hero-overlay rounded-b-3xl"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Chandrima Lake</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">শান্ত প্রাকৃতিক সৌন্দর্য — বোটিং, পিকনিক এবং পরিবারিক ভ্রমণের জন্য আদর্শ স্থান।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-emerald-400 hover:bg-emerald-500 rounded-full font-semibold text-white shadow">Quick facts</a>
+          <a href="#activities" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">Activities</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Chandrima Lake</li>
+              <li><strong>অবস্থান:</strong> Chattogram, Bangladesh</li>
+              <li><strong>ধরন:</strong> প্রাকৃতিক হ্রদ</li>
+              <li><strong>উপযুক্ত:</strong> পরিবার, বোটিং, পিকনিক</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Chandrima Lake চট্টগ্রামের শান্ত ও প্রাকৃতিক পরিবেশে অবস্থিত। এটি নৌকা ভ্রমণ, পিকনিক এবং ছোট পরিবারিক ভ্রমণের জন্য পরিচিত। পারিপার্শ্বিক সবুজ বনভূমি এবং জলরাশি দর্শনার্থীদের জন্য আনন্দদায়ক অভিজ্ঞতা প্রদান করে।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সকাল থেকে সন্ধ্যা পর্যন্ত খোলা। স্থানীয় নৌকা সার্ভিস ও গাইড পাওয়া যায়। নিরাপত্তা নিশ্চিত করতে স্থানীয় নির্দেশিকা অনুসরণ করা উচিত।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">ইতিহাস</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Chandrima Lake প্রাকৃতিকভাবে গঠিত একটি হ্রদ। স্থানীয়রা প্রাচীনকাল থেকে এটিকে পিকনিক এবং বিশ্রামের স্থান হিসেবে ব্যবহার করে আসছেন। শহরের দ্রুত উন্নয়নের পরও এটি পর্যটন ও স্থানীয়দের বিনোদনের জন্য গুরুত্বপূর্ণ।
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mt-4">
+            হ্রদের চারপাশে বন এবং জলরাশির নৈসর্গিক দৃশ্য দর্শনার্থীদের জন্য আকর্ষণীয়। পর্যটকরা নৌকা ভ্রমণ এবং ছবি তোলার জন্য এখানে আসে।
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importance -->
+    <section id="importance" class="py-16 fade-in">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">গুরুত্ব</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li>শহরের নৈসর্গিক সৌন্দর্য বজায় রাখে এবং মানসিক শান্তি প্রদান করে।</li>
+            <li>পরিবার ও বন্ধুদের সাথে পিকনিক ও নৌকা ভ্রমণের জন্য উপযুক্ত।</li>
+            <li>ছবি তোলা, প্রকৃতি পর্যবেক্ষণ ও ছোট ইভেন্টের জন্য আকর্ষণীয় স্থান।</li>
+            <li>স্থানীয়দের ও পর্যটকদের জন্য বিনোদন এবং পর্যটন উভয় দিকেই গুরুত্বপূর্ণ।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">Activities</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Boating</h4>
+            <p class="text-gray-700 text-sm">পর্যটকরা নৌকা ভ্রমণ করতে পারেন হ্রদে; ছোট পরিবারিক নৌকা ও রেন্টাল সার্ভিস পাওয়া যায়।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Picnic & Relax</h4>
+            <p class="text-gray-700 text-sm">পরিবার বা বন্ধুদের সঙ্গে পিকনিক করা যায়; সবুজ বন ও শান্ত জলরাশি পরিবেশ উপভোগ করুন।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Photography</h4>
+            <p class="text-gray-700 text-sm">নৈসর্গিক দৃশ্য ও জলরাশির পরিবেশ ফটোগ্রাফির জন্য উপযুক্ত।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Guide -->
+    <section id="travel" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 accent">যেভাবে যাওয়া যায়</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li><strong>ঢাকা থেকে:</strong> গাড়ী/বাস: প্রায় ৬–৭ ঘণ্টা; বিমান: ঢাকা → চট্টগ্রাম (১ ঘন্টা), তারপর স্থানীয় পরিবহন করে Chandrima Lake পৌঁছান।</li>
+            <li><strong>চট্টগ্রাম শহর থেকে:</strong> চট্টগ্রাম সিটি থেকে গাড়ী/রিকশা/সিএনজি করে সহজেই ১–১.৫ ঘণ্টায় পৌঁছানো যায়।</li>
+            <li><strong>Best time:</strong> অক্টোবর থেকে মার্চ — কম বৃষ্টি ও সুন্দর আকাশ।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Hotels / Stay (with costs & booking) -->
+    <section id="hotels" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">নজদিকের হোটেল — মূল্য ও বুকিং</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Hotel Peninsula -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Chattogram/Hotels/peninsula.jpg" alt="The Peninsula Chittagong" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">The Peninsula Chittagong</h3>
+              <p class="text-gray-600">GEC Circle / O.R. Nizam Road — রুফটপ পুল ও আধুনিক সুবিধা</p>
+              <p class="mt-2 text-gray-700 font-medium">💰 ভাড়া: প্রতি রাত ৳৮,৫০০–৳১২,৫০০</p>
+              <p class="text-sm text-gray-500 mt-1">☎ +88 031 251-xxxx</p>
+              <a href="https://www.booking.com/hotel/bd/the-peninsula-chittagong-limited.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-emerald-400 hover:bg-emerald-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Hotel Tower Inn -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Chattogram/Hotels/tower-inn.jpg" alt="Hotel Tower Inn" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hotel Tower Inn</h3>
+              <p class="text-gray-600">Station Road — বাজেট-মিড রেঞ্জ সুবিধা</p>
+              <p class="mt-2 text-gray-700 font-medium">💰 ভাড়া: প্রতি রাত ৳৪,৫০০–৳৭,০০০</p>
+              <p class="text-sm text-gray-500 mt-1">☎ +88 031 250-xxxx</p>
+              <a href="https://www.booking.com/hotel/bd/po-hotel-tower-inn-chittagong-chittagong.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-emerald-400 hover:bg-emerald-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Hotel Agrabad -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Chattogram/Hotels/hotel-agrabad.jpg" alt="Hotel Agrabad" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hotel Agrabad</h3>
+              <p class="text-gray-600">Agrabad Commercial Area — কেন্দ্রীয় অবস্থান</p>
+              <p class="mt-2 text-gray-700 font-medium">💰 ভাড়া: প্রতি রাত ৳৭,০০০–৳১০,০০০</p>
+              <p class="text-sm text-gray-500 mt-1">☎ +88 031 713311-8</p>
+              <a href="https://www.booking.com/hotel/bd/po-hotel-agrabad-chittagong.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-emerald-400 hover:bg-emerald-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 text-center mt-4">*উল্লেখিত ভাড়া আনুমানিক—ঋতু, উৎসব ও বুকিং সাইট অনুযায়ী পরিবর্তিত হতে পারে।</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">Gallery</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <img src="../../images/Chattogram/Chandrima-Lake/chandrima-1.jpg" alt="Lake view" class="w-full h-44 object-cover rounded-lg shadow">
+          <img src="../../images/Chattogram/Chandrima-Lake/chandrima-2.jpg" alt="Boating" class="w-full h-44 object-cover rounded-lg shadow">
+          <img src="../../images/Chattogram/Chandrima-Lake/chandrima-3.jpg" alt="Surrounding greenery" class="w-full h-44 object-cover rounded-lg shadow">
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.8130!3d22.3372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b0a1a2b3c5%3A0xabcdef1234567890!2sChandrima%20Lake!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Chandrima Lake map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — Chandrima Lake
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

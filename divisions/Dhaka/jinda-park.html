@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>জিন্দা পার্ক — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-green-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/jinda-park/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">জিন্দা পার্ক</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          ঢাকার অদূরে প্রাকৃতিক সৌন্দর্যে ঘেরা এক নিভৃত সবুজ স্বর্গ — বিনোদন ও প্রকৃতির এক অনন্য মেলবন্ধন।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. পরিচিতি ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          জিন্দা পার্ক নারায়ণগঞ্জ জেলার রূপগঞ্জ উপজেলায় অবস্থিত একটি জনপ্রিয় পরিবেশবান্ধব পার্ক। 
+          এটি প্রায় ১০০ একর জমির উপর প্রতিষ্ঠিত এবং ১৯৮০-এর দশকে “অবকাশ” নামের একটি স্থানীয় সংগঠন এটি গড়ে তোলে। 
+          পার্কের ভেতরে রয়েছে পাঁচটি হ্রদ, শতাধিক প্রজাতির বৃক্ষ, শিক্ষা প্রতিষ্ঠান এবং গ্রামীণ জীবনের নিদর্শন।
+        </p>
+        <p>
+          পার্কটি শহরের কোলাহল থেকে দূরে প্রকৃতির সান্নিধ্যে কিছুটা সময় কাটানোর জন্য একটি আদর্শ স্থান। 
+          এখানে পরিবার, বন্ধু বা শিক্ষাসফরের জন্য সব ধরণের সুযোগ-সুবিধা রয়েছে।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও দর্শনীয় স্থান
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/jinda-park/lake.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">পাঁচটি হ্রদ</h3>
+            <p>পার্কের ভেতরে পাঁচটি স্বচ্ছ জলাধার রয়েছে যা নৌকা ভ্রমণের জন্য উপযুক্ত।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/jinda-park/bridge.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">লেকের সেতু</h3>
+            <p>বাঁশ ও কাঠের তৈরি সেতু পার্কের অন্যতম আকর্ষণ — এটি ছবি তোলার জন্য দারুণ স্থান।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/jinda-park/garden.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">বোটানিক্যাল গার্ডেন</h3>
+            <p>বিভিন্ন প্রজাতির গাছ ও ফুলে ভরা বাগান পার্কের সৌন্দর্য বাড়িয়ে তোলে।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/jinda-park/tower.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">দর্শন টাওয়ার</h3>
+            <p>উঁচু টাওয়ার থেকে পুরো পার্কের মনোরম দৃশ্য দেখা যায়।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে কাঁচপুর সেতু পার হয়ে রূপগঞ্জের চনপাড়া বা কাঞ্চন সড়ক ধরে সহজেই জিন্দা পার্কে পৌঁছানো যায়। 
+          দূরত্ব প্রায় ৩৫ কিলোমিটার। বাস, প্রাইভেট গাড়ি বা সিএনজি যোগে যাওয়া যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল (নভেম্বর থেকে ফেব্রুয়ারি) ও বসন্তকাল ভ্রমণের জন্য উপযুক্ত। 
+          বর্ষাকালে হ্রদগুলো আরও সুন্দর লাগে, তবে কাদা থাকতে পারে।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>প্রবেশ ফি: প্রাপ্তবয়স্ক ১০০ টাকা, শিশু ৫০ টাকা।</li>
+          <li>নৌকা ভ্রমণের জন্য আলাদা টিকিট লাগে।</li>
+          <li>খাবারের জন্য নিজস্ব রেস্টুরেন্ট ও খোলা ঘাসের মাঠ রয়েছে।</li>
+          <li>প্রকৃতির সৌন্দর্য উপভোগ করতে সকাল বেলা ভ্রমণ শ্রেষ্ঠ।</li>
+          <li>আবর্জনা ফেলার জন্য নির্ধারিত স্থানে ফেলুন।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">জিন্দা পার্কের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7612695579363!2d90.56646877544093!3d23.72809729460354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755cde51402c1d1%3A0x3dbf05d7f3c0d7a!2sJinda%20Park!5e0!3m2!1sen!2sbd!4v1697470125483!5m2!1sen!2sbd"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — জিন্দা পার্ক
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

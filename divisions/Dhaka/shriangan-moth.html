@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>শ্রীঅঙ্গন মঠ — ExploreBangla</title>
+
+  <!-- Meta -->
+  <meta name="description" content="শ্রীঅঙ্গন মঠ — ঐতিহ্য ও স্থাপত্যের মিশ্রণ; ঢাকার বাইরে একটি শান্ত ও ধর্মীয় দর্শনীয় স্থান।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="শ্রীঅঙ্গন মঠ — ExploreBangla">
+  <meta property="og:description" content="শ্রীঅঙ্গন মঠ — প্রাচীন মঠ, ধ্যানাশ্রয় ও স্থাপত্যের নিদর্শন। ভ্রমণ টিপস ও মানচিত্র।">
+  <meta property="og:image" content="../../images/dhaka/shriangan-moth/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#4FB6A6}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.82),rgba(255,255,255,0.7));backdrop-filter:blur(6px)}
+    :focus{outline:2px solid rgba(79,182,166,0.18);outline-offset:2px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Place",
+    "name":"Shriangan Moth",
+    "description":"Shriangan Moth — a serene historical monastery known for its architecture and spiritual atmosphere.",
+    "image":["../../images/dhaka/shriangan-moth/hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Dhaka Division","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-teal-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../dhaka/index.html" class="hover:underline">Dhaka</a></li>
+            <li>›</li>
+            <li class="font-medium">Shriangan Moth</li>
+          </ol>
+        </nav>
+        <a href="../dhaka/index.html" class="px-4 py-2 bg-teal-400 hover:bg-teal-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[480px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/dhaka/shriangan-moth/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/55 via-black/25 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6">
+        <h1 class="font-playfair text-5xl md:text-6xl text-white leading-tight drop-shadow-lg">শ্রীঅঙ্গন মঠ</h1>
+        <p class="mt-4 text-lg md:text-xl text-white/90 max-w-3xl">শান্তির নীড়—ঐতিহাসিক স্থাপত্য ও আধ্যাত্মিক পরিবেশে ভরপুর।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#about" class="px-6 py-3 bg-teal-400 hover:bg-teal-500 rounded-full font-semibold text-black shadow">পরিচিতি দেখুন</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">যাত্রা পরিকল্পনা</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ক. পরিচিতি ও গুরুত্ব</h2>
+        <div class="max-w-4xl mx-auto glass shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+          <p class="mb-4">শ্রীঅঙ্গন মঠ ঐতিহ্যবাহী একটি মঠ, যেখানে স্থাপত্যের সরল সৌন্দর্য ও ধর্মীয় আচার-অনুষ্ঠান মিশে আছে। এটি স্থানীয় সম্প্রদায়ের জন্য ধ্যান ও শান্তিতে শরণ নেওয়ার জায়গা হিসেবে পরিচিত।</p>
+          <p>ভ্রমণকারীরা এখানে স্থাপত্য ও খাঁটি নিস্তব্ধতা অভিজ্ঞতা করতে পারেন; পাশাপাশি স্থানীয় উৎসব-অনুষ্ঠানে অংশগ্রহণ করার সুযোগও আছে।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">খ. আকর্ষণ</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-teal-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">প্রাচীন স্থাপত্য</h3>
+            <p class="text-gray-700">কাঠ ও ইটের ইউনিক নকশা এবং মন্দিরঘরগুলো দর্শনীয়।</p>
+          </article>
+
+          <article class="bg-teal-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">ধ্যানকোণ</h3>
+            <p class="text-gray-700">শান্ত পরিবেশে ধ্যান ও আত্ম-অনুসন্ধান করা যায়।</p>
+          </article>
+
+          <article class="bg-teal-50 rounded-2xl shadow p-6 transform transition-transform duration-300 hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-2">উৎসব ও রীতিনীতি</h3>
+            <p class="text-gray-700">বার্ষিক উৎসবগুলোতে পরম্পরা ও সঙ্গীত শোনা যায়।</p>
+          </article>
+        </div>
+
+        <!-- Gallery -->
+        <div class="mt-10 swiper mySwiperGallery" aria-label="Shriangan image gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/shriangan-moth/entrance@1200.webp" class="glightbox" data-gallery="shriangan" data-title="মঠের প্রবেশপথ">
+                <img src="../../images/dhaka/shriangan-moth/entrance@800.webp" srcset="../../images/dhaka/shriangan-moth/entrance@480.webp 480w, ../../images/dhaka/shriangan-moth/entrance@800.webp 800w, ../../images/dhaka/shriangan-moth/entrance@1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="মঠের প্রবেশপথ" loading="lazy" class="w-full h-56 object-cover" />
+              </a>
+            </div>
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/shriangan-moth/courtyard@1200.webp" class="glightbox" data-gallery="shriangan" data-title="মঠের অভ্যন্তরীণ উঠোন">
+                <img src="../../images/dhaka/shriangan-moth/courtyard@800.webp" srcset="../../images/dhaka/shriangan-moth/courtyard@480.webp 480w, ../../images/dhaka/shriangan-moth/courtyard@800.webp 800w, ../../images/dhaka/shriangan-moth/courtyard@1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="মঠের উঠোন" loading="lazy" class="w-full h-56 object-cover" />
+              </a>
+            </div>
+
+            <div class="swiper-slide rounded-2xl overflow-hidden shadow-lg">
+              <a href="../../images/dhaka/shriangan-moth/sanctum@1200.webp" class="glightbox" data-gallery="shriangan" data-title="মঠের মুল সেন্ট্রাল">
+                <img src="../../images/dhaka/shriangan-moth/sanctum@800.webp" srcset="../../images/dhaka/shriangan-moth/sanctum@480.webp 480w, ../../images/dhaka/shriangan-moth/sanctum@800.webp 800w, ../../images/dhaka/shriangan-moth/sanctum@1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="মঠের মূল অংশ" loading="lazy" class="w-full h-56 object-cover" />
+              </a>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visit info -->
+    <section id="visit" class="py-20 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">গ. ভ্রমণ তথ্য ও টিপস</h2>
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 text-teal-700">কিভাবে যাবেন</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">ট্যাক্সি বা প্রাইভেট গাড়ি সহজে পৌঁছাতে পারে; দূরত্ব শহরের কেন্দ্র থেকে ভিন্ন হতে পারে—লোকাল রুট ও সময় যাচাই করে বের করুন।</p>
+
+              <h3 class="text-2xl font-semibold mb-3 text-teal-700">সেরা সময়</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">সকালে বা সন্ধ্যায় — শান্ত পরিবেশে দর্শন উপভোগ করুন। উৎসবকালে জায়গার সৌন্দর্য দ্বিগুণ হয়।</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-3 text-teal-700">নির্দেশনা ও নিয়ম</h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>শান্তি এবং ধর্মীয় আচরণ বজায় রাখুন।</li>
+                <li>ফটোগ্রাফির ক্ষেত্রে স্থানীয় নিয়ম মেনে চলুন—কিছু অভ্যন্তরীণ স্থানে ফটোগ্রাফি নিষিদ্ধ থাকতে পারে।</li>
+                <li>উৎসব বা আচার-অনুষ্ঠানের সময় ভিড়ে সাবধান থাকুন।</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-3 text-teal-700">প্যাকিং টিপস</h3>
+              <p class="text-gray-700">নরম জুতো, পানি, হালকা মুড়ি/ন্যাশনাল স্ন্যাকস এবং কসমেটিক/ইলেকট্রনিক দ্রব্যের জন্য ছোট ব্যাগ নিন।</p>
+            </div>
+          </div>
+
+          <div class="mt-6 text-center">
+            <a href="#" class="inline-block px-6 py-3 bg-black text-white rounded-full font-semibold shadow">আরও তথ্য জানুন</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-20 bg-teal-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">ঘ. মানচিত্র ও আশেপাশ</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.000000000000!2d90.000000000000!3d24.000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjR4wqAxMCwgOTB4wqAxMCI!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Shriangan Moth map"></iframe>
+        </div>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">নিকটবর্তী স্পট</h4>
+            <p class="text-sm text-gray-600">স্থানীয় বাজার, পুরনো মন্দির ও সংস্কৃতি কেন্দ্র</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">খাওয়ার পরামর্শ</h4>
+            <p class="text-sm text-gray-600">স্থানীয় মিষ্টি ও লজিস্টিক খাবারের দোকান চেষ্টা করুন।</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="font-semibold">গাইড ও সার্ভিস</h4>
+            <p class="text-sm text-gray-600">লোকাল গাইড থেকে মঠের ইতিহাস শুনলে অভিজ্ঞতা মধুর হয়।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — শ্রীঅঙ্গন মঠ
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const gallery = new Swiper('.mySwiperGallery', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3500, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]'); if(ifr){ ifr.src = ifr.dataset.src; }
+    });
+
+    const menuBtn = document.getElementById('menu-btn');
+    menuBtn?.addEventListener('click', () => { alert('মেনু: Home, About, Divisions, Contact — আপনার প্রকল্পে navbar সম্পূর্ণ করুন।'); });
+  </script>
+</body>
+</html>

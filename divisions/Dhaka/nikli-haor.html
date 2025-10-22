@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>নিকলী হাওর — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/nikli-haor/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">নিকলী হাওর</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          বিশাল জলরাশি, ভাসমান গ্রাম আর অসাধারণ সূর্যাস্ত — প্রাকৃতিক সৌন্দর্যের এক অনন্য স্বর্গভূমি।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- পরিচিতি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. পরিচিতি ও ইতিহাস</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          নিকলী হাওর কিশোরগঞ্জ জেলার নিকলী উপজেলায় অবস্থিত বাংলাদেশের অন্যতম বৃহৎ ও মনোমুগ্ধকর হাওর এলাকা। 
+          বর্ষাকালে পুরো অঞ্চল জলে ভরে এক বিশাল সমুদ্রের মতো রূপ নেয়, যা পর্যটকদের কাছে অপরূপ আকর্ষণ সৃষ্টি করে।
+        </p>
+        <p>
+          নৌকা ভ্রমণ, সূর্যোদয়-সূর্যাস্ত দেখা, ভাসমান গ্রাম পরিদর্শন — এসব মিলে এটি দেশের অন্যতম জনপ্রিয় প্রাকৃতিক ভ্রমণস্থান। 
+          হাওরের জলাভূমিতে শতাধিক প্রজাতির পাখি দেখা যায়, যা প্রকৃতি ও ফটোগ্রাফি প্রেমীদের জন্য আদর্শ স্থান।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও দর্শনীয় স্থান
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/nikli-haor/boat.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">নৌকা ভ্রমণ</h3>
+            <p>বর্ষায় নৌকা ভ্রমণ নিকলী হাওরের প্রধান আকর্ষণ — অসীম জলের মাঝে ভেসে বেড়ানোর অনুভূতি অনন্য।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/nikli-haor/sunset.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">সূর্যাস্ত</h3>
+            <p>হাওরের জলে সূর্যাস্তের প্রতিফলন এতটাই সুন্দর যে এটি ফটোগ্রাফারদের জন্য স্বর্গতুল্য।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/nikli-haor/village.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">ভাসমান গ্রাম</h3>
+            <p>জলের ওপর ভাসমান ঘরবাড়ি ও জীবনযাত্রা এক অনন্য অভিজ্ঞতা দেয়।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/nikli-haor/bird.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">পাখি দেখা</h3>
+            <p>শীতকালে দেশি-বিদেশি নানা প্রজাতির পরিযায়ী পাখি দেখা যায়।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে কিশোরগঞ্জ জেলার নিকলী যেতে প্রায় ৪ ঘণ্টা লাগে। 
+          কমলাপুর বা মহাখালী থেকে বাসে কিশোরগঞ্জ, সেখান থেকে সিএনজি বা রিকশায় নিকলী পৌঁছানো যায়। 
+          স্থানীয় ঘাট থেকে নৌকা ভাড়া করে হাওর ভ্রমণ করা যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          বর্ষাকাল (জুন–অক্টোবর) নিকলী হাওর ভ্রমণের সেরা সময়। 
+          শীতকালে পাখি দেখার মৌসুম শুরু হয়, তখনও এটি ভ্রমণের জন্য উপযুক্ত।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>নৌকা ভ্রমণের আগে ভাড়া ঠিক করে নিন।</li>
+          <li>লাইফ জ্যাকেট ব্যবহার করুন, বিশেষ করে শিশুদের জন্য।</li>
+          <li>সকাল বা বিকেলের সময় ভ্রমণ সবচেয়ে সুন্দর।</li>
+          <li>প্রাকৃতিক পরিবেশ রক্ষায় প্লাস্টিক ও আবর্জনা ফেলবেন না।</li>
+          <li>ফটোগ্রাফি প্রেমীদের জন্য ড্রোন অনুমতি নিয়ে ব্যবহার করা যায়।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">নিকলী হাওরের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.502534386989!2d90.97741887545308!3d24.2616126843644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756d205a4fbaed3%3A0x5184f3b57f9271da!2sNikli%20Haor!5e0!3m2!1sen!2sbd!4v1697486111190!5m2!1sen!2sbd"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — নিকলী হাওর
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

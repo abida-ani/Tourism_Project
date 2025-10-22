@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>মোহেরা জমিদার বাড়ি — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-rose-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/mohera-jamidar-bari/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">মোহেরা জমিদার বাড়ি</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          টাঙ্গাইল জেলার ঐতিহাসিক নিদর্শন — ইউরোপীয় স্থাপত্যে নির্মিত এক রাজকীয় আবাস।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. ইতিহাস ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          মোহেরা জমিদার বাড়ি টাঙ্গাইল জেলার মির্জাপুর উপজেলায় অবস্থিত একটি বিখ্যাত ঐতিহাসিক স্থাপনা। 
+          এটি উনিশ শতকের শেষ দিকে জমিদার কর্ণেল নরসিংহ চন্দ্র রায় চৌধুরীর বংশধররা নির্মাণ করেন। 
+          ব্রিটিশ স্থাপত্যের আদলে গড়ে তোলা এই বাড়িটি বর্তমানে “বাংলাদেশ পুলিশ ট্রেনিং সেন্টার” হিসেবে ব্যবহৃত হচ্ছে।
+        </p>
+        <p>
+          বিশাল এলাকাজুড়ে গড়ে ওঠা এই জমিদার বাড়িতে রয়েছে একাধিক প্রাসাদ, বাগান, পুকুর এবং চমৎকার সেতু। 
+          এর রাজকীয় নকশা ও প্রাকৃতিক সৌন্দর্য একে পর্যটকদের অন্যতম প্রিয় গন্তব্যে পরিণত করেছে।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- মূল আকর্ষণ -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও দর্শনীয় স্থান
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mohera-jamidar-bari/palace1.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">চৌধুরী লজ</h3>
+            <p>ইউরোপীয় স্টাইলে নির্মিত এই ভবনটি মোহেরা বাড়ির অন্যতম আকর্ষণ, বর্তমানে পুলিশ অফিস হিসেবে ব্যবহৃত।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mohera-jamidar-bari/palace2.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">কমলিনী লজ</h3>
+            <p>এই ভবনের রঙিন জানালা ও সূক্ষ্ম অলংকরণ জমিদার যুগের ঐশ্বর্যের নিদর্শন বহন করে।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mohera-jamidar-bari/bridge.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">সেতু ও পুকুর</h3>
+            <p>বাড়ির ভেতরে সুন্দর পুকুরের ওপর নির্মিত লাল ইটের সেতুটি ফটোজোন হিসেবে বিখ্যাত।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/mohera-jamidar-bari/garden.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">বাগান ও প্রাকৃতিক পরিবেশ</h3>
+            <p>গাছপালা ও ফুলে ভরা বিশাল বাগান পুরো এলাকা জুড়ে এক রাজকীয় আবহ তৈরি করে।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে মোহেরা জমিদার বাড়ির দূরত্ব প্রায় ৮০ কিলোমিটার। ঢাকা-টাঙ্গাইল মহাসড়কের মির্জাপুর উপজেলার কাছাকাছি অবস্থিত। 
+          মির্জাপুর বাসস্ট্যান্ড থেকে সিএনজি বা অটোরিকশায় ১৫ মিনিটে পৌঁছানো যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          সারা বছরই ভ্রমণযোগ্য, তবে শীতকাল বা বসন্তে গেলে আরামদায়ক পরিবেশ উপভোগ করা যায়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>প্রবেশ ফি: প্রাপ্তবয়স্ক ৫০ টাকা, শিশু ২৫ টাকা।</li>
+          <li>পুলিশ ট্রেনিং সেন্টারের অংশ হওয়ায় নির্দিষ্ট নিয়ম মেনে প্রবেশ করতে হয়।</li>
+          <li>ছবি তোলার জন্য দারুণ সুন্দর লোকেশন।</li>
+          <li>শান্তিপূর্ণ পরিবেশ বজায় রাখুন ও কর্তৃপক্ষের নির্দেশনা মেনে চলুন।</li>
+          <li>নিকটে খাবারের হোটেল ও বিশ্রামাগার রয়েছে।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">মোহেরা জমিদার বাড়ির মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6365296546017!2d90.07662117544113!3d24.32940898431121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdb0133485b9f9%3A0x83ee1742334a15e4!2sMohera%20Zamindar%20Bari!5e0!3m2!1sen!2sbd!4v1697481412085!5m2!1sen!2sbd"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — মোহেরা জমিদার বাড়ি
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

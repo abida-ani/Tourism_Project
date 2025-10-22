@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrabad Park — ExploreBangla</title>
+
+  <meta name="description" content="Agrabad Park — চট্টগ্রামের Agrabad-এ থাকা একটি সবুজ পার্ক; পরিবার, হাঁটার পথ, শিশুদের খেলার জায়গা ও শহুরে বিশ্রামের জন্য জনপ্রিয়।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Agrabad Park — ExploreBangla">
+  <meta property="og:description" content="Agrabad Park — চট্টগ্রামের Agrabad-এ অবস্থিত জনপ্রিয় পার্ক; হাঁটা, পিকনিক ও শিশুদের জন্য উপযুক্ত স্থান।">
+  <meta property="og:image" content="../../images/Chattogram/Agrabad-Park/agrabad-park-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{--accent:#3B82F6}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#042033}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.96),rgba(255,255,255,0.92));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+    .hero-overlay{background: linear-gradient(180deg, rgba(2,6,23,0.25), rgba(2,6,23,0.0));}
+    .accent{color:var(--accent)}
+    .focus-ring:focus{outline:3px solid rgba(59,130,246,0.18); outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Agrabad Park",
+    "description":"Agrabad Park — চট্টগ্রামের Agrabad-এ অবস্থিত একটি সবুজ পার্ক; পারিবারিক বিনোদন ও বিশ্রামের জন্য জনপ্রিয়।",
+    "image":["../../images/Chattogram/Agrabad-Park/agrabad-park-hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Chattogram","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-sky-50 via-white to-emerald-50">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Agrabad Park</li>
+          </ol>
+        </nav>
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[480px] bg-cover bg-center rounded-b-3xl shadow-inner relative" style="background-image: url('../../images/Chattogram/Agrabad-Park/agrabad-park-hero.jpg');">
+      <div class="absolute inset-0 hero-overlay rounded-b-3xl"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-4xl md:text-5xl font-extrabold drop-shadow-lg">Agrabad Park</h1>
+        <p class="mt-3 text-md md:text-lg max-w-3xl">শহরের মাঝখানে সবুজ বিশ্রাম — পরিবার, হাঁটার পথ ও শিশুদের খেলার আনন্দের জায়গা।</p>
+        <div class="mt-5 flex gap-3">
+          <a href="#overview" class="px-5 py-2 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold text-white shadow">Quick facts</a>
+          <a href="#activities" class="px-5 py-2 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">Activities</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Agrabad Park</li>
+              <li><strong>অবস্থান:</strong> Agrabad, Chattogram</li>
+              <li><strong>ধরন:</strong> শহরের সবুজ উদ্যান / পার্ক</li>
+              <li><strong>উপযুক্ত:</strong> পরিবার, হাঁটা, শিশুদের খেলা</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Agrabad Park শহরের কেন্দ্রস্থলে অবস্থিত পরিচ্ছন্ন উদ্যান যেখানে বেঞ্চ, হাঁটার পথ, ছোট জলাশয় ও শিশুদের খেলার সাঁজোয়া আছে। দিনের যে কোনো সময় পরিবার ও যাত্রীদের জন্য এটি আরামদায়ক স্থান।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সকাল থেকে সন্ধ্যা পর্যন্ত খোলা। প্রবেশ ফ্রি। বড় ইভেন্ট থাকলে স্থানীয় কর্তৃপক্ষের অনুমতি প্রয়োজন হতে পারে।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">ইতিহাস</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Agrabad Park শহরের আধুনিক উন্নয়নের একটি অংশ হিসেবে গড়ে উঠেছে। Agrabad ব্যবসায়িক ও বাণিজ্যিক এলাকার কেন্দ্রে অবস্থিত হওয়ায় কর্মকর্তাবৃন্দ ও স্থানীয়রা এখানে বিশ্রাম এবং সামাজিক মিলনক্ষেত্র হিসেবে ব্যবহার করে থাকেন। সময়ের সাথে পার্কটিকে পরিচ্ছন্ন এবং নিরাপদ রাখার জন্য বিভিন্ন নগর ও কমিউনিটি উদ্যোগ গ্রহণ করা হয়েছে।
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mt-4">
+            পার্কটি ছোট ইভেন্ট, শিশুদের কার্যক্রম এবং সকালের ব্যায়াম/জগিংয়ের জন্য পরিচিত। শহুরে পরিবেশে এটি একটি শান্তিপূর্ণ সবুজফোঁটা হিসেবে গুরুত্বপূর্ণ ভূমিকা রাখে।
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importance -->
+    <section id="importance" class="py-16 fade-in">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">গুরুত্ব</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li>Agrabad Park শহরের সবুজ ফুসফুস হিসেবে কাজ করে এবং নাগরিকদের মানসিক ও শারীরিক বিশ্রামের সুযোগ দেয়।</li>
+            <li>শিশু ও পরিবারের জন্য নিরাপদ খেলার স্থান; সকালের হাঁটা ও ব্যায়ামের জন্য আদর্শ।</li>
+            <li>লক্ষ্যভিত্তিক ছোট ইভেন্ট ও কমিউনিটি গাদাগাদি এড়ানোর জন্য ব্যবহৃত হয়।</li>
+            <li>নগর জীবনের চাপ থেকে মুক্তি পেতে স্থানীয়দের জন্য গুরুত্বপূর্ণ রিল্যাক্স স্পট।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color:var(--accent)">Activities</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Morning Walks & Exercise</h4>
+            <p class="text-gray-700 text-sm">সকালে এখানে লোকজন হাঁটা, জগিং ও হালকা ব্যায়াম করে থাকেন — পরিষ্কার পথ ও পর্যাপ্ত আলো আছে।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Children Playground</h4>
+            <p class="text-gray-700 text-sm">পার্কে শিশুদের জন্য স্লাইড, সুইং ও নিরাপদ খেলার জায়গা রয়েছে। পরিবারের জন্য আদর্শ।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Picnic & Relax</h4>
+            <p class="text-gray-700 text-sm">বন্ধু ও পরিবারের সঙ্গে পিকনিক করা যায়; ছায়া ও বেঞ্চ রয়েছে যেখানে বসে বিশ্রাম নেওয়া যায়।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Guide -->
+    <section id="travel" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 accent">যেভাবে যাওয়া যায়</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li><strong>ঢাকা থেকে:</strong> গাড়ী/বাস: প্রায় ৬-৭ ঘণ্টা; বিমান: ঢাকা → চট্টগ্রাম (১ ঘন্টা), তারপর স্থানীয় পরিবহন (রিকশা/CNG/ট্যাক্সি) করে Agrabad পৌঁছান।</li>
+            <li><strong>চট্টগ্রাম শহর থেকে:</strong> Agrabad কেন্দ্র থেকে সহজে taxi/ride-share/CNG পাওয়া যায় — পার্ক মাত্র ১০–১৫ মিনিটের দূরত্বে অবস্থিত।</li>
+            <li><strong>ট্রাভেল টিপ:</strong> সকালে/সন্ধ্যায় যাওয়া সবচেয়ে উপভোগ্য; দুপুরে রোদ বেশি পড়ে।</li>
+            <li><strong>Best time:</strong> অক্টোবর থেকে মার্চ — কম বৃষ্টি ও স্বচ্ছ আকাশ।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Hotels / Stay (with costs & booking) -->
+    <section id="hotels" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">নজদিকের হোটেল — মূল্য ও বুকিং</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Hotel Agrabad -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Chattogram/Hotels/hotel-agrabad.jpg" alt="Hotel Agrabad" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hotel Agrabad</h3>
+              <p class="text-gray-600">Agrabad Commercial Area — কেন্দ্রীয় অবস্থান</p>
+              <p class="mt-2 text-gray-700 font-medium">💰 ভাড়া: প্রতি রাত ৳৭,০০০–৳১০,০০০</p>
+              <p class="text-sm text-gray-500 mt-1">☎ +88 031 713311-8</p>
+              <a href="https://www.booking.com/hotel/bd/po-hotel-agrabad-chittagong.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <!-- The Peninsula Chittagong -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Chattogram/Hotels/peninsula.jpg" alt="The Peninsula Chittagong" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">The Peninsula Chittagong</h3>
+              <p class="text-gray-600">GEC Circle / O.R. Nizam Road — রুফটপ পুল ও আধুনিক সুযোগ-সুবিধা</p>
+              <p class="mt-2 text-gray-700 font-medium">💰 ভাড়া: প্রতি রাত ৳৮,৫০০–৳১২,৫০০</p>
+              <p class="text-sm text-gray-500 mt-1">☎ +88 031 251-xxxx (প্রায়)</p>
+              <a href="https://www.booking.com/hotel/bd/the-peninsula-chittagong-limited.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <!-- Hotel Tower Inn -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Chattogram/Hotels/tower-inn.jpg" alt="Hotel Tower Inn" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hotel Tower Inn</h3>
+              <p class="text-gray-600">Station Road — বাজেট-মিড রেঞ্জ সুবিধা</p>
+              <p class="mt-2 text-gray-700 font-medium">💰 ভাড়া: প্রতি রাত ৳৪,৫০০–৳৭,০০০</p>
+              <p class="text-sm text-gray-500 mt-1">☎ +88 031 250-xxxx (প্রায়)</p>
+              <a href="https://www.booking.com/hotel/bd/po-hotel-tower-inn-chittagong-chittagong.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 text-center mt-4">*উল্লেখিত ভাড়া আনুমানিক—ঋতু, উৎসব ও বুকিং সাইট অনুযায়ী পরিবর্তিত হতে পারে।</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">Gallery</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <img src="../../images/Chattogram/Agrabad-Park/agrabad-park-1.jpg" alt="Park walking path" class="w-full h-44 object-cover rounded-lg shadow">
+          <img src="../../images/Chattogram/Agrabad-Park/agrabad-park-2.jpg" alt="Children playground" class="w-full h-44 object-cover rounded-lg shadow">
+          <img src="../../images/Chattogram/Agrabad-Park/agrabad-park-3.jpg" alt="Park pond" class="w-full h-44 object-cover rounded-lg shadow">
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.8130!3d22.3372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b0a1a2b3c5%3A0xabcdef1234567890!2sAgrabad%20Park!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Agrabad Park map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — Agrabad Park
+  </footer>
+
+  <script>
+    // lazy-load iframe map
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

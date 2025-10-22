@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylhet - ExploreBangla</title>
+  <link href="../../style.css" rel="stylesheet">
+  <script src="../../script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" alt="ExploreBangla" class="h-10 w-auto object-contain">
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-6">
+        <li><a href="../../index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="../../about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="../" class="text-blue-600 font-medium">Divisions</a></li>
+        <li><a href="../../contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center" style="background-image: url('../../images/sylhet/hero.jpg');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 container mx-auto h-full flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-6xl font-bold">Welcome to Sylhet</h1>
+    </div>
+  </header>
+
+  <!-- Places Section -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center">Popular Spots in Sylhet</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition-transform duration-300">
+        <img src="../../images/sylhet/tea_garden.jpg" alt="Tea Garden" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Tea Garden</h3>
+          <p class="text-gray-600 text-sm">Lush green tea plantations.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition-transform duration-300">
+        <img src="../../images/sylhet/ratargul.jpg" alt="Ratargul Swamp" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Ratargul Swamp</h3>
+          <p class="text-gray-600 text-sm">Freshwater swamp forest.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition-transform duration-300">
+        <img src="../../images/sylhet/jaflong.jpg" alt="Jaflong" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Jaflong</h3>
+          <p class="text-gray-600 text-sm">Stone collection & scenic beauty.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition-transform duration-300">
+        <img src="../../images/sylhet/mazar_shahjalal.jpg" alt="Shahjalal Mazar" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-xl mb-2">Shahjalal Mazar</h3>
+          <p class="text-gray-600 text-sm">Historic spiritual site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

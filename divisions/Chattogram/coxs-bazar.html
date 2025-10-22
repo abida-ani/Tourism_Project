@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cox’s Bazar — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Cox’s Bazar — বিশ্বের দীর্ঘতম সমুদ্র সৈকত। পরিবার এবং বন্ধুদের জন্য পর্যটনের অন্যতম আকর্ষণীয় স্থান।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cox’s Bazar — ExploreBangla">
+  <meta property="og:description" content="Cox’s Bazar — বিশ্বের দীর্ঘতম সমুদ্র সৈকত, সূর্যাস্ত, সমুদ্র এবং পর্যটন সুবিধার জন্য বিখ্যাত।">
+  <meta property="og:image" content="../../images/Chattogram/Coxs-Bazar/cox1.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,255,255,0.7));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .focus-ring:focus{outline:3px solid rgba(255,180,0,0.25);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Cox’s Bazar",
+    "description":"Cox’s Bazar — বিশ্বের দীর্ঘতম সমুদ্র সৈকত।",
+    "image":["../../images/Chattogram/Coxs-Bazar/cox1.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Cox's Bazar","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Cox’s Bazar</li>
+          </ol>
+        </nav>
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/Chattogram/Coxs-Bazar/cox1.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Cox’s Bazar</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">বিশ্বের দীর্ঘতম সমুদ্র সৈকত — পরিবার ও বন্ধুদের জন্য পর্যটনের আদর্শ স্থান।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+   <!-- History & Importance Wide Columns -->
+<section id="history-importance" class="py-16 fade-in bg-gray-50">
+  <div class="container mx-auto px-6 max-w-7xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-600">ইতিহাস ও গুরুত্ব</h2>
+    <div class="flex flex-col md:flex-row md:space-x-8 gap-8">
+      <!-- History Column -->
+      <div class="flex-1 glass p-8 rounded-3xl shadow min-h-[300px]">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-600">ইতিহাস</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Cox’s Bazar বাংলাদেশের দক্ষিণ-পূর্বাঞ্চলে অবস্থিত এবং এটি বিশ্বের দীর্ঘতম প্রাকৃতিক সমুদ্র সৈকত। প্রাথমিকভাবে স্থানীয় সম্প্রদায় মাছধরা ও বাণিজ্যের জন্য পরিচিত ছিল। ব্রিটিশ ঔপনিবেশিক সময়ে সৈকতটি পর্যটকদের জন্য পরিচিত হতে শুরু করে। ১৯৫০-এর দশকে সরকার এটিকে পর্যটন কেন্দ্র হিসেবে উন্নয়নের পরিকল্পনা নেয়। Cox’s Bazar-এর সূর্যাস্ত, বিস্তীর্ণ বালি ও প্রাকৃতিক সৌন্দর্য পর্যটকদের আকর্ষণ করে। এখানে সমুদ্রসৈকতের পাশাপাশি হোটেল, রিসোর্ট এবং জলক্রীড়ার সুযোগ রয়েছে। বিশ্বব্যাপী পর্যটকরা এটি “Longest Beach in the World” হিসেবে চেনে।
+        </p>
+      </div>
+
+      <!-- Importance Column -->
+      <div class="flex-1 glass p-8 rounded-3xl shadow min-h-[300px]">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-600">গুরুত্ব</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+          <li>বাংলাদেশের পর্যটন শিল্পে গুরুত্বপূর্ণ অবদান রাখে।</li>
+          <li>আন্তর্জাতিক পর্যটকদের জন্য দেশের মুখপত্র হিসেবে কাজ করে।</li>
+          <li>স্থানীয় অর্থনীতি ও কর্মসংস্থানে সহায়ক।</li>
+          <li>সমুদ্র, পাহাড় ও বনানীর সংমিশ্রণ শিক্ষামূলক এবং প্রাকৃতিক শিক্ষা প্রদান করে।</li>
+          <li>পরিবার, বন্ধু ও শিশুদের জন্য নিরাপদ বিনোদন ও বিশ্রামের স্থান।</li>
+          <li>জলক্রীড়া, রিসোর্ট ও হোটেল ব্যবসার জন্য সম্ভাবনার জায়গা।</li>
+          <li>পরিবেশ ও প্রাকৃতিক সৌন্দর্য সংরক্ষণের গুরুত্ব রয়েছে।</li>
+          <li>আন্তর্জাতিক মিডিয়ায় বাংলাদেশের পরিচিতি বাড়ায়।</li>
+          <li>স্থানীয় সম্প্রদায় ও সংস্কৃতি পর্যটকদের কাছে পরিচিত করায়।</li>
+          <li>দেশের অভ্যন্তরীণ পর্যটন বৃদ্ধিতে সহায়ক।</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Cox’s Bazar</li>
+              <li><strong>অবস্থান:</strong> চট্টগ্রাম, বাংলাদেশ</li>
+              <li><strong>ধরন:</strong> সমুদ্র সৈকত</li>
+              <li><strong>বিশেষত্ব:</strong> দীর্ঘ সমুদ্র সৈকত, সূর্যাস্ত, পর্যটন</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Cox’s Bazar বাংলাদেশের চট্টগ্রাম জেলার একটি প্রাকৃতিক সৈকত। এটি বিশ্বের দীর্ঘতম প্রাকৃতিক সমুদ্র সৈকত হিসেবে পরিচিত। পর্যটকরা এখানে সূর্যাস্ত, সমুদ্র এবং বিভিন্ন জলক্রীড়া উপভোগ করতে পারেন।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সকাল ৬টা থেকে সন্ধ্যা ৭টা পর্যন্ত খোলা। প্রবেশ ফি প্রযোজ্য না। পরিবার ও বন্ধুদের জন্য উপযুক্ত।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ========== Modern Gallery (FULL: CSS + HTML + JS) ========== -->
+
+<!-- Put this CSS in your <head> or main stylesheet -->
+<style>
+  /* Gallery specific */
+  .gallery-modern .slide-img { width:100%; height:420px; object-fit:cover; border-radius:.75rem; transition:transform .45s ease,opacity .45s ease,filter .45s ease; display:block; }
+  @media(min-width:768px){ .gallery-modern .slide-img { height:520px; } }
+  @media(min-width:1024px){ .gallery-modern .slide-img { height:640px; } }
+
+  /* lazy reveal */
+  .gallery-modern .lazy-img{opacity:0; transform:translateY(8px); filter:blur(2px);}
+  .gallery-modern .lazy-img.is-visible{opacity:1; transform:none; filter:blur(0);}
+
+  /* subtle zoom on hover */
+  .gallery-modern .swiper-slide:hover .slide-img{ transform:scale(1.03); }
+
+  /* thumb active visual */
+  .gallery-modern .gallery-thumbs .swiper-slide-thumb-active img,
+  .gallery-modern .gallery-thumbs .swiper-slide-active img{
+    outline:3px solid rgba(255,180,0,0.95); outline-offset:4px;
+    transform:scale(1.02);
+  }
+
+  /* controls */
+  .gallery-modern .gallery-prev, .gallery-modern .gallery-next {
+    width:44px; height:44px; display:grid; place-items:center; border-radius:9999px;
+  }
+
+  /* caption backdrop */
+  .gallery-modern .slide-caption { backdrop-filter: blur(6px); }
+
+  /* small accessibility focus */
+  .gallery-modern .focus-ring:focus { outline:3px solid rgba(99,102,241,0.18); outline-offset:3px; }
+</style>
+
+<!-- ================= Modern Gallery (MAIN + THUMBS + MASONRY) ================= -->
+<section id="gallery-modern" class="gallery-modern py-16" aria-labelledby="gallery-modern-title">
+  <div class="container mx-auto px-6">
+    <h2 id="gallery-modern-title" class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">📸 Gallery</h2>
+
+    <!-- Main carousel + captions -->
+    <div class="max-w-6xl mx-auto space-y-6">
+      <!-- Main wrapper -->
+      <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden">
+
+        <!-- MAIN SWIPER -->
+        <div class="swiper gallery-main" role="region" aria-label="Main gallery carousel">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 4">
+              <figure class="relative">
+                <a href="../../images/Chattogram/Coxs-Bazar/cox1.jpg" class="glightbox" data-gallery="cox" data-title="Cox’s Bazar — Golden shore">
+                  <img
+                    data-src="../../images/Chattogram/Coxs-Bazar/cox1.jpg"
+                    data-srcset="../../images/Chattogram/Coxs-Bazar/cox1-480.jpg 480w, ../../images/Chattogram/Coxs-Bazar/cox1-800.jpg 800w, ../../images/Chattogram/Coxs-Bazar/cox1.jpg 1200w"
+                    sizes="(max-width:640px) 100vw, 70vw"
+                    alt="Cox’s Bazar — Golden shore"
+                    class="slide-img lazy-img w-full object-cover focus-ring"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption class="absolute left-6 bottom-6 slide-caption text-white text-sm px-3 py-2 rounded bg-black/45">Cox’s Bazar — সোনালি বালি ও বিশাল সমুদ্র</figcaption>
+              </figure>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 4">
+              <figure class="relative">
+                <a href="../../images/Chattogram/Coxs-Bazar/cox2.jpg" class="glightbox" data-gallery="cox" data-title="Sunset at Cox’s Bazar">
+                  <img
+                    data-src="../../images/Chattogram/Coxs-Bazar/cox2.jpg"
+                    data-srcset="../../images/Chattogram/Coxs-Bazar/cox2-480.jpg 480w, ../../images/Chattogram/Coxs-Bazar/cox2-800.jpg 800w, ../../images/Chattogram/Coxs-Bazar/cox2.jpg 1200w"
+                    sizes="(max-width:640px) 100vw, 70vw"
+                    alt="Sunset at Cox’s Bazar"
+                    class="slide-img lazy-img w-full object-cover focus-ring"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption class="absolute left-6 bottom-6 slide-caption text-white text-sm px-3 py-2 rounded bg-black/45">Sunset View — অপরূপ সূর্যাস্ত</figcaption>
+              </figure>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 4">
+              <figure class="relative">
+                <a href="../../images/Chattogram/Coxs-Bazar/cox3.jpg" class="glightbox" data-gallery="cox" data-title="Sea activities">
+                  <img
+                    data-src="../../images/Chattogram/Coxs-Bazar/cox3.jpg"
+                    data-srcset="../../images/Chattogram/Coxs-Bazar/cox3-480.jpg 480w, ../../images/Chattogram/Coxs-Bazar/cox3-800.jpg 800w, ../../images/Chattogram/Coxs-Bazar/cox3.jpg 1200w"
+                    sizes="(max-width:640px) 100vw, 70vw"
+                    alt="Sea activities at Cox’s Bazar"
+                    class="slide-img lazy-img w-full object-cover focus-ring"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption class="absolute left-6 bottom-6 slide-caption text-white text-sm px-3 py-2 rounded bg-black/45">Sea Activities — নৌকা ও সমুদ্রখেলা</figcaption>
+              </figure>
+            </div>
+
+            <!-- Slide 4 (fixed srcset typo) -->
+            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="Slide 4 of 4">
+              <figure class="relative">
+                <a href="../../images/Chattogram/Coxs-Bazar/cox4.jpg" class="glightbox" data-gallery="cox" data-title="Coastal view">
+                  <img
+                    data-src="../../images/Chattogram/Coxs-Bazar/cox4.jpg"
+                    data-srcset="../../images/Chattogram/Coxs-Bazar/cox4-480.jpg 480w, ../../images/Chattogram/Coxs-Bazar/cox4-800.jpg 800w, ../../images/Chattogram/Coxs-Bazar/cox4.jpg 1200w"
+                    sizes="(max-width:640px) 100vw, 70vw"
+                    alt="Coastal view at Cox’s Bazar"
+                    class="slide-img lazy-img w-full object-cover focus-ring"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption class="absolute left-6 bottom-6 slide-caption text-white text-sm px-3 py-2 rounded bg-black/45">Coastal view — বিস্তীর্ণ তটরেখা</figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+          <!-- controls -->
+          <div class="absolute inset-y-0 left-4 flex items-center z-20">
+            <button class="gallery-prev p-2 rounded-full bg-white/90 shadow focus-ring" aria-label="Previous slide">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+          </div>
+          <div class="absolute inset-y-0 right-4 flex items-center z-20">
+            <button class="gallery-next p-2 rounded-full bg-white/90 shadow focus-ring" aria-label="Next slide">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </div>
+
+          <!-- pagination (dots) -->
+          <div class="swiper-pagination mt-4" aria-hidden="false" role="navigation" aria-label="Gallery pagination"></div>
+        </div>
+
+        <!-- thumbs -->
+        <div class="mt-4 border-t border-gray-100 bg-white/70 p-4">
+          <div class="swiper gallery-thumbs" aria-label="Gallery thumbnails">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide cursor-pointer p-1 rounded" role="button" aria-label="Thumbnail 1">
+                <img data-src="../../images/Chattogram/Coxs-Bazar/cox1-480.jpg" class="lazy-img w-full h-20 object-cover rounded" alt="thumb1" loading="lazy"/>
+              </div>
+              <div class="swiper-slide cursor-pointer p-1 rounded" role="button" aria-label="Thumbnail 2">
+                <img data-src="../../images/Chattogram/Coxs-Bazar/cox2-480.jpg" class="lazy-img w-full h-20 object-cover rounded" alt="thumb2" loading="lazy"/>
+              </div>
+              <div class="swiper-slide cursor-pointer p-1 rounded" role="button" aria-label="Thumbnail 3">
+                <img data-src="../../images/Chattogram/Coxs-Bazar/cox3-480.jpg" class="lazy-img w-full h-20 object-cover rounded" alt="thumb3" loading="lazy"/>
+              </div>
+              <div class="swiper-slide cursor-pointer p-1 rounded" role="button" aria-label="Thumbnail 4">
+                <img data-src="../../images/Chattogram/Coxs-Bazar/cox4-480.jpg" class="lazy-img w-full h-20 object-cover rounded" alt="thumb4" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Masonry / compact grid for quick peek -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <a href="../../images/Chattogram/Coxs-Bazar/cox1.jpg" class="glightbox" data-gallery="cox" data-title="Cox’s Bazar — Golden shore">
+          <img data-src="../../images/Chattogram/Coxs-Bazar/cox1-480.jpg" class="lazy-img w-full h-36 object-cover rounded-lg shadow-sm" alt="thumb grid 1" loading="lazy"/>
+        </a>
+        <a href="../../images/Chattogram/Coxs-Bazar/cox2.jpg" class="glightbox" data-gallery="cox" data-title="Sunset View">
+          <img data-src="../../images/Chattogram/Coxs-Bazar/cox2-480.jpg" class="lazy-img w-full h-36 object-cover rounded-lg shadow-sm" alt="thumb grid 2" loading="lazy"/>
+        </a>
+        <a href="../../images/Chattogram/Coxs-Bazar/cox3.jpg" class="glightbox" data-gallery="cox" data-title="Sea activities">
+          <img data-src="../../images/Chattogram/Coxs-Bazar/cox3-480.jpg" class="lazy-img w-full h-36 object-cover rounded-lg shadow-sm" alt="thumb grid 3" loading="lazy"/>
+        </a>
+        <a href="../../images/Chattogram/Coxs-Bazar/cox4.jpg" class="glightbox" data-gallery="cox" data-title="Coastal view">
+          <img data-src="../../images/Chattogram/Coxs-Bazar/cox4-480.jpg" class="lazy-img w-full h-36 object-cover rounded-lg shadow-sm" alt="thumb grid 4" loading="lazy"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= END gallery-modern ================= -->
+
+<!-- Put this script near the end of body (after Swiper & GLightbox scripts) -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.querySelector('#gallery-modern');
+
+    // lazy reveal helper (for gallery images)
+    const lazyImgs = root.querySelectorAll('.lazy-img');
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) img.src = img.dataset.src;
+          if (img.dataset.srcset) img.srcset = img.dataset.srcset;
+          img.addEventListener('load', ()=> img.classList.add('is-visible'));
+          if (img.complete) img.classList.add('is-visible');
+          obs.unobserve(img);
+        }
+      });
+    }, {rootMargin: '200px'});
+    lazyImgs.forEach(i => io.observe(i));
+
+    // Thumbs swiper
+    const thumbs = new Swiper('.gallery-thumbs', {
+      slidesPerView: 5,
+      spaceBetween: 8,
+      watchSlidesProgress: true,
+      breakpoints: { 320:{ slidesPerView:3 }, 640:{ slidesPerView:5 }, 1024:{ slidesPerView:8 } }
+    });
+
+    // Main swiper
+    const main = new Swiper('.gallery-main', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: { nextEl: '.gallery-next', prevEl: '.gallery-prev' },
+      pagination: { el: '.gallery-main .swiper-pagination', clickable: true },
+      thumbs: { swiper: thumbs },
+      keyboard: { enabled: true, onlyInViewport: true },
+      effect: 'slide',
+    });
+
+    // GLightbox
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    // make thumbnails clickable to target slide index reliably (use loop index)
+    const thumbSlides = Array.from(document.querySelectorAll('.gallery-thumbs .swiper-slide'));
+    thumbSlides.forEach((thumb, idx) => {
+      thumb.addEventListener('click', () => {
+        main.slideToLoop(idx);
+      });
+    });
+
+    // Ensure swiper updates after lazy images load
+    lazyImgs.forEach(img => {
+      img.addEventListener('load', () => setTimeout(()=> main.update(), 200));
+    });
+
+    // Accessibility: allow left/right arrows on focused slide
+    document.querySelectorAll('.gallery-main .swiper-slide').forEach(s => {
+      s.setAttribute('tabindex','0');
+      s.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') main.slideNext();
+        if (e.key === 'ArrowLeft') main.slidePrev();
+      });
+    });
+  });
+</script>
+
+    <!-- Beaches Section (With Images) -->
+<section id="beaches" class="py-16 fade-in bg-white">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-600">Cox’s Bazar-এর জনপ্রিয় সৈকতসমূহ</h2>
+    
+    <!-- Cox's Bazar Main Beach -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Most Visited: Cox’s Bazar Main Beach</h3>
+      <img src="../../images/Chattogram/Coxs-Bazar/cox5.jpg" alt="Cox's Bazar Main Beach" class="w-full h-64 object-cover rounded-2xl mb-4">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        বিশ্বের দীর্ঘতম প্রাকৃতিক সমুদ্র সৈকত। পরিবার এবং বন্ধুদের সঙ্গে আনন্দ ও বিশ্রামের জন্য সবচেয়ে জনপ্রিয়। সূর্যাস্ত দেখার জন্য সেরা। এখানে হোটেল, রিসোর্ট এবং পর্যটন সুবিধা প্রচুর।
+      </p>
+    </div>
+
+    <!-- Inani Beach -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Inani Beach</h3>
+      <img src="../../images/Chattogram/Coxs-Bazar/inani.jpg" alt="Inani Beach" class="w-full h-64 object-cover rounded-2xl mb-4">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        প্রশান্ত, তুলনামূলক কম ভিড়ের সৈকত। সাদা ও কালো পাথরের সুন্দর দৃশ্য। ফটোগ্রাফির জন্য উপযুক্ত। nature lovers ও adventure প্রেমীদের জন্য আদর্শ।
+      </p>
+    </div>
+
+    <!-- Himchari Beach -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Himchari Beach</h3>
+      <img src="../../images/Chattogram/Coxs-Bazar/Himchari Beach.jpg" alt="Himchari Beach" class="w-full h-64 object-cover rounded-2xl mb-4">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        পাহাড়ী প্রাকৃতিক দৃশ্য এবং জলপ্রপাতের জন্য বিখ্যাত। ছোট hike ও nature trip এর জন্য উপযুক্ত। শান্তিপূর্ণ পরিবেশে বিশ্রামের জন্য ভালো।
+      </p>
+    </div>
+
+    <!-- Saint Martin's Island -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Saint Martin's Island</h3>
+      <img src="../../images/Chattogram/Coxs-Bazar/st martin.jpg" alt="Saint Martin's Island" class="w-full h-64 object-cover rounded-2xl mb-4">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        বাংলাদেশের একমাত্র প্রবাল দ্বীপ। স্বচ্ছ জল এবং snorkeling এর জন্য আদর্শ। ফ্রেশ সমুদ্র খাবার এবং প্রাকৃতিক সৌন্দর্য উপভোগ করা যায়।
+      </p>
+    </div>
+
+    <!-- Teknaf Beach -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Teknaf Beach</h3>
+      <img src="../../images/Chattogram/Coxs-Bazar/Teknaf_beach.jpg" alt="Teknaf Beach" class="w-full h-64 object-cover rounded-2xl mb-4">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        বাংলাদেশের দক্ষিণতম সৈকত। pristine, শান্ত এবং কম ভিড়। nature escape ও secluded trip এর জন্য সেরা।
+      </p>
+    </div>
+
+    <!-- Laboni Beach -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Laboni Beach</h3>
+      <img src="../../images/Chattogram/Coxs-Bazar/laboni.jpg" alt="Laboni Beach" class="w-full h-64 object-cover rounded-2xl mb-4">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Cox’s Bazar শহরের কাছে। রিসোর্ট, দোকান এবং পানীয় সুবিধার জন্য উপযুক্ত। সূর্যাস্ত দেখার জন্য জনপ্রিয়। সহজে যাওয়া যায়।
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- Famous Foods Section -->
+<section id="famous-foods" class="py-16 fade-in bg-gray-50">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-600">Cox’s Bazar-এর জনপ্রিয় খাবারসমূহ</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Mezban Beef -->
+      <div class="glass p-6 rounded-3xl shadow">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Mezban Beef</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          চট্টগ্রামের ঐতিহ্যবাহী মেজবান মাংস। সেরা স্বাদের জন্য স্থানীয় মশলা ব্যবহার করা হয়। Cox’s Bazar-এ এটি অবশ্যই খেতে হবে।  
+        </p>
+      </div>
+
+      <!-- Fishes & Sea Food -->
+      <div class="glass p-6 rounded-3xl shadow">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Fishes & Sea Food</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সমুদ্র সৈকতের কাছাকাছি হওয়ায় তাজা মাছ, চিংড়ি, কাঁকড়া এবং অন্যান্য seafood প্রচুর পাওয়া যায়। Grilled বা curry style উভয়ই স্বাদে অসাধারণ।  
+        </p>
+      </div>
+
+      <!-- Panta Bhat with Local Pickle -->
+      <div class="glass p-6 rounded-3xl shadow">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Panta Bhat with Local Pickle</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সকালে হালকা নাস্তায় স্থানীয় পান্তা ভাত এবং আচার। Authentic Bangladeshi flavor, বিশেষ করে স্থানীয় অতিথিদের কাছে জনপ্রিয়।  
+        </p>
+      </div>
+
+      <!-- Chingri Malaikari -->
+      <div class="glass p-6 rounded-3xl shadow">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Chingri Malaikari</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          নারকেল দুধ এবং মশলা দিয়ে রান্না করা চিংড়ির পদ। Cox’s Bazar-এর seafood lovers এর must try।  
+        </p>
+      </div>
+
+      <!-- Morog Polao -->
+      <div class="glass p-6 rounded-3xl shadow">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Morog Polao</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সুস্বাদু মুরগি পোলাও, যা স্থানীয় উৎসব ও রেস্তোরাঁর প্রধান attraction। Family dinner বা special occasion-এ try করা যায়।  
+        </p>
+      </div>
+
+      <!-- Sweet Treats -->
+      <div class="glass p-6 rounded-3xl shadow">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Sweet Treats</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Cox’s Bazar-এর local sweets যেমন মিষ্টি পায়েস, স্যান্ডুইচ আইসক্রিম এবং স্থানীয় কেক। Beach stroll-এর সময় must try।  
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Must Enjoy Rides & Adventure Section -->
+<section id="rides" class="py-16 fade-in bg-gray-50">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-yellow-600">Must Enjoy Rides & Adventure in Cox’s Bazar</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Banana Boat -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Banana Boat</h3>
+        <img src="../../images/Chattogram/Coxs-Bazar/Banana Boat.webp" alt="Banana Boat" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সমুদ্র সৈকতে জনপ্রিয় water ride। বন্ধু বা পরিবারের সঙ্গে উপভোগ করা যায়। Speed এবং thrill lovers এর জন্য must try।  
+        </p>
+      </div>
+
+      <!-- Jet Ski -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Jet Ski</h3>
+        <img src="../../images/Chattogram/Coxs-Bazar/jetski.jpg" alt="Jet Ski" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <p class="text-gray-700 text-lg leading-relaxed">
+          দ্রুততার সঙ্গে সমুদ্রে চলার sensation। Adventure seekers এবং beach sports enthusiasts-এর জন্য সেরা।  
+        </p>
+      </div>
+
+      <!-- Para Sailing -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Para Sailing</h3>
+        <img src="../../images/Chattogram/Coxs-Bazar/Para Sailing.jpeg" alt="Para Sailing" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সমুদ্রের উপর থেকে panoramic view উপভোগ করার জন্য সেরা। স্বচ্ছ জল, সূর্যাস্ত এবং horizon view দেখার জন্য ideal।  
+        </p>
+      </div>
+
+      <!-- Surfing -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Surfing</h3>
+        <img src="../../images/Chattogram/Coxs-Bazar/Surfing.webp" alt="Surfing" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সমুদ্রের তরঙ্গের সঙ্গে খেলা। Beginners এবং intermediate surfers-এর জন্য course & instructor available।  
+        </p>
+      </div>
+
+      <!-- Horse Riding -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-600">Horse Riding</h3>
+        <img src="../../images/Chattogram/Coxs-Bazar/Horse Riding.jpeg" alt="Horse Riding" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <p class="text-gray-700 text-lg leading-relaxed">
+          সৈকতে ঘোড়া চালানোর আনন্দ। Children এবং family-friendly activity। Sunset time-এ বিশেষভাবে recommend।  
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Hotels Section -->
+<section id="hotels" class="py-16 fade-in bg-gray-50">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Cox’s Bazar-এর জনপ্রিয় হোটেলসমূহ</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- 1. 5-Star Hotel -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover">
+        <img src="https://seapearlcoxsbazar.com/20230826135945im_/http_/www.seapearlcoxsbazar.com/images/rt003.jpg" alt="Sea Pearl Beach Resort" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Sea Pearl Beach Resort (5-তারকা)</h3>
+          <p class="text-gray-600 mb-2">লাক্সারি রিসোর্ট, সমুদ্রের সামনে, প্রাইভেট পুল ও স্পা সুবিধা। ফাইন ডাইনিং এর অভিজ্ঞতা।</p>
+          <ul class="text-gray-700 text-sm mb-2 list-disc list-inside">
+            <li>সমুদ্র সৈকতের দূরত্ব: ১ কিমি</li>
+            <li>রুম রেট: ১৮,০০০ - ৩০,০০০ টাকা / রাত</li>
+            <li>ভিউ: Stunning Oceanfront</li>
+          </ul>
+          <a href="https://www.booking.com/hotel/bd/sea-pearl-beach-resort.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">বুক করুন</a>
+        </div>
+      </div>
+
+      <!-- 2. 5-Star Hotel -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/283183777.jpg?k=899b1542446c88268f790cf9968ddeffe42a7b24c7b228069de09413d5275822&o=&hp=1" alt="Long Beach Hotel" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Long Beach Hotel (5-তারকা)</h3>
+          <p class="text-gray-600 mb-2">লাক্সারি হোটেল, সমুদ্রের সামনে বারান্দা, সুইমিং পুল ও আধুনিক রুম।</p>
+          <ul class="text-gray-700 text-sm mb-2 list-disc list-inside">
+            <li>সমুদ্র সৈকতের দূরত্ব: ০.৫ কিমি</li>
+            <li>রুম রেট: ১৫,০০০ - ২৮,০০০ টাকা / রাত</li>
+            <li>ভিউ: Panoramic Sea View</li>
+          </ul>
+          <a href="https://www.booking.com/hotel/bd/long-beach.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">বুক করুন</a>
+        </div>
+      </div>
+
+      <!-- 3. 3-Star Hotel -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover">
+        <img src="https://hotelseacrownbd.com/wp-content/uploads/2017/08/Sea-Front-Deluxe-Supreme-13-850x450.jpg" alt="Hotel Sea Crown" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Hotel Sea Crown (3-তারকা)</h3>
+          <p class="text-gray-600 mb-2">পরিবার-বান্ধব হোটেল, সৈকতের কাছাকাছি। পরিচ্ছন্ন ও আরামদায়ক রুম।</p>
+          <ul class="text-gray-700 text-sm mb-2 list-disc list-inside">
+            <li>সমুদ্র সৈকতের দূরত্ব: ১ কিমি</li>
+            <li>রুম রেট: ৭,০০০ - ১২,০০০ টাকা / রাত</li>
+            <li>ভিউ: আংশিক সমুদ্র দৃশ্য</li>
+          </ul>
+          <a href="https://www.booking.com/hotel/bd/sea-crown.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">বুক করুন</a>
+        </div>
+      </div>
+
+      <!-- 4. Mid-Range Hotel -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover">
+        <img src="https://hotjobs.bdjobs.com/jobs/ophr/image.jpg" alt="Ocean Paradise Hotel" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Ocean Paradise Hotel (মাঝারি রেঞ্জ)</h3>
+          <p class="text-gray-600 mb-2">সুন্দর ও পরিচ্ছন্ন হোটেল, সৈকতের কাছাকাছি। ছোট পরিবার বা দম্পতিদের জন্য উপযুক্ত।</p>
+          <ul class="text-gray-700 text-sm mb-2 list-disc list-inside">
+            <li>সমুদ্র সৈকতের দূরত্ব: ২ কিমি</li>
+            <li>রুম রেট: ৫,০০০ - ৮,০০০ টাকা / রাত</li>
+            <li>ভিউ: সীমিত</li>
+          </ul>
+          <a href="https://www.booking.com/hotel/bd/ocean-paradise.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">বুক করুন</a>
+        </div>
+      </div>
+
+      <!-- 5. Budget-Friendly Hotel -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover">
+        <img src="https://sea-view-apartment.bangladeshhotels.net/data/Pics/OriginalPhoto/7358/735844/735844801/hyperion-sea-view-cox-s-bazar-pic-2.JPEG" alt="Sea View Inn" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Sea View Inn (বাজেট-ফ্রেন্ডলি)</h3>
+          <p class="text-gray-600 mb-2">সস্তায় আরামদায়ক রুম, সৈকতের কাছে। বেসিক সুবিধা থাকলেও পরিচ্ছন্ন ও উপযুক্ত।</p>
+          <ul class="text-gray-700 text-sm mb-2 list-disc list-inside">
+            <li>সমুদ্র সৈকতের দূরত্ব: ১.৫ কিমি</li>
+            <li>রুম রেট: ২,৫০০ - ৪,০০০ টাকা / রাত</li>
+            <li>ভিউ: আংশিক</li>
+          </ul>
+          <a href="https://www.booking.com/hotel/bd/sea-view-inn.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">বুক করুন</a>
+        </div>
+      </div>
+
+      <!-- 6. 3-Star Hotel -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-hover">
+        <img src="https://images.trvl-media.com/lodging/36000000/35510000/35504600/35504579/a6492e1e.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Sea Breeze Resort" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Sea Breeze Resort (3-তারকা)</h3>
+          <p class="text-gray-600 mb-2">পরিবার-বান্ধব, আরামদায়ক রুম, নিকটস্থ রেস্তোরাঁ ও আকর্ষণীয় স্থান।</p>
+          <ul class="text-gray-700 text-sm mb-2 list-disc list-inside">
+            <li>সমুদ্র সৈকতের দূরত্ব: ০.৮ কিমি</li>
+            <li>রুম রেট: ৬,০০০ - ১০,০০০ টাকা / রাত</li>
+            <li>ভিউ: সীমিত</li>
+          </ul>
+          <a href="https://www.booking.com/hotel/bd/bay-breeze.en-gb.html" target="_blank" class="inline-block mt-2 px-4 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded font-semibold text-sm">বুক করুন</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ <!-- Nearby spots -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Himchari National Park</h4>
+            <p class="text-sm text-gray-600">Cox’s Bazar থেকে মাত্র 12 কিমি দূরে প্রাকৃতিক জলপ্রপাত ও বনাঞ্চল।</p>
+            <a href="../chattogram/himchari.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Inani Beach</h4>
+            <p class="text-sm text-gray-600">Cox’s Bazar থেকে 32 কিমি দূরে। সুস্পষ্ট প্রবাল পাথর ও শান্ত সমুদ্র সৈকত।</p>
+            <a href="../chattogram/inani-beach.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Ramu Buddhist Temple</h4>
+            <p class="text-sm text-gray-600">Cox’s Bazar থেকে 15 কিমি দূরে। ঐতিহ্যবাহী বৌদ্ধ মন্দির।</p>
+            <a href="../chattogram/ramu-temple.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.0!2d91.9654!3d21.4272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc4c6a0bca555%3A0x0!2sCox%27s+Bazar!5e0!3m2!1sbn!2sbd!4v1690000000001!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Cox’s Bazar map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+   <!-- 🌎 Footer -->
+  <footer class="py-10 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-gray-300 text-center">
+    <p class="text-lg font-semibold mb-2">🌏 ExploreBangla</p>
+    <p class="text-sm">বাংলাদেশের প্রতিটি সৌন্দর্যের গল্প — ExploreBangla এর সাথে।</p>
+    <p class="mt-4 text-gray-400 text-xs">&copy; 2025 ExploreBangla. All rights reserved.</p>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3000, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

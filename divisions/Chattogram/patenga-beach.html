@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patenga Beach — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Patenga Beach — চট্টগ্রামের প্রাণকেন্দ্র; সমুদ্র সৈকত, সূর্যাস্ত, পরিবার ও ভ্রমণ উপযোগী স্থান।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Patenga Beach — ExploreBangla">
+  <meta property="og:description" content="Patenga Beach — চট্টগ্রামের সৈকতের সৌন্দর্য; সূর্যোদয় ও সূর্যাস্তের জন্য বিখ্যাত।">
+  <meta property="og:image" content="../../images/Chattogram/Patenga-Beach/patenga.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,255,255,0.7));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .focus-ring:focus{outline:3px solid rgba(255,180,0,0.25);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Patenga Beach",
+    "description":"Patenga Beach — চট্টগ্রামের সুন্দর সমুদ্র সৈকত, পরিবার ও বন্ধুদের জন্য আদর্শ ভ্রমণ স্থান।",
+    "image":["../../images/Chattogram/Patenga-Beach/patenga.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Chattogram","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Patenga Beach</li>
+          </ol>
+        </nav>
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/Chattogram/Patenga-Beach/patenga.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Patenga Beach</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">চট্টগ্রামের সমুদ্র সৈকতের প্রাণকেন্দ্র — সূর্যোদয় ও সূর্যাস্তের সৌন্দর্য উপভোগ করুন।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Patenga Beach</li>
+              <li><strong>অবস্থান:</strong> চট্টগ্রাম, বাংলাদেশ</li>
+              <li><strong>ধরন:</strong> সমুদ্র সৈকত</li>
+              <li><strong>বিশেষত্ব:</strong> সূর্যোদয় ও সূর্যাস্তের জন্য বিখ্যাত</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">পতেঙ্গা সৈকত চট্টগ্রামের সবচেয়ে জনপ্রিয় সমুদ্র সৈকত। সাগরের নৈসর্গিক দৃশ্য, স্বচ্ছ বালুকাময় তট এবং শান্ত বাতাস পর্যটকদের মুগ্ধ করে।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সব সময় খোলা। প্রবেশ ফ্রি। নিরাপদ এবং পরিবার-বন্ধুদের জন্য উপযোগী।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+<section id="history" class="py-16 fade-in bg-gray-50">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">ইতিহাস</h2>
+    <div class="glass p-8 rounded-3xl shadow">
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Patenga Beach চট্টগ্রামের অন্যতম প্রাচীন ও জনপ্রিয় সমুদ্র সৈকত। এটি মূলত চট্টগ্রাম বন্দর ও সমুদ্রপথের সাথে সংলগ্ন হওয়ায় পর্যটক ও স্থানীয়দের জন্য আকর্ষণের কেন্দ্রবিন্দু। 
+        প্রায়শই শহরবাসী এবং পর্যটকরা এখানে সমুদ্রের নৈসর্গিক সৌন্দর্য, সূর্যোদয় ও সূর্যাস্ত উপভোগ করতে আসে।  
+        সামুদ্রিক পরিবেশের কারণে Patenga Beach চট্টগ্রামের সমুদ্র ভ্রমণের ইতিহাসে গুরুত্বপূর্ণ ভূমিকা রেখেছে।
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Importance Section -->
+<section id="importance" class="py-16 fade-in bg-white">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">গুরুত্ব</h2>
+    <div class="glass p-8 rounded-3xl shadow">
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+        <li>Patenga Beach চট্টগ্রামের পর্যটন শিল্পে গুরুত্বপূর্ণ ভূমিকা পালন করে।</li>
+        <li>স্থানীয় জনগণ ও পর্যটকরা সৈকতের সৌন্দর্য উপভোগ করে মানসিক শান্তি পায়।</li>
+        <li>শহরের সমুদ্র পরিবেশ এবং বন্দর নিকটবর্তী অবস্থান শিক্ষামূলক ও প্রাকৃতিক দৃশ্যের জন্য আকর্ষণীয়।</li>
+        <li>পরিবার, বন্ধু ও পর্যটকদের জন্য বিনোদন, নৌকা ভ্রমণ এবং ছবি তোলার জন্য উপযুক্ত স্থান।</li>
+        <li>Patenga Beach চট্টগ্রামের অর্থনীতি ও হোটেল ব্যবসার জন্য গুরুত্বপূর্ণ অবদান রাখে।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Gallery swiper -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">📸 Gallery</h2>
+        <div class="swiper mySwiper relative" aria-label="Patenga Beach gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Chattogram/Patenga-Beach/patenga.jpg" class="glightbox" data-gallery="patenga" data-title="Patenga Beach">
+                <img src="../../images/Chattogram/Patenga-Beach/patenga.jpg" alt="Patenga Beach" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Chattogram/Patenga-Beach/patenga2.jpg" class="glightbox" data-gallery="patenga" data-title="Beach view">
+                <img src="../../images/Chattogram/Patenga-Beach/patenga2.jpg" alt="Beach view" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Chattogram/Patenga-Beach/patenga3.jpg" class="glightbox" data-gallery="patenga" data-title="Sunset">
+                <img src="../../images/Chattogram/Patenga-Beach/patenga3.jpg" alt="Sunset" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit tips -->
+    <section id="visit" class="py-12 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">ভ্রমণ টিপস</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow">
+          <ul class="list-disc list-inside space-y-3 text-gray-700">
+            <li>সকালে বা সন্ধ্যায় যাওয়া উত্তম, কারণ বাতাস তাজা এবং সূর্যোদয়/সূর্যাস্ত সুন্দর।</li>
+            <li>পরিবার বা বন্ধুদের সঙ্গে নিরাপদ ও আনন্দদায়ক সময় কাটান।</li>
+            <li>স্মার্টফোন বা ক্যামেরা সঙ্গে রাখুন ফটো-স্মৃতি জন্য।</li>
+            <li>নৌকা ভ্রমণ নিরাপদ এবং পরিচিত গাইড ব্যবহার করুন।</li>
+            <li>আরামদায়ক জুতা এবং পানি সঙ্গে রাখুন।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby spots -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Foy's Lake</h4>
+            <p class="text-sm text-gray-600">প্রাকৃতিক লেক ও বিনোদন পার্ক।</p>
+            <a href="../chattogram/foys-lake.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Chittagong Port</h4>
+            <p class="text-sm text-gray-600">বাংলাদেশের প্রধান বাণিজ্যিক বন্দরের দৃশ্য।</p>
+            <a href="../chattogram/port.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Kaptai Lake</h4>
+            <p class="text-sm text-gray-600">চট্টগ্রাম পাহাড়ের কাছে বিশাল প্রাকৃতিক জলাশয়।</p>
+            <a href="../chattogram/kaptai-lake.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels Section -->
+<section id="hotels" class="py-16 bg-gray-50 fade-in">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-8">Patenga Beach এর কাছে জনপ্রিয় হোটেল</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Hotel 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/123456789.jpg" alt="Brisa Marina CBC Resort" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Brisa Marina CBC Resort</h3>
+          <p class="text-gray-600">Patenga Beach থেকে ৫ কিলোমিটার দূরে। ফিটনেস সেন্টার, সুইমিং পুল, বাগান রয়েছে।</p>
+          <a href="https://www.booking.com/hotel/bd/brisa-marina.html" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+        </div>
+      </div>
+      <!-- Hotel 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/987654321.jpg" alt="Hotel Agrabad" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Hotel Agrabad</h3>
+          <p class="text-gray-600">Patenga Beach থেকে ১৩ মিনিটের ড্রাইভে অবস্থিত। সুইমিং পুল, ফ্রি ব্রেকফাস্ট এবং ফ্রি ওয়াইফাই।</p>
+          <a href="https://www.booking.com/hotel/bd/agrabad.html" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+        </div>
+      </div>
+      <!-- Hotel 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/112233445.jpg" alt="Radisson Blu Chattogram Bay View" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Radisson Blu Chattogram Bay View</h3>
+          <p class="text-gray-600">Patenga Beach থেকে ১৬ মিনিটের ড্রাইভে অবস্থিত। ৩টি রেস্টুরেন্ট, আউটডোর পুল এবং হট টাব সুবিধা।</p>
+          <a href="https://www.booking.com/hotel/bd/radisson-blu-chattogram-bay-view.html" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.8012!3d22.3315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPatenga+Beach!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Patenga Beach map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — Patenga Beach
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3000, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

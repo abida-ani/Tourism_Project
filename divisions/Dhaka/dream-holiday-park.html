@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ড্রিম হলিডে পার্ক — ExploreBangla</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 80px; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 via-white to-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="Logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <a href="../dhaka/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative mt-16">
+    <div class="h-[420px] bg-cover bg-center rounded-b-3xl"
+         style="background-image: url('../../images/dhaka/dream-holiday-park/hero.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full">
+        <h1 class="text-5xl font-extrabold mb-3 drop-shadow-lg">ড্রিম হলিডে পার্ক</h1>
+        <p class="text-lg md:text-xl text-white/90 max-w-2xl px-4">
+          পরিবার ও বন্ধুদের সাথে বিনোদনের জন্য গাজীপুরের অন্যতম আকর্ষণীয় বিনোদন কেন্দ্র।
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ইতিহাস ও পটভূমি -->
+  <section class="py-16 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ক. পরিচিতি ও পটভূমি</h2>
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8 leading-relaxed text-lg">
+        <p class="mb-4">
+          ড্রিম হলিডে পার্ক গাজীপুর জেলার শ্রীপুর এলাকায় অবস্থিত একটি আধুনিক বিনোদন কেন্দ্র। 
+          এটি বাংলাদেশে পরিবার ও শিশুদের জন্য তৈরি সবচেয়ে বড় থিম পার্কগুলোর মধ্যে অন্যতম। 
+          ২০১১ সালে এটি সাধারণ মানুষের জন্য উন্মুক্ত করা হয়। পার্কটি তার বিশাল জলরাশি, রাইড, 
+          ওয়াটার পার্ক, রিসোর্ট এবং সবুজ পরিবেশের জন্য বিখ্যাত।
+        </p>
+        <p>
+          সপ্তাহান্তে, সরকারি ছুটি ও উৎসবের দিনে এখানে হাজার হাজার দর্শনার্থী ভিড় জমায়। 
+          পার্কের ভেতরে রয়েছে জলরাইড, নৌকা ভ্রমণ, রেস্টুরেন্ট, সুইমিং পুল ও শিশুদের খেলার মাঠ।
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- আকর্ষণ ও বিনোদন -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        খ. মূল আকর্ষণ ও বিনোদন ব্যবস্থা
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper relative">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/dream-holiday-park/water-park.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">ওয়াটার পার্ক</h3>
+            <p>বৃহৎ সুইমিং এরিয়া ও ওয়াটার স্লাইডগুলো গরমের দিনে দর্শনার্থীদের প্রধান আকর্ষণ।</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/dream-holiday-park/rides.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">রাইড ও এডভেঞ্চার জোন</h3>
+            <p>পার্কে আছে ট্রেন রাইড, বাম্পার কার, ফেরিস হুইলসহ নানা ধরণের রোমাঞ্চকর রাইড।</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/dream-holiday-park/boat.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">নৌকা ভ্রমণ</h3>
+            <p>পানির উপর দিয়ে নৌকা ভ্রমণের সুযোগ আছে যা পরিবারের সাথে আনন্দদায়ক সময় কাটানোর উপযুক্ত স্থান।</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6">
+            <img src="../../images/dhaka/dream-holiday-park/resort.jpg" class="rounded-xl mb-4 w-full h-56 object-cover" />
+            <h3 class="text-xl font-semibold mb-2">রিসোর্ট ও কটেজ</h3>
+            <p>পার্কের ভেতরে আধুনিক কটেজ ও রিসোর্টে রাত্রিযাপনের সুযোগ রয়েছে, যা ভ্রমণকে আরও উপভোগ্য করে।</p>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev text-gray-700"></div>
+        <div class="swiper-button-next text-gray-700"></div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ভ্রমণ পরিকল্পনা ও টিপস -->
+  <section class="py-20 fade-in">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">গ. ভ্রমণ পরিকল্পনা ও টিপস</h2>
+
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-3xl p-8">
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">কীভাবে যাবেন:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          ঢাকা থেকে গাজীপুরের শ্রীপুর যাওয়া বাসে উঠুন। শ্রীপুর শহর থেকে সিএনজি বা অটোযোগে 
+          মাওনা চৌরাস্তার কাছাকাছি ড্রিম হলিডে পার্কে পৌঁছানো যায়। দূরত্ব প্রায় ৫০ কিলোমিটার।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">সেরা সময়:</h3>
+        <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+          শীতকাল (নভেম্বর–ফেব্রুয়ারি) ও ছুটির দিনগুলোতে পার্ক ভ্রমণের জন্য আদর্শ সময়।
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-yellow-700">পর্যটকদের টিপস:</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+          <li>প্রবেশ ফি: প্রাপ্তবয়স্ক ২০০ টাকা, শিশু ১০০ টাকা।</li>
+          <li>ওয়াটার পার্কে প্রবেশের জন্য আলাদা টিকিট লাগে।</li>
+          <li>খাবারের জন্য পার্কের ভেতরেই ভালো মানের রেস্টুরেন্ট আছে।</li>
+          <li>বৃষ্টি হলে কিছু রাইড বন্ধ থাকতে পারে।</li>
+          <li>সপ্তাহের মাঝামাঝি দিনে ভিড় কম থাকে।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 fade-in bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">ড্রিম হলিডে পার্কের মানচিত্র</h2>
+      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.0780994465084!2d90.48308417544211!3d23.846358184544927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37543b836c26f5f3%3A0x6c0c798f7c3e4d73!2sDream%20Holiday%20Park!5e0!3m2!1sen!2sbd!4v1697449837642!5m2!1sen!2sbd" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — ড্রিম হলিডে পার্ক
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saint Martin’s Island — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Saint Martin’s Island — বাংলাদেশের একমাত্র প্রাকৃতিক সমুদ্র দ্বীপ। সাদা বালি, স্পষ্ট জল এবং সমুদ্রের সৌন্দর্য উপভোগের জন্য বিখ্যাত।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saint Martin’s Island — ExploreBangla">
+  <meta property="og:description" content="Saint Martin’s Island — বাংলাদেশের সুন্দর সমুদ্র দ্বীপ, সাদা বালি ও প্রাণবন্ত জলে ভ্রমণের জন্য বিখ্যাত।">
+  <meta property="og:image" content="../../images/SaintMartin/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,255,255,0.7));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .focus-ring:focus{outline:3px solid rgba(255,180,0,0.25);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Saint Martin’s Island",
+    "description":"Saint Martin’s Island — বাংলাদেশের একমাত্র প্রাকৃতিক সমুদ্র দ্বীপ।",
+    "image":["../../images/SaintMartin/hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Cox's Bazar","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../coxsbazar/index.html" class="hover:underline">Cox’s Bazar</a></li>
+            <li>›</li>
+            <li class="font-medium">Saint Martin’s Island</li>
+          </ol>
+        </nav>
+        <a href="../coxsbazar/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/SaintMartin/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Saint Martin’s Island</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">বাংলাদেশের একমাত্র প্রাকৃতিক সমুদ্র দ্বীপ — সাদা বালি ও নীল জলের জন্য বিখ্যাত।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Saint Martin’s Island</li>
+              <li><strong>অবস্থান:</strong> কক্সবাজার, বাংলাদেশ</li>
+              <li><strong>ধরন:</strong> প্রাকৃতিক সমুদ্র দ্বীপ</li>
+              <li><strong>বিশেষত্ব:</strong> সাদা বালি, স্পষ্ট জল, স্কুবা ডাইভিং</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Saint Martin বাংলাদেশের একমাত্র প্রাকৃতিক সমুদ্র দ্বীপ। পরিবার ও বন্ধুদের জন্য ভ্রমণ ও পানির কার্যক্রমের জন্য উপযুক্ত। দ্বীপের চারপাশে ছোট গ্রাম, মাছের বাজার ও সুন্দর সৈকত রয়েছে।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সকাল ৭টা থেকে সন্ধ্যা ৫টা পর্যন্ত ভ্রমণ করা যায়। প্রবেশ ফি খুব সামান্য। নিরাপদ ও শিশুদের জন্য উপযুক্ত।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History & Importance (2 column) -->
+    <section class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- History -->
+          <div class="glass p-8 rounded-3xl shadow">
+            <h2 class="text-3xl font-bold mb-4 text-yellow-600">ইতিহাস</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Saint Martin’s Island ছোট্ট কিন্তু প্রাকৃতিক সৌন্দর্যে ভরা। এটি চট্টগ্রাম উপকূল থেকে প্রায় ৯ কিমি দূরে অবস্থিত। দ্বীপটি মূলত প্রবালপাথর দ্বারা গঠিত এবং প্রাচীনকাল থেকেই স্থানীয় মানুষদের মাছ ধরার জন্য পরিচিত। পর্যটকরা প্রথমে ১৯৫০-এর দশকে দ্বীপটি পর্যটন স্থল হিসেবে খুঁজে পান।
+            </p>
+          </div>
+          <!-- Importance -->
+          <div class="glass p-8 rounded-3xl shadow">
+            <h2 class="text-3xl font-bold mb-4 text-yellow-600">গুরুত্ব</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+              <li>বাংলাদেশের একমাত্র প্রাকৃতিক সমুদ্র দ্বীপ হিসেবে আন্তর্জাতিকভাবে পরিচিত।</li>
+              <li>পর্যটন শিল্পে গুরুত্বপূর্ণ, স্থানীয় অর্থনীতিকে সমৃদ্ধ করে।</li>
+              <li>প্রাকৃতিক প্রজাতি ও প্রবাল চিরায়ত রক্ষা করে।</li>
+              <li>পরিবার ও বন্ধুদের জন্য শান্তি ও বিনোদন প্রদানের স্থান।</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 🌊 Beautiful Beaches -->
+    <section id="beaches" class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-4xl font-playfair font-bold text-yellow-600 mb-10">Saint Martin এর সমুদ্র সৈকত</h2>
+        <p class="text-gray-700 mb-10 text-lg">Saint Martin দ্বীপে বেশ কিছু ছোট ও সুন্দর সৈকত রয়েছে — প্রতিটির আলাদা সৌন্দর্য ও আকর্ষণ। নিচে সবচেয়ে জনপ্রিয় সৈকতগুলোর বিবরণ দেওয়া হলো:</p>
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2 text-yellow-700">🌴 West Beach</h3>
+            <p>সবচেয়ে জনপ্রিয় সৈকত। সূর্যাস্ত দেখার জন্য দারুণ উপযুক্ত এবং বেশিরভাগ রিসোর্ট এখানেই অবস্থিত।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2 text-yellow-700">🌊 Chhera Dwip</h3>
+            <p>দ্বীপের দক্ষিণ প্রান্তে অবস্থিত ছোট দ্বীপ, স্বচ্ছ জল ও প্রবালের জন্য বিখ্যাত। নৌকায় করে পৌঁছানো যায়।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2 text-yellow-700">🌅 North Beach</h3>
+            <p>শান্ত ও কম ভিড়ের এলাকা। প্রকৃতিপ্রেমীদের জন্য আদর্শ, এখানে জল খুব স্বচ্ছ ও ঠান্ডা।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍤 Famous Food -->
+    <section id="food" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-4xl font-playfair font-bold text-yellow-600 mb-10">🍽️ Saint Martin এর অবশ্যই খেতে হবে এমন খাবার</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">🐟 তাজা মাছ</h3>
+            <p>দ্বীপের স্থানীয় মৎস্যজীবীরা প্রতিদিন সকালে টাটকা মাছ বিক্রি করেন। গ্রিল বা ভাজা মাছ খুব জনপ্রিয়।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">🦐 লবস্টার ও প্রন</h3>
+            <p>স্থানীয় রেস্টুরেন্টে পাওয়া যায় সুস্বাদু লবস্টার ও প্রন কারি — এটি Saint Martin এর স্পেশাল আইটেম।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">🍚 নারকেল দুধে ভাত ও চিংড়ি</h3>
+            <p>দ্বীপের ঐতিহ্যবাহী খাবার, হালকা মিষ্টি নারকেল দুধে রান্না করা ভাতের সাথে চিংড়ি পরিবেশন করা হয়।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎢 Must Enjoy Rides -->
+    <section id="rides" class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-4xl font-playfair font-bold text-yellow-600 mb-10">🎉 Saint Martin এ অবশ্যই উপভোগ করার রাইড</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">🚤 Speed Boat Ride</h3>
+            <p>সৈকতের চারপাশে স্পিডবোটে করে ঘোরা — এক অবিস্মরণীয় অভিজ্ঞতা। জনপ্রতি ভাড়া প্রায় ৳800–৳1200।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">🤿 Scuba Diving</h3>
+            <p>স্বচ্ছ জলের নিচে প্রবাল আর মাছের মাঝে ডাইভিং করার সুযোগ। জনপ্রতি ৳3000–৳4000।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">🛶 Kayaking</h3>
+            <p>সকাল বা বিকেলে শান্ত জলে কায়াকিং করা অত্যন্ত রোমাঞ্চকর। জনপ্রতি ৳500–৳800।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🏨 Hotels Section -->
+    <section id="hotels" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-4xl font-playfair font-bold text-yellow-600 mb-10">🏨 Saint Martin এর সেরা হোটেলসমূহ</h2>
+        <p class="text-gray-700 mb-12 text-lg">নিচে বিভিন্ন বাজেটের জন্য উপযুক্ত কিছু হোটেল ও রিসোর্টের তালিকা দেওয়া হলো।</p>
+        
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+
+          <!-- 5 Star -->
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-2xl font-semibold mb-2 text-yellow-700">🌟 Blue Marine Resort</h3>
+            <p class="text-gray-700 mb-3">5-Star রিসোর্ট, সমুদ্রের একদম পাশে অবস্থিত। চমৎকার রুম ও ইনফিনিটি পুল সহ।</p>
+            <p class="mb-2"><strong>Rent:</strong> ৳8,500–৳12,000 প্রতি রাত</p>
+            <p class="mb-4"><strong>Location:</strong> West Beach, Saint Martin</p>
+            <a href="https://www.booking.com/hotel/bd/blue-marine-resort.html" target="_blank" class="inline-block px-5 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg font-semibold text-black">Book Now</a>
+          </div>
+
+          <!-- 4 Star -->
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-2xl font-semibold mb-2 text-yellow-700">🏝️ Coral View Resort</h3>
+            <p>সুন্দর সমুদ্র দর্শনসহ 4-star রিসোর্ট। পরিবারদের জন্য উপযুক্ত।</p>
+            <p class="mb-2"><strong>Rent:</strong> ৳6,000–৳8,000 প্রতি রাত</p>
+            <a href="https://www.booking.com/hotel/bd/coral-view-resort.html" target="_blank" class="inline-block mt-4 px-5 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg font-semibold text-black">Book Now</a>
+          </div>
+
+          <!-- Mid Range -->
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-2xl font-semibold mb-2 text-yellow-700">🏖️ Dream Island Resort</h3>
+            <p>সুবিধাজনক মূল্যে পরিষ্কার রুম ও ব্যক্তিগত বিচ ভিউ সহ।</p>
+            <p class="mb-2"><strong>Rent:</strong> ৳3,500–৳5,000 প্রতি রাত</p>
+            <a href="https://www.booking.com/hotel/bd/dream-island-resort.html" target="_blank" class="inline-block mt-4 px-5 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg font-semibold text-black">Book Now</a>
+          </div>
+
+          <!-- Budget Friendly -->
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-2xl font-semibold mb-2 text-yellow-700">🏠 Sea View Cottage</h3>
+            <p>বাজেট পর্যটকদের জন্য আরামদায়ক কটেজ। সৈকতের কাছাকাছি।</p>
+            <p class="mb-2"><strong>Rent:</strong> ৳1,800–৳2,500 প্রতি রাত</p>
+            <a href="https://www.booking.com/hotel/bd/sea-view-cottage.html" target="_blank" class="inline-block mt-4 px-5 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg font-semibold text-black">Book Now</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 🗺️ Map -->
+    <section class="py-16 bg-white text-center">
+      <h2 class="text-4xl font-playfair font-bold text-yellow-600 mb-10">📍 Location Map</h2>
+      <iframe class="mx-auto w-[90%] md:w-[70%] h-[420px] rounded-2xl shadow-lg" src="https://www.google.com/maps?q=Saint+Martin's+Island,+Bangladesh&output=embed" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+  </main>
+
+  <!-- 🌅 Footer -->
+  <footer class="bg-yellow-500/20 text-gray-700 py-8 mt-10">
+    <div class="container mx-auto px-6 text-center">
+      <p class="font-semibold text-lg">ExploreBangla — Discover the Beauty of Bangladesh 🇧🇩</p>
+      <p class="text-sm mt-2">ভ্রমণের আগে আবহাওয়া ও সমুদ্রের অবস্থা যাচাই করুন। নিরাপত্তা বজায় রাখুন 🌊</p>
+      <div class="mt-4 text-sm text-gray-600">© 2025 ExploreBangla. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>
