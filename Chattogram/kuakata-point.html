@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kuakata Point — ExploreBangla</title>
+  <link rel="icon" href="../../images/logo/favicon.png" />
+  <meta name="description" content="Kuakata Point (Kuakata Beach) — 'দুই সমুদ্রের প্রান্ত' ; সূর্যোদয় ও সূর্যাস্ত একসঙ্গে দেখা যায়। ইতিহাস, সংস্কৃতি, সীফুড এবং ভ্রমণ নির্দেশিকা।" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kuakata Point — ExploreBangla" />
+  <meta property="og:description" content="Kuakata — বাংলাদেশের দক্ষিণে অবস্থিত দর্শনীয় সৈকত; উজ্জ্বল সূর্যোদয় ও সূর্যাস্ত উপভোগ করুন।" />
+  <meta property="og:image" content="../../images/Kuakata/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a;scroll-padding-top:88px;background:linear-gradient(to bottom,#fffaf0,#f0f9ff)}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn .9s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.86),rgba(255,255,255,0.72));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .25s ease,box-shadow .25s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 14px 40px rgba(12,12,15,0.08)}
+    .focus-ring:focus{outline:3px solid rgba(255,180,0,0.18);outline-offset:3px}
+    .btn-accent{background:var(--accent);color:#061328}
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Kuakata Point",
+    "description":"Kuakata Point — Kuakata সমুদ্র সৈকত: সূর্যোদয় ও সূর্যাস্ত দেখা যায়; রৌপ্য বালুখানা এবং স্থানীয় সংস্কৃতি।",
+    "image":["../../images/Kuakata/hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Kuakata","addressRegion":"Patuakhali","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav class="hidden md:block" aria-label="Breadcrumb">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li><li>›</li>
+            <li><a href="../Chattogram/index.html" class="hover:underline">Chattogram</a></li><li>›</li>
+            <li class="font-medium">Kuakata Point</li>
+          </ol>
+        </nav>
+        <a href="../kuakata/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[560px] md:h-[680px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image:url('../../images/Kuakata/hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/45 via-black/18 to-transparent"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+        <h1 class="font-playfair text-4xl md:text-6xl font-extrabold drop-shadow-lg">Kuakata Point</h1>
+        <p class="mt-4 text-md md:text-lg max-w-2xl">“দুই সমুদ্রের প্রান্ত” — সূর্যোদয় ও সূর্যাস্ত একসাথে দেখা যায়। শান্ত সমুদ্র, দীর্ঘ বালি এবং রৌদ্রোজ্জ্বল দৃশ্য।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 rounded-full btn-accent font-semibold shadow">Quick Facts</a>
+          <a href="#gallery" class="px-6 py-3 rounded-full border border-white/30 font-semibold text-white/90 hover:bg-white/10">Gallery</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 mt-12 space-y-16">
+
+    <!-- Overview -->
+    <section id="overview" class="fade-in">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Quick Facts</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li><strong>নাম:</strong> Kuakata Point (Kuakata Beach)</li>
+            <li><strong>অবস্থান:</strong> Patuakhali / Barguna, Bangladesh</li>
+            <li><strong>ধরন:</strong> সমুদ্র সৈকত (Panoramic beach)</li>
+            <li><strong>বিশেষত্ব:</strong> দুটি দিকেই সূর্য— Sunrise & Sunset</li>
+            <li><strong>উপযোগী সময়:</strong> নভেম্বর — এপ্রিল</li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Short Overview</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">
+            Kuakata দক্ষিণ বাংলা কাইনারের এক শান্ত ও বিস্তৃত সৈকত। এখানে সমুদ্রের দু’দিকেই সূর্য প্রদর্শিত হওয়ায় ভোরে ও সন্ধ্যায় আলোকচুম্বন দুটোই উপভোগ করা যায়। স্থানীয় জেলেরা সকাল-বিকাল অসংখ্য তাজা সীফুড ধরেন — দর্শনার্থীরা সরাসরি মাছ বাজার থেকে তাজা সামগ্রী কিনে খেতে পারেন।
+          </p>
+        </div>
+
+        <div class="glass p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Visitor Info</h3>
+          <p class="text-sm text-gray-700">
+            প্রবেশ ফি নেই। পর্যটকদের জন্য আটাইতেই বাস, প্রাইভেট ভাড়া গাড়ি ও স্থানীয় ট্যাক্সি সহজলভ্য। যথাসম্ভব স্থানীয় নিয়ম-কানুন ও পরিবেশ সংরক্ষণ মেনে চলুন।
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- History & Culture -->
+    <section id="history" class="fade-in bg-gray-50 py-6 rounded-3xl">
+      <div class="max-w-4xl mx-auto p-8 glass rounded-3xl shadow">
+        <h2 class="text-2xl md:text-3xl font-bold text-yellow-600 mb-4 text-center">ইতিহ্য ও সংস্কৃতি</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Kuakata এলাকার সংস্কৃতি মিশ্র: এখানকার রাখাইন (Rakhine) ও স্থানীয় বাংলাদেশি সম্প্রদায় তাদের নিজস্ব উৎসব, হাতে তৈরি পানশাল, এবং সামুদ্রিক জীবনধারার মাধ্যমে পরিচিত। কোহারিক স্মৃতি ও আনুষঙ্গিক স্থানীয় ঐতিহ্য পর্যটকদের জন্য আকর্ষণীয়। স্থানীয় হ্যান্ডিক্রাফট ও সামুদ্রিক মাছের বাজার এখানে বিশেষভাবে জনপ্রিয়।
+        </p>
+      </div>
+    </section>
+
+    <!-- Famous Food -->
+    <section id="food" class="fade-in">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6 text-yellow-600">প্রসিদ্ধ খাবার ও সি-ফুড</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="card-hover glass p-4 rounded-2xl text-center">
+            <img src="../../images/Kuakata/food/seafood-platter.jpg" alt="Seafood" class="w-full h-44 object-cover rounded-xl mb-3">
+            <h4 class="font-semibold">Fresh Seafood</h4>
+            <p class="text-sm text-gray-700">তাজা চিংড়ি, কাঁকড়া, পেটা ও স্থানীয় মাছ। মাঝারি দামের রেস্টুরেন্টে একটি ভাল সীফুড প্লেট ৩০০–৭০০ BDT।</p>
+          </div>
+          <div class="card-hover glass p-4 rounded-2xl text-center">
+            <img src="../../images/Kuakata/food/fish-curry.jpg" alt="Fish Curry" class="w-full h-44 object-cover rounded-xl mb-3">
+            <h4 class="font-semibold">Traditional Fish Curry</h4>
+            <p class="text-sm text-gray-700">স্থানীয় ঝাঁ চকচকে মসলাযুক্ত কারি — স্থানীয় স্বাদ বেশ জনপ্রিয়।</p>
+          </div>
+          <div class="card-hover glass p-4 rounded-2xl text-center">
+            <img src="../../images/Kuakata/food/street-snacks.jpg" alt="Street Snacks" class="w-full h-44 object-cover rounded-xl mb-3">
+            <h4 class="font-semibold">Street Snacks</h4>
+            <p class="text-sm text-gray-700">বিচ-ফ্রাই, ফিস-চপ, চা ও কফি — হালকা খিদে মেটাতে ভাল।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels & Stay -->
+    <section id="hotels" class="fade-in bg-gray-50 py-8">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-6">কোয়াকাটা — হোটেল ও থাকার ব্যবস্থা</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Kuakata/hotels/hotel1.jpg" alt="Hotel 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Kuakata Sea View Resort</h3>
+              <p class="text-gray-600 text-sm">Sea view room, restaurant. Rate: 3,000–5,000 BDT/night</p>
+              <a href="#" class="mt-3 inline-block btn-accent px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Kuakata/hotels/hotel2.jpg" alt="Hotel 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Ocean Breeze Guest House</h3>
+              <p class="text-gray-600 text-sm">Budget friendly, clean rooms. Rate: 1,200–2,500 BDT/night</p>
+              <a href="#" class="mt-3 inline-block btn-accent px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+            <img src="../../images/Kuakata/hotels/hotel3.jpg" alt="Hotel 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Horizon Beach Resort</h3>
+              <p class="text-gray-600 text-sm">Family friendly, event facilities. Rate: 4,500–7,500 BDT/night</p>
+              <a href="#" class="mt-3 inline-block btn-accent px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">(দাম পরিবর্তনশীল — প্রত্যক্ষ বুকিং সাইট দেখে নিশ্চিত করুন)</p>
+      </div>
+    </section>
+
+    <!-- Travel Tips & Budget -->
+    <section id="travel-tips" class="fade-in">
+      <div class="max-w-4xl mx-auto glass p-8 rounded-3xl shadow">
+        <h2 class="text-2xl font-bold text-center text-yellow-600 mb-4">ভ্রমণ টিপস ও বাজেট গাইড</h2>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li><strong>যাওয়ার সেরা সময়:</strong> নভেম্বর থেকে মার্চ (শুক্র ও সঠিক আবহাওয়া)</li>
+          <li><strong>কিভাবে পৌঁছাবেন:</strong> ঢাকা → রংপুর/বরিশাল/পটুয়াখালী রুটের বাস; দ্রুততার জন্য ঢাকা থেকে Barisal/Cox's Bazar/বরিশাল বিমান → স্থানীয় গাড়ি/বাস। (লোকাল রুট ভিন্নতা থাকতে পারে)</li>
+          <li><strong>বাজেট নির্দেশিকা (প্রতি দিন):</strong> খাদ্য 300–600 BDT, থাকাকালীন বাজেট 1,200–5,000 BDT/night (হোটেল ধরন অনুসারে)।</li>
+          <li><strong>নিরাপত্তা:</strong> সমুদ্রতটে সাইনবোর্ড দেখুন, গভীর জলে ঝাঁপ দেবেন না; স্থানীয় নৌকাদার নির্দেশ অনুসরণ করুন।</li>
+          <li><strong>দ্রষ্টব্য:</strong> স্থানীয় বাজারে কেনাকাটা ও রেস্তোরাঁয় মূল্যজনিত আলাপ-আলোচনা হতে পারে — দরদাম করা যেতে পারে।</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="map" class="fade-in bg-gray-100 py-8 rounded-3xl">
+      <div class="max-w-5xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.0!2d90.12!3d21.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKuakata!5e0!3m2!1sbn!2sbd!4v1690000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Kuakata map"></iframe>
+        </div>
+        <p class="text-sm text-gray-600 mt-3 text-center">Map lazy-loaded — page load দ্রুত রাখার জন্য iframe deferred করা আছে।</p>
+      </div>
+    </section>
+
+    <!-- Nearby Attractions -->
+    <section class="fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6 text-yellow-600">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-4 shadow card-hover">
+            <h4 class="font-semibold mb-1">Rakhain Para</h4>
+            <p class="text-sm text-gray-600">রাখাইন সম্প্রদায়ের ঐতিহ্য ও হাতের কাজ দেখার সুযোগ।</p>
+            <p class="text-xs text-gray-400 mt-2">Distance: 10–15 min local drive</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-4 shadow card-hover">
+            <h4 class="font-semibold mb-1">Kuakata Ecopark</h4>
+            <p class="text-sm text-gray-600">প্রাকৃতিক বনভূমি ও পাখি পর্যবেক্ষণের জন্য উপযুক্ত জায়গা।</p>
+            <p class="text-xs text-gray-400 mt-2">Distance: 15–20 min drive</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-4 shadow card-hover">
+            <h4 class="font-semibold mb-1">Local Fish Market</h4>
+            <p class="text-sm text-gray-600">তাজা সীফুড কেনাবেচা এবং স্থানীয় খাবারের স্বাদ দেখার জায়গা।</p>
+            <p class="text-xs text-gray-400 mt-2">Distance: central walking area</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6 text-yellow-600">📸 Gallery</h2>
+        <div class="swiper mySwiper relative" aria-label="Kuakata gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover">
+              <a href="../../images/Kuakata/gallery1.jpg" class="glightbox" data-gallery="kuakata" data-title="Kuakata Sunrise">
+                <img src="../../images/Kuakata/gallery1.jpg" alt="Kuakata Sunrise" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover">
+              <a href="../../images/Kuakata/gallery2.jpg" class="glightbox" data-gallery="kuakata" data-title="Kuakata Sunset">
+                <img src="../../images/Kuakata/gallery2.jpg" alt="Kuakata Sunset" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover">
+              <a href="../../images/Kuakata/gallery3.jpg" class="glightbox" data-gallery="kuakata" data-title="Beach View">
+                <img src="../../images/Kuakata/gallery3.jpg" alt="Beach View" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white/80 border-t mt-12 py-6 text-center text-gray-600">
+    &copy; 2025 ExploreBangla — Kuakata Point
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Lazy load map iframe src when in viewport
+    document.addEventListener('DOMContentLoaded', function () {
+      const ifr = document.querySelector('iframe[data-src]');
+      if (ifr) {
+        const io = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              ifr.src = ifr.dataset.src;
+              observer.disconnect();
+            }
+          });
+        }, {rootMargin: "200px"});
+        io.observe(ifr);
+      }
+    });
+
+    // Swiper init
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 18,
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      breakpoints: {640:{slidesPerView:2},1024:{slidesPerView:3}}
+    });
+
+    // GLightbox init
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    // Tab-like scroll via hero-buttons (if any)
+    document.querySelectorAll('.btn-accent, .tab-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const href = btn.getAttribute('href') || btn.dataset.href;
+        if (!href && btn.dataset.tab) {
+          const target = document.getElementById(btn.dataset.tab);
+          if (target) target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

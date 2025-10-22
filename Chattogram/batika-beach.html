@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batika Beach — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Batika Beach — চট্টগ্রামের জনপ্রিয় সমুদ্র সৈকত। পরিবার এবং বন্ধুদের জন্য সুন্দর এবং শান্ত স্থান।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Batika Beach — ExploreBangla">
+  <meta property="og:description" content="Batika Beach — চট্টগ্রামের জনপ্রিয় সমুদ্র সৈকত, যেখানে সূর্যাস্ত ও সমুদ্রের সৌন্দর্য উপভোগ করা যায়।">
+  <meta property="og:image" content="../../images/Chattogram/Batika/batika-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,255,255,0.7));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .focus-ring:focus{outline:3px solid rgba(255,180,0,0.25);outline-offset:3px}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Batika Beach",
+    "description":"Batika Beach — চট্টগ্রামের সুন্দর সমুদ্র সৈকত এবং পর্যটন স্থান।",
+    "image":["../../images/Chattogram/Batika/batika-hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Chattogram","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Batika Beach</li>
+          </ol>
+        </nav>
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/Chattogram/Batika/batika-hero.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent" aria-hidden="true"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Batika Beach</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">চট্টগ্রামের সুন্দর সমুদ্র সৈকত — পরিবার ও বন্ধুদের জন্য শান্ত এবং আনন্দময় স্থান।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-black shadow">Quick facts</a>
+          <a href="#visit" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ভ্রমণ টিপস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Batika Beach</li>
+              <li><strong>অবস্থান:</strong> চট্টগ্রাম, বাংলাদেশ</li>
+              <li><strong>ধরন:</strong> সমুদ্র সৈকত</li>
+              <li><strong>বিশেষত্ব:</strong> সূর্যাস্ত, নীল জলরাশি, পিকনিক স্থান</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Batika Beach চট্টগ্রামের অন্যতম সুন্দর সৈকত। পরিবার ও বন্ধুদের সঙ্গে আনন্দময় সময় কাটানোর জন্য এটি উপযুক্ত। সৈকতের শান্ত পরিবেশ এবং নীল জলরাশি মনোরম অভিজ্ঞতা প্রদান করে।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সকাল ৮টা থেকে সন্ধ্যা ৬টা পর্যন্ত খোলা। নিরাপদ এবং পরিবার-বন্ধুদের জন্য উপযোগী। প্রবেশ ফি প্রযোজ্য।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery swiper -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">📸 Gallery</h2>
+        <div class="swiper mySwiper relative" aria-label="Batika Beach gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Chattogram/Batika/batika1.jpg" class="glightbox" data-gallery="batika" data-title="Batika Beach">
+                <img src="../../images/Chattogram/Batika/batika1.jpg" alt="Batika Beach" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Chattogram/Batika/batika2.jpg" class="glightbox" data-gallery="batika" data-title="Sunset view">
+                <img src="../../images/Chattogram/Batika/batika2.jpg" alt="Sunset view" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover" tabindex="0">
+              <a href="../../images/Chattogram/Batika/batika3.jpg" class="glightbox" data-gallery="batika" data-title="Seaside view">
+                <img src="../../images/Chattogram/Batika/batika3.jpg" alt="Seaside view" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit tips -->
+    <section id="visit" class="py-12 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">ভ্রমণ টিপস</h2>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-8 shadow">
+          <ul class="list-disc list-inside space-y-3 text-gray-700">
+            <li>সকালে বা বিকেলে যাওয়া উত্তম, কারণ বাতাস তাজা এবং সৈকতের সৌন্দর্য সুন্দর।</li>
+            <li>পরিবার বা বন্ধুদের সঙ্গে নিরাপদ ও আনন্দদায়ক সময় কাটান।</li>
+            <li>সৈকতে নিজের জিনিসপত্র সতর্কভাবে রাখুন।</li>
+            <li>আরামদায়ক জুতা এবং পানি সঙ্গে রাখুন।</li>
+            <li>সূর্যাস্ত দেখার জন্য ক্যামেরা বা স্মার্টফোন সঙ্গে রাখুন।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby spots -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Patenga Beach</h4>
+            <p class="text-sm text-gray-600">চট্টগ্রামের জনপ্রিয় সমুদ্র সৈকত।</p>
+            <a href="../chattogram/patenga-beach.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Foy's Lake</h4>
+            <p class="text-sm text-gray-600">চট্টগ্রামের জনপ্রিয় প্রাকৃতিক লেক ও বিনোদন পার্ক।</p>
+            <a href="../chattogram/foys-lake.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Karnaphuli River</h4>
+            <p class="text-sm text-gray-600">চট্টগ্রামের গুরুত্বপূর্ণ নদী এবং দর্শনীয় স্থান।</p>
+            <a href="../chattogram/karnaphuli-river.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section id="hotels" class="py-16 bg-gray-50 fade-in">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-8">Batika Beach এর কাছে জনপ্রিয় হোটেল</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Example Hotel -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/223344556.jpg" alt="Sea View Resort" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Sea View Resort</h3>
+              <p class="text-gray-600">Batika Beach থেকে মাত্র ২ কিমি দূরে। সুইমিং পুল, সমুদ্র দৃশ্য।</p>
+              <a href="https://www.booking.com/" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.8012!3d22.3315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBatika+Beach!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Batika Beach map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — Batika Beach
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3000, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

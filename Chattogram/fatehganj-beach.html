@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatehganj Beach — ExploreBangla</title>
+
+  <meta name="description" content="Fatehganj Beach — কক্সবাজার, বাংলাদেশের মনোরম সমুদ্র সৈকত; সূর্যাস্ত, বোটিং, পরিবার ও পর্যটকদের জন্য উপযুক্ত।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <meta property="og:title" content="Fatehganj Beach — ExploreBangla">
+  <meta property="og:description" content="Fatehganj Beach — কক্সবাজারের একটি সুন্দর সৈকত; পর্যটন ও ফটো-গ্রাফির জন্য বিখ্যাত।">
+  <meta property="og:image" content="../../images/CoxsBazar/Fatehganj-Beach/fatehganj-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{--accent:#F97316}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.92),rgba(255,255,255,0.85));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .hero-overlay{background: linear-gradient(180deg, rgba(15,23,42,0.25), rgba(15,23,42,0.0));}
+    .accent{color:var(--accent)}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Fatehganj Beach",
+    "description":"Fatehganj Beach — কক্সবাজারের সুন্দর সমুদ্র সৈকত, পর্যটক ও পরিবারের জন্য উপযুক্ত।",
+    "image":["../../images/CoxsBazar/Fatehganj-Beach/fatehganj-hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Cox's Bazar","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../coxs-bazar/index.html" class="hover:underline">Cox's Bazar</a></li>
+            <li>›</li>
+            <li class="font-medium">Fatehganj Beach</li>
+          </ol>
+        </nav>
+        <a href="../coxs-bazar/index.html" class="px-4 py-2 bg-orange-400 hover:bg-orange-500 rounded-lg text-white font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner relative" style="background-image: url('../../images/CoxsBazar/Fatehganj-Beach/fatehganj-hero.jpg');">
+      <div class="absolute inset-0 hero-overlay rounded-b-3xl"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Fatehganj Beach</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">কক্সবাজারের মনোরম সৈকত — সূর্যোদয় ও সূর্যাস্ত উপভোগ করুন।</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#overview" class="px-6 py-3 bg-orange-400 hover:bg-orange-500 rounded-full font-semibold text-white shadow">Quick facts</a>
+          <a href="#activities" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">Activities</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Fatehganj Beach</li>
+              <li><strong>অবস্থান:</strong> Cox's Bazar, বাংলাদেশ</li>
+              <li><strong>ধরন:</strong> সমুদ্র সৈকত</li>
+              <li><strong>বিশেষত্ব:</strong> সূর্যোদয় ও সূর্যাস্তের জন্য বিখ্যাত</li>
+            </ul>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Fatehganj Beach কক্সবাজারের একটি শান্তিপূর্ণ সৈকত, পরিবার ও বন্ধুদের সঙ্গে ভ্রমণের জন্য আদর্শ। এটি নৌকা ভ্রমণ, ফটোগ্রাফি ও সমুদ্রের শীতল বাতাস উপভোগের জন্য পরিচিত।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণত সব সময় খোলা। প্রবেশ ফ্রি। নিরাপদ ও পরিবার-বান্ধব।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-orange-600">Activities</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Boating & Lake Tours</h4>
+            <p class="text-gray-700 text-sm">নৌকা ভ্রমণ উপভোগ করুন এবং সৈকতের সৌন্দর্য ঘুরে দেখুন।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Photography & Sunset</h4>
+            <p class="text-gray-700 text-sm">সূর্যাস্তের সময়ে ফটোগ্রাফির জন্য সুন্দর স্থান।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Beach Sports</h4>
+            <p class="text-gray-700 text-sm">ভলিবল ও অন্যান্য সৈকত খেলার সুযোগ।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels -->
+    <section id="hotels" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">থাকার ব্যবস্থা</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="../../images/CoxsBazar/Fatehganj-Beach/hotel1.jpg" alt="Hotel 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Fatehganj Sea View Resort</h3>
+              <p class="text-gray-600">প্রতি রাত: ৩,০০০-৪,০০০ টাকা (উচ্চমান)।</p>
+              <a href="https://www.booking.com" target="_blank" class="mt-3 inline-block bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="../../images/CoxsBazar/Fatehganj-Beach/hotel2.jpg" alt="Hotel 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Local Guesthouse</h3>
+              <p class="text-gray-600">প্রতি রাত: ১,০০০-২,০০০ টাকা (বাজেট)।</p>
+              <a href="mailto:info@example.com" class="mt-3 inline-block bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold text-sm">Inquire</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="../../images/CoxsBazar/Fatehganj-Beach/hotel3.jpg" alt="Hotel 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hill View Lodge</h3>
+              <p class="text-gray-600">প্রতি রাত: ২,০০০-৩,০০০ টাকা (মধ্যম)।</p>
+              <a href="https://www.booking.com" target="_blank" class="mt-3 inline-block bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+<section class="py-16 fade-in bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">Gallery</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="../../images/CoxsBazar/Fatehganj-Beach/fatehganj-1.jpg" alt="Fatehganj view" class="w-full h-44 object-cover rounded-lg shadow">
+      <img src="../../images/CoxsBazar/Fatehganj-Beach/fatehganj-2.jpg" alt="Beach activities" class="w-full h-44 object-cover rounded-lg shadow">
+      <img src="../../images/CoxsBazar/Fatehganj-Beach/fatehganj-3.jpg" alt="Sunset view" class="w-full h-44 object-cover rounded-lg shadow">
+    </div>
+  </div>
+</section>
+
+
+    <!-- Map -->
+    <section class="py-12 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.978!3d21.428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc34a12345678%3A0xabcdef1234567890!2sFatehganj%20Beach!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Fatehganj Beach map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — Fatehganj Beach
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

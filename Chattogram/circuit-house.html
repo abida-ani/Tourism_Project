@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circuit House — ExploreBangla</title>
+
+  <!-- Primary meta -->
+  <meta name="description" content="Circuit House — চট্টগ্রামের ঐতিহ্যবাহী স্থাপত্য এবং পর্যটকদের জন্য আকর্ষণীয় স্থান।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper & GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{--accent:#FFB400}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.85),rgba(255,255,255,0.7));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg text-black font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[520px] bg-cover bg-center rounded-b-3xl shadow-inner" style="background-image: url('../../images/Chattogram/Circuit-House/circuit-house.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-5xl md:text-6xl font-extrabold drop-shadow-lg">Circuit House</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl">চট্টগ্রামের ঐতিহ্যবাহী স্থাপত্য ও শান্ত পরিবেশের এক অনন্য সংমিশ্রণ।</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="fade-in">
+
+    <!-- Quick Facts -->
+    <section id="overview" class="py-12">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-6">
+        <div class="glass p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Quick Facts</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li><strong>নাম:</strong> Circuit House</li>
+            <li><strong>অবস্থান:</strong> চট্টগ্রাম, বাংলাদেশ</li>
+            <li><strong>ধরন:</strong> ঐতিহ্যবাহী স্থাপত্য ও পর্যটন কেন্দ্র</li>
+            <li><strong>বিশেষত্ব:</strong> শান্ত পরিবেশ ও প্রাকৃতিক সৌন্দর্য</li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Visitor Info</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>খোলা সময়: সকাল ৮টা – সন্ধ্যা ৬টা</li>
+            <li>প্রবেশ ফি: ফ্রি</li>
+            <li>পরিবার ও বন্ধুদের জন্য উপযোগী</li>
+            <li>ফটোগ্রাফির জন্য আদর্শ স্থান</li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+          <p class="text-sm text-gray-700">Circuit House চট্টগ্রামের ঐতিহ্যবাহী স্থাপত্যের একটি চমৎকার উদাহরণ। প্রাকৃতিক দৃশ্য এবং স্থাপত্যের সমন্বয়ে পর্যটকরা এখানে শান্ত সময় কাটাতে পারেন।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">ইতিহাস</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Circuit House চট্টগ্রামের ব্রিটিশ ঔপনিবেশিক স্থাপত্যের অংশ। এটি প্রশাসনিক কাজে ব্যবহৃত হত এবং বর্তমানে পর্যটকদের জন্য খোলা। স্থাপত্য ও প্রাকৃতিক পরিবেশ একত্রে ভিজিটরদের মনোহর অভিজ্ঞতা প্রদান করে।
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importance -->
+    <section id="importance" class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">গুরুত্ব</h2>
+        <div class="glass p-8 rounded-3xl shadow text-gray-700">
+          <ul class="list-disc list-inside space-y-3 text-lg">
+            <li>ঐতিহাসিক ও স্থাপত্যগত গুরুত্বপূর্ণ স্থান।</li>
+            <li>পর্যটক ও স্থানীয়দের জন্য বিনোদন ও শিক্ষামূলক।</li>
+            <li>প্রাকৃতিক সৌন্দর্য ও শান্ত পরিবেশের জন্য বিখ্যাত।</li>
+            <li>পরিবার, বন্ধু ও শিক্ষার্থী ভ্রমণকারীদের জন্য উপযুক্ত।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-yellow-600">📸 Gallery</h2>
+        <div class="swiper mySwiper relative" aria-label="Circuit House gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover">
+              <a href="../../images/Chattogram/Circuit-House/circuit-house.jpg" class="glightbox" data-gallery="circuit" data-title="Circuit House Front">
+                <img src="../../images/Chattogram/Circuit-House/circuit-house.jpg" alt="Circuit House Front" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover">
+              <a href="../../images/Chattogram/Circuit-House/circuit-house2.jpg" class="glightbox" data-gallery="circuit" data-title="Courtyard">
+                <img src="../../images/Chattogram/Circuit-House/circuit-house2.jpg" alt="Courtyard" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+            <div class="swiper-slide bg-white rounded-3xl shadow-lg p-6 card-hover">
+              <a href="../../images/Chattogram/Circuit-House/circuit-house3.jpg" class="glightbox" data-gallery="circuit" data-title="Garden View">
+                <img src="../../images/Chattogram/Circuit-House/circuit-house3.jpg" alt="Garden View" loading="lazy" class="rounded-xl mb-4 w-full h-56 object-cover" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev" aria-hidden="true"></div>
+          <div class="swiper-button-next" aria-hidden="true"></div>
+          <div class="swiper-pagination mt-6" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Tips / Safety -->
+    <section id="visit" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">ভ্রমণ টিপস & Safety</h2>
+        <div class="glass rounded-3xl p-8 shadow text-gray-700 space-y-3">
+          <ul class="list-disc list-inside">
+            <li>পর্যটকদের জন্য পথনির্দেশ ও নিরাপত্তা নির্দেশাবলী মানা জরুরি।</li>
+            <li>প্রকৃতির সৌন্দর্য উপভোগ করুন কিন্তু কোনো সম্পত্তি ক্ষতি করবেন না।</li>
+            <li>সকালে বা সন্ধ্যায় ভ্রমণ করলে শান্ত ও সুন্দর পরিবেশ উপভোগ করা যায়।</li>
+            <li>পরিবার ও বন্ধুদের সঙ্গে নিরাপদ ভ্রমণ করুন।</li>
+            <li>প্রয়োজনমত পানি ও হালকা খাবার সঙ্গে রাখুন।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Spots -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-yellow-600">আশেপাশের দর্শনীয় স্থান</h2>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Foy's Lake</h4>
+            <p class="text-sm text-gray-600">প্রাকৃতিক লেক ও বিনোদন পার্ক।</p>
+            <a href="../chattogram/foys-lake.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Bater Hill</h4>
+            <p class="text-sm text-gray-600">চট্টগ্রামের পাহাড়ি সৌন্দর্য।</p>
+            <a href="../chattogram/batar-hill.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+          <div class="bg-white p-5 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Patenga Beach</h4>
+            <p class="text-sm text-gray-600">সমুদ্র সৈকতের শান্ত পরিবেশ।</p>
+            <a href="../chattogram/patenga-beach.html" class="text-sm text-blue-600 mt-3 inline-block">আরও জানো →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels -->
+    <section id="hotels" class="py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-8">Circuit House এর কাছে জনপ্রিয় হোটেল</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/123456789.jpg" alt="Hotel Sea Crown" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Hotel Sea Crown</h3>
+              <p class="text-gray-600">Circuit House থেকে ৫ মিনিটের ড্রাইভে। ফ্রি ওয়াইফাই, সুইমিং পুল।</p>
+              <a href="https://www.booking.com/hotel/bd/sea-crown.html" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/987654321.jpg" alt="Hotel Agrabad" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Hotel Agrabad</h3>
+              <p class="text-gray-600">Circuit House থেকে ১০ মিনিটের ড্রাইভ। ফ্রি ব্রেকফাস্ট ও ওয়াইফাই।</p>
+              <a href="https://www.booking.com/hotel/bd/agrabad.html" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/112233445.jpg" alt="Radisson Blu Chattogram Bay View" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold text-gray-800">Radisson Blu Chattogram Bay View</h3>
+              <p class="text-gray-600">Circuit House থেকে ১৫ মিনিটের ড্রাইভ। ৩টি রেস্টুরেন্ট, আউটডোর পুল।</p>
+              <a href="https://www.booking.com/hotel/bd/radisson-blu-chattogram-bay-view.html" target="_blank" class="mt-4 inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.8012!3d22.3315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCircuit+House+Chattogram!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Circuit House map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="container mx-auto px-6 text-center space-y-2">
+      <p>&copy; 2025 ExploreBangla — All rights reserved</p>
+      <p>Follow us: 
+        <a href="#" class="text-yellow-400 hover:underline">Facebook</a> | 
+        <a href="#" class="text-yellow-400 hover:underline">Instagram</a> | 
+        <a href="#" class="text-yellow-400 hover:underline">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 3000, disableOnInteraction: false }
+    });
+
+    const lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chattogram — ExploreBangla</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { scroll-padding-top: 96px; }
+    .glow-hover:hover { box-shadow: 0 0 20px rgba(255, 200, 0, 0.3); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full h-20 md:h-24 z-50 bg-white/80 backdrop-blur-md shadow transition-all">
+    <div class="container mx-auto h-full px-4 flex items-center justify-between">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" alt="ExploreBangla" class="h-12 w-auto object-contain">
+        <span class="font-semibold text-lg md:text-xl">ExploreBangla</span>
+      </a>
+
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+        <li><a href="../../index.html" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="../../about.html" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="../../divisions.html" class="text-blue-600 font-medium">Divisions</a></li>
+        <li><a href="../../contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+      </ul>
+
+      <button id="menu-btn" class="md:hidden p-2 rounded hover:bg-gray-100">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+      <div class="px-4 py-3 flex flex-col gap-2 text-gray-700 font-medium">
+        <a href="../../index.html" class="py-2 hover:text-blue-600">Home</a>
+        <a href="../../about.html" class="py-2 hover:text-blue-600">About</a>
+        <a href="../../divisions.html" class="py-2 text-blue-600">Divisions</a>
+        <a href="../../contact.html" class="py-2 hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+ <!-- HERO -->
+<header class="relative w-full mt-20 md:mt-24">
+  <div class="relative h-[440px] md:h-[520px] lg:h-[640px] bg-cover bg-center bg-no-repeat rounded-b-xl overflow-hidden"
+       style="background-image: url('../../images/Chattogram/hero.jpg');">
+    
+    <!-- Overlay: reduce opacity for clearer image -->
+    <div class="absolute inset-0 bg-black/20 md:bg-black/30"></div>
+    
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-3 drop-shadow-lg">Welcome to Chattogram</h1>
+      <p class="text-base sm:text-lg md:text-2xl text-white/90 mb-6 max-w-2xl">সাগর, পাহাড় ও ঐতিহ্যের মিলিত শহর</p>
+      
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="../../divisions.html" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105">
+          Back to Divisions
+        </a>
+        <a href="#places" class="border border-white text-white px-6 py-3 rounded-lg hover:bg-white/10 transition transform hover:scale-105">
+          Jump to Places
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- INTRO -->
+  <section class="py-16 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">Chattogram Division</h2>
+      <p class="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed">
+        চট্টগ্রাম বাংলাদেশের একটি গুরুত্বপূর্ণ বন্দর নগরী। এখানে রয়েছে পাহাড়, নদী, সাগর ও ঐতিহাসিক স্থাপনাসমূহ। প্রকৃতি ও সংস্কৃতির মিলনে চট্টগ্রাম একটি আকর্ষণীয় পর্যটন কেন্দ্র।
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <section class="text-center mb-12">
+    <div class="flex flex-wrap justify-center gap-4">
+      <button data-category="all" class="filter-btn bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold">All</button>
+      <button data-category="beach" class="filter-btn bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold">Beaches</button>
+      <button data-category="hill" class="filter-btn bg-green-400 hover:bg-green-500 text-white px-4 py-2 rounded-lg font-semibold">Hills</button>
+      <button data-category="historical" class="filter-btn bg-pink-400 hover:bg-pink-500 text-white px-4 py-2 rounded-lg font-semibold">Historical</button>
+    </div>
+  </section>
+
+  <!-- TOURIST SPOTS -->
+  <section id="places" class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+
+    <!-- 1. PATENGA BEACH -->
+    <a href="patenga-beach.html" class="block group" data-category="beach">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Patenga-Beach/patenga.jpg');"></div>
+        <div class="absolute inset-0 bg-blue-800/40 group-hover:bg-blue-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Patenga Beach</h3>
+          <p class="text-sm text-white/90 mb-2">সাগরের পাশে চট্টগ্রামের জনপ্রিয় সৈকত।</p>
+          <span class="text-blue-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 2. FOY'S LAKE -->
+    <a href="foys-lake.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Foys-Lake/foys.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Foy's Lake</h3>
+          <p class="text-sm text-white/90 mb-2">প্রাকৃতিক সৌন্দর্য এবং বিনোদনের জন্য জনপ্রিয় স্থান।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 3. KAPTIA RESERVOIR -->
+    <a href="kaptai-reservoir.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Kaptai/kaptai.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Kaptai Reservoir</h3>
+          <p class="text-sm text-white/90 mb-2">চট্টগ্রামের বড় জলাধার, নৌকা ভ্রমণের জন্য উপযুক্ত।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 4. CIRCUIT HOUSE -->
+    <a href="circuit-house.html" class="block group" data-category="historical">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Circuit-House/circuit.jpg');"></div>
+        <div class="absolute inset-0 bg-pink-800/40 group-hover:bg-pink-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Circuit House</h3>
+          <p class="text-sm text-white/90 mb-2">ঐতিহাসিক স্থাপত্য এবং প্রশাসনিক কেন্দ্র।</p>
+          <span class="text-pink-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 5. FATEHGANJ BEACH -->
+    <a href="fatehganj-beach.html" class="block group" data-category="beach">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Fatehganj/fatehganj.jpg');"></div>
+        <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Fatehganj Beach</h3>
+          <p class="text-sm text-white/90 mb-2">সাগরের নৈসর্গিক দৃশ্য উপভোগের জন্য পরিচিত।</p>
+          <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 6. CHANDRIMA LAKE -->
+    <a href="chandrima-lake.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Chandrima-Lake/chandrima.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Chandrima Lake</h3>
+          <p class="text-sm text-white/90 mb-2">শান্ত পরিবেশ এবং নৌকা ভ্রমণের জন্য উপযুক্ত।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 7. AGRABAD JETTY -->
+    <a href="agrabad-jetty.html" class="block group" data-category="historical">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Agrabad-Jetty/agrabad.jpg');"></div>
+        <div class="absolute inset-0 bg-pink-800/40 group-hover:bg-pink-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Agrabad Jetty</h3>
+          <p class="text-sm text-white/90 mb-2">প্রাচীন বন্দর এলাকা ও ঐতিহাসিক স্থাপনা।</p>
+          <span class="text-pink-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 8. NAFRADI FALLS -->
+    <a href="nafradi-falls.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Nafradi-Falls/nafradi.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Nafradi Falls</h3>
+          <p class="text-sm text-white/90 mb-2">পাহাড়ি ঝর্ণা এবং নৈসর্গিক দৃশ্যের জন্য বিখ্যাত।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 9. WAGHLAH BEACH -->
+    <a href="waghlah-beach.html" class="block group" data-category="beach">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Waghlah-Beach/waghlah.jpg');"></div>
+        <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Waghlah Beach</h3>
+          <p class="text-sm text-white/90 mb-2">পরিবারসহ ভ্রমণের জন্য সুন্দর সৈকত।</p>
+          <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 10. RAMU MARKET -->
+    <a href="ramu-market.html" class="block group" data-category="historical">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Ramu-Market/ramu.jpg');"></div>
+        <div class="absolute inset-0 bg-pink-800/40 group-hover:bg-pink-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Ramu Market</h3>
+          <p class="text-sm text-white/90 mb-2">ঐতিহ্যবাহী স্থানীয় বাজার ও সাংস্কৃতিক কেন্দ্র।</p>
+          <span class="text-pink-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 11. KUAKATA POINT -->
+    <a href="kuakata-point.html" class="block group" data-category="beach">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Kuakata/kuakata.jpg');"></div>
+        <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Kuakata Point</h3>
+          <p class="text-sm text-white/90 mb-2">সাগর ও সূর্যোদয়ের সুন্দর দৃশ্য।</p>
+          <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 12. MAHARANI HILL -->
+    <a href="maharani-hill.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Maharani-Hill/maharani.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Maharani Hill</h3>
+          <p class="text-sm text-white/90 mb-2">পাহাড়ি সুন্দর দৃশ্য এবং ট্রেকিং পয়েন্ট।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 13. FOTI HILL -->
+    <a href="foti-hill.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Foti-Hill/foti.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Foti Hill</h3>
+          <p class="text-sm text-white/90 mb-2">প্রাকৃতিক দৃশ্যের জন্য জনপ্রিয় পাহাড়।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 14. MOHADEVPUR BEACH -->
+    <a href="mohadevpur-beach.html" class="block group" data-category="beach">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Mohadevpur-Beach/mohadevpur.jpg');"></div>
+        <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Mohadevpur Beach</h3>
+          <p class="text-sm text-white/90 mb-2">শান্ত সৈকত এবং নৈসর্গিক দৃশ্য।</p>
+          <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 15. AGRABAD PARK -->
+    <a href="agrabad-park.html" class="block group" data-category="historical">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Agrabad-Park/agrabadpark.jpg');"></div>
+        <div class="absolute inset-0 bg-pink-800/40 group-hover:bg-pink-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Agrabad Park</h3>
+          <p class="text-sm text-white/90 mb-2">ঐতিহাসিক পার্ক এবং শিথিল পরিবেশ।</p>
+          <span class="text-pink-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 16. WAR Cemetery -->
+    <a href="war-cemetery.html" class="block group" data-category="historical">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/War-Cemetery/war.jpg');"></div>
+        <div class="absolute inset-0 bg-pink-800/40 group-hover:bg-pink-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">War Cemetery</h3>
+          <p class="text-sm text-white/90 mb-2">ঐতিহাসিক স্মৃতিসৌধ।</p>
+          <span class="text-pink-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 17. MURADPUR MARKET -->
+    <a href="muradpur-market.html" class="block group" data-category="historical">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Muradpur-Market/muradpur.jpg');"></div>
+        <div class="absolute inset-0 bg-pink-800/40 group-hover:bg-pink-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Muradpur Market</h3>
+          <p class="text-sm text-white/90 mb-2">চট্টগ্রামের ব্যস্ততম ঐতিহ্যবাহী বাজার।</p>
+          <span class="text-pink-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 18. BATIKA BEACH -->
+    <a href="batika-beach.html" class="block group" data-category="beach">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Batika-Beach/batika.jpg');"></div>
+        <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Batika Beach</h3>
+          <p class="text-sm text-white/90 mb-2">স্নান ও সূর্যাস্ত উপভোগের জন্য বিখ্যাত।</p>
+          <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 19. MEGHNA RIVER VIEW -->
+    <a href="meghna-river.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Meghna-River/meghna.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Meghna River View</h3>
+          <p class="text-sm text-white/90 mb-2">নদীর শান্তিপূর্ণ দৃশ্য এবং প্রকৃতি উপভোগের জন্য।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+
+    <!-- 20. BATAR HILL -->
+    <a href="batar-hill.html" class="block group" data-category="hill">
+      <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Batar-Hill/batar.jpg');"></div>
+        <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+        <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+          <h3 class="text-xl font-semibold mb-2">Batar Hill</h3>
+          <p class="text-sm text-white/90 mb-2">পাহাড়ি চূড়া এবং নৈসর্গিক সৌন্দর্য।</p>
+          <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+        </div>
+      </article>
+    </a>
+<!-- 21. COX'S BAZAR -->
+<a href="coxs-bazar.html" class="block group" data-category="beach">
+  <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Coxs-Bazar/coxsbazar.jpg');" loading="lazy"></div>
+    <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+    <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+      <h3 class="text-xl font-semibold mb-2">Cox’s Bazar</h3>
+      <p class="text-sm text-white/90 mb-2">বিশ্বের দীর্ঘতম সমুদ্র সৈকত, পর্যটকদের জন্য স্বর্গ।</p>
+      <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+    </div>
+  </article>
+</a>
+
+<!-- 22. SAINT MARTIN -->
+<a href="saint-martin.html" class="block group" data-category="beach">
+  <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Saint-Martin/saintmartin.jpg');" loading="lazy"></div>
+    <div class="absolute inset-0 bg-yellow-800/40 group-hover:bg-yellow-700/40 transition-all"></div>
+    <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+      <h3 class="text-xl font-semibold mb-2">Saint Martin</h3>
+      <p class="text-sm text-white/90 mb-2">বাংলাদেশের একমাত্র প্রবাল দ্বীপ, প্রাকৃতিক সৌন্দর্যের ঠিকানা।</p>
+      <span class="text-yellow-300 font-medium hover:underline text-sm">Explore Details →</span>
+    </div>
+  </article>
+</a>
+<!-- 23. AMIAKHUM FALLS -->
+<a href="amiakhum.html" class="block group" data-category="hill">
+  <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Amiakhum/amiakhum.jpg');" loading="lazy"></div>
+    <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+    <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+      <h3 class="text-xl font-semibold mb-2">Amiakhum Falls</h3>
+      <p class="text-sm text-white/90 mb-2">Bandarban এর অদূরপ্রসারিত ঝর্ণা, প্রকৃতিপ্রেমীদের জন্য আকর্ষণীয়।</p>
+      <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+    </div>
+  </article>
+</a>
+
+<!-- 24. DEBOTAKHUM FALLS -->
+<a href="debotakhum.html" class="block group" data-category="hill">
+  <article class="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('../../images/Chattogram/Debotakhum/debotakhum.jpg');" loading="lazy"></div>
+    <div class="absolute inset-0 bg-green-800/40 group-hover:bg-green-700/40 transition-all"></div>
+    <div class="relative z-10 p-6 text-white h-60 flex flex-col justify-end">
+      <h3 class="text-xl font-semibold mb-2">Debotakhum Falls</h3>
+      <p class="text-sm text-white/90 mb-2">Bandarban এর একটি অদ্ভুত ঝর্ণা, নৈসর্গিক সৌন্দর্যে ভরা।</p>
+      <span class="text-green-300 font-medium hover:underline text-sm">Explore Details →</span>
+    </div>
+  </article>
+</a>
+
+  </section>
+
+  <!-- 🚆 How to Reach -->
+  <section class="py-16 bg-blue-50 text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6 text-blue-700">🚆 ঢাকা থেকে চট্টগ্রাম যাওয়ার উপায়</h3>
+    <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+      ঢাকা থেকে চট্টগ্রাম যেতে পারেন ট্রেন, বাস অথবা বিমানে।  
+      <br><br>
+      <strong>🚆 ট্রেন:</strong> সুবর্ণ এক্সপ্রেস, তূর্ণা নিশিতা, মেঘনা এক্সপ্রেস — সময় লাগে প্রায় ৬ ঘন্টা।<br>
+      <strong>🚌 বাস:</strong> Ena, Hanif, Green Line (ভাড়া: ৳700–৳1500)।<br>
+      <strong>✈️ বিমান:</strong> Biman Bangladesh, US-Bangla, Novoair (সময়: ~১ ঘন্টা)।
+    </p>
+  </section>
+
+  <!-- 🏨 Hotel Info -->
+  <section class="bg-white py-16" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-center text-green-700">🏨 থাকার ব্যবস্থা</h3>
+      <div class="grid md:grid-cols-3 gap-6 text-left">
+        <div class="p-6 bg-green-50 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-lg mb-2">Hotel Agrabad</h4>
+          <p>🌟 4-star | 🏷️ ৳6000–৳9000 / রাত</p>
+          <p class="text-gray-600 text-sm mt-2">চট্টগ্রাম শহরের কেন্দ্রস্থলে অবস্থিত, সেরা সার্ভিস।</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-lg mb-2">Hotel Peninsula</h4>
+          <p>🌟 3-star | 🏷️ ৳3500–৳5000 / রাত</p>
+          <p class="text-gray-600 text-sm mt-2">শান্ত পরিবেশে আধুনিক সুযোগ-সুবিধা।</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-lg mb-2">Hotel Well Park</h4>
+          <p>🌟 3-star | 🏷️ ৳4000–৳6000 / রাত</p>
+          <p class="text-gray-600 text-sm mt-2">পর্যটকদের জন্য আরামদায়ক পরিবেশ।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌿 Travel Tips -->
+  <section class="bg-green-100 py-16 text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-green-800 mb-6">🧭 ভ্রমণ টিপস</h3>
+    <ul class="max-w-2xl mx-auto text-gray-700 text-left leading-relaxed space-y-2">
+      <li>🌅 কক্সবাজারে সূর্যাস্ত দেখার সময় ক্যামেরা সাথে রাখুন।</li>
+      <li>🏞️ সাজেক ভ্যালিতে সকালে উঠেই সূর্যোদয় উপভোগ করুন।</li>
+      <li>🚤 ফয়’স লেকে নৌকা ভ্রমণ করলে লাইফজ্যাকেট ব্যবহার করুন।</li>
+      <li>🍤 স্থানীয় খাবারের মধ্যে সীফুড অবশ্যই ট্রাই করুন।</li>
+      <li>💧 পর্যাপ্ত পানি ও সানস্ক্রিন সঙ্গে রাখুন।</li>
+    </ul>
+  </section>
+
+
+
+  <!-- SCRIPT: MOBILE MENU + FILTER -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Filter Buttons
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const spots = document.querySelectorAll('#places a');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.dataset.category;
+        spots.forEach(spot => {
+          if(category === 'all' || spot.dataset.category === category) {
+            spot.classList.remove('hidden');
+          } else {
+            spot.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+   <!-- ⚙️ AOS Animation Init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- 🌎 Footer -->
+  <footer class="py-10 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-gray-300 text-center">
+    <p class="text-lg font-semibold mb-2">🌏 ExploreBangla</p>
+    <p class="text-sm">বাংলাদেশের প্রতিটি সৌন্দর্যের গল্প — ExploreBangla এর সাথে।</p>
+    <p class="mt-4 text-gray-400 text-xs">&copy; 2025 ExploreBangla. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrabad Jetty — ExploreBangla</title>
+
+  <meta name="description" content="Agrabad Jetty — চট্টগ্রামের প্রাণকেন্দ্রের একটি গুরুত্বপূর্ণ জেটি; বন্দরবন্দরী কার্যক্রম, সমুদ্রদৃশ্য ও যাত্রাবাহিক সুবিধার জন্য পরিচিত।">
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <meta property="og:title" content="Agrabad Jetty — ExploreBangla">
+  <meta property="og:description" content="Agrabad Jetty — চট্টগ্রাম বন্দরনগরির একটি গুরুত্বপূর্ণ জেটি; পর্যটন ও স্থানীয় জীবিকার জন্য গুরুত্বপূর্ণ।">
+  <meta property="og:image" content="../../images/Chattogram/Agrabad-Jetty/agrabad-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{--accent:#FF7A59}
+    html{scroll-behavior:smooth}
+    body{scroll-padding-top:84px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#0b2330}
+    .font-playfair{font-family:'Playfair Display',serif}
+    .fade-in{animation:fadeIn 1s ease-in-out}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .glass{background:linear-gradient(135deg,rgba(255,255,255,0.94),rgba(255,255,255,0.9));backdrop-filter:blur(6px)}
+    .card-hover{transition:transform .22s ease,box-shadow .22s ease}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,0.08)}
+    .hero-overlay{background: linear-gradient(180deg, rgba(3,7,18,0.35), rgba(3,7,18,0.0));}
+    .accent{color:var(--accent)}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristAttraction",
+    "name":"Agrabad Jetty",
+    "description":"Agrabad Jetty — চট্টগ্রামের গুরুত্বপূর্ণ জেটি; বন্দর, জাহাজ ও সমুদ্রদৃশ্যের জন্য পরিচিত।",
+    "image":["../../images/Chattogram/Agrabad-Jetty/agrabad-hero.jpg"],
+    "address":{"@type":"PostalAddress","addressLocality":"Chattogram","addressCountry":"BD"}
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-amber-50 via-white to-sky-50">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="ExploreBangla home">
+        <img src="../../images/logo/logo.png" class="h-10 w-auto" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav aria-label="Breadcrumb" class="hidden md:block">
+          <ol class="flex items-center text-sm text-gray-600 space-x-2">
+            <li><a href="../../index.html" class="hover:underline">Home</a></li>
+            <li>›</li>
+            <li><a href="../chattogram/index.html" class="hover:underline">Chattogram</a></li>
+            <li>›</li>
+            <li class="font-medium">Agrabad Jetty</li>
+          </ol>
+        </nav>
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-orange-400 hover:bg-orange-500 rounded-lg text-white font-semibold">⬅ ফিরে যান</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mt-16">
+    <div class="h-[480px] bg-cover bg-center rounded-b-3xl shadow-inner relative" style="background-image: url('../../images/Chattogram/Agrabad-Jetty/agrabad-hero.jpg');">
+      <div class="absolute inset-0 hero-overlay rounded-b-3xl"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 text-white">
+        <h1 class="font-playfair text-4xl md:text-5xl font-extrabold drop-shadow-lg">Agrabad Jetty</h1>
+        <p class="mt-3 text-md md:text-lg max-w-3xl">চট্টগ্রামের বন্দরনগরীর প্রাণকেন্দ্র — জাহাজ, জেটি এবং সমুদ্রদৃশ্য উপভোগের আদর্শ স্থান।</p>
+        <div class="mt-5 flex gap-3">
+          <a href="#overview" class="px-5 py-2 bg-orange-400 hover:bg-orange-500 rounded-full font-semibold text-white shadow">Quick facts</a>
+          <a href="#history" class="px-5 py-2 border border-white/30 rounded-full font-semibold text-white/90 hover:bg-white/10">ইতিহাস</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Quick facts -->
+    <section id="overview" class="py-12 -mt-6 fade-in">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Quick facts</h3>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li><strong>নাম:</strong> Agrabad Jetty</li>
+              <li><strong>অবস্থান:</strong> চট্টগ্রাম (Agrabad)</li>
+              <li><strong>ধরন:</strong> বন্দর জেটি / যাত্রাবাহী ছাউনি</li>
+              <li><strong>বিশেষত্ব:</strong> জাহাজ/কন্টেইনার কার্যক্রম ও সমুদ্রদৃশ্য</li>
+            </ul>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">সংক্ষিপ্ত বিবরণ</h3>
+            <p class="text-sm text-gray-700">Agrabad Jetty চট্টগ্রাম বন্দরনগরীর একটি গুরুত্বপূর্ণ জেটি যেখানে ছোট বড় বাণিজ্যিক এবং যাত্রীবাহী নৌযান এসে যায়। শহরের কেন্দ্রিক অবস্থানের কারণে এটি স্থানীয় ট্রেড ও পরিবহণে গুরুত্বপূর্ণ ভূমিকা রাখে।</p>
+          </div>
+
+          <div class="glass p-6 rounded-2xl shadow">
+            <h3 class="text-xl font-semibold mb-2">Visitor info</h3>
+            <p class="text-sm text-gray-700">সাধারণ দর্শনার্থীরা দিনে সময় দিয়ে এখানে আগমন করতে পারেন; বন্দর এলাকায় নিরাপত্তা ও কার্যক্রম বিবেচনা করে নির্দিষ্ট এলাকাতে প্রবেশ সীমিত থাকতে পারে।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">ইতিহাস</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Agrabad এলাকা ও তার জেটি চট্টগ্রামের বন্দর আর শহরতলীর বর্ধিত উন্নয়নের সাথে যুক্ত। ইতিহাসগতভাবে Agrabad ছিল ব্যবসা-বাণিজ্যের কেন্দ্র হিসেবে পরিচিত; ১৯শ শতাব্দীর পর থেকেই বন্দরগত কার্যক্রম ও অবকাঠামো বাড়তে শুরু করে।
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mt-4">
+            স্বাধীনতাকালের পর থেকে Agrabad উন্নয়ন পেয়ে আধুনিক বাণিজ্যিক কেন্দ্রে পরিণত হয়েছে — এতে অফিস, ব্যাংক, হোটেল ও বন্দর-সংক্রান্ত স্থাপনা চলে এসেছে। Agrabad Jetty শহরের অর্থনৈতিক কর্মকাণ্ডে গুরুত্বপূর্ণ যোগান দেয়।
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Importance -->
+    <section id="importance" class="py-16 fade-in">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">গুরুত্ব</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li>Agrabad Jetty চট্টগ্রামের বন্দর কার্যক্রমকে সহায়তা করে এবং স্থানীয় ব্যবসায়িক কর্মকাণ্ডে অবদান রাখে।</li>
+            <li>এটি পর্যটকদের জন্য শহরের সমুদ্রদৃশ্য দেখার সহজ পথ।</li>
+            <li>জেটি সংলগ্ন এলাকায় হোটেল, রেস্টুরেন্ট ও বাণিজ্যিক সহায়ক পরিষেবা পাওয়া যায়।</li>
+            <li>নৌপরিবহন ও ছোট বাণিজ্যিক চলাচলের জন্য গুরুত্বপূর্ণ স্থান।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color:var(--accent)">Activities</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Harbor Views</h4>
+            <p class="text-gray-700 text-sm">জেটি থেকে বন্দরের দর্শনীয় দৃশ্য দেখা যায় — কন্টেইনার শিপ, ট্রলারে ভরা জাহাজ এবং সমুদ্র সীমানা।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Photography</h4>
+            <p class="text-gray-700 text-sm">বন্দর এবং শহরের মিশ্র দৃশ্য ফটোগ্রাফির জন্য আকর্ষণীয়; বিশেষ করে সূর্যাস্তের সময় ছবি তোলার মান ভাল হয়।</p>
+          </div>
+          <div class="glass p-6 rounded-2xl shadow card-hover">
+            <h4 class="font-semibold mb-2">Boat Trip (Local)</h4>
+            <p class="text-gray-700 text-sm">কিছু নির্দিষ্ট সময় ও জায়গায় স্থানীয় নৌকা ভাড়া করে সংক্ষিপ্ত সমুদ্র ভ্রমণ করা যেতে পারে (নিরাপত্তা নির্দেশনা মেনে)।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Guide -->
+    <section id="travel" class="py-16 fade-in bg-gray-50">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 accent">যেভাবে যাওয়া যায়</h2>
+        <div class="glass p-8 rounded-3xl shadow">
+          <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+            <li><strong>ঢাকা থেকে:</strong> গাড়ী/বাস: প্রায় ৬-৭ ঘণ্টা; বিমান: ঢাকা → চট্টগ্রাম (১ ঘন্টা), তারপর স্থানীয় পরিবহন।</li>
+            <li><strong>চট্টগ্রাম শহর থেকে:</strong> Agrabad এলাকায় সহজেই taxi/ride-share/personal car দিয়ে পৌঁছা যায়।</li>
+            <li><strong>টিপ:</strong> বন্দর এলাকায় নিরাপত্তার কারণে থাকলে নির্দেশিকা মেনে চলুন; সকালে বা বিকেলে ঘোরার সময় বেশি উপভোগ্য।</li>
+            <li><strong>Best time:</strong> অক্টোবর থেকে মার্চ (শীতকালীন পরিষ্কার আকাশ ও তাজা বাতাস)।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby Hotels / Stay -->
+    <section id="hotels" class="py-16 fade-in bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">থাকার ব্যবস্থা (নজদিক)</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="../../images/Chattogram/Hotels/hotel-agrabad.jpg" alt="Hotel Agrabad" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hotel Agrabad</h3>
+              <p class="text-gray-600">Agrabad Commercial Area, চট্টগ্রাম — আধুনিক সুবিধা ও কেন্দ্রীয় অবস্থান।</p>
+              <a href="https://www.booking.com/hotel/bd/po-hotel-agrabad-chittagong.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="../../images/Chattogram/Hotels/peninsula.jpg" alt="The Peninsula Chittagong" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">The Peninsula Chittagong</h3>
+              <p class="text-gray-600">GEC Circle নিকটবর্তী — রুফটপ পুল ও আধুনিক সম্মত সুবিধা।</p>
+              <a href="https://www.booking.com/hotel/bd/the-peninsula-chittagong-limited.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="../../images/Chattogram/Hotels/tower-inn.jpg" alt="Hotel Tower Inn" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold">Hotel Tower Inn</h3>
+              <p class="text-gray-600">শহরের কেন্দ্রে—বাজেট-মিড রেঞ্জ সুবিধা; সহজে অ্যাক্সেস।</p>
+              <a href="https://www.booking.com/hotel/bd/po-hotel-tower-inn-chittagong-chittagong.html" target="_blank" rel="noopener" class="mt-3 inline-block bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold text-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 accent">Gallery</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <img src="../../images/Chattogram/Agrabad-Jetty/agrabad-1.jpg" alt="Agrabad jetty view" class="w-full h-44 object-cover rounded-lg shadow">
+          <img src="../../images/Chattogram/Agrabad-Jetty/agrabad-2.jpg" alt="Harbor activity" class="w-full h-44 object-cover rounded-lg shadow">
+          <img src="../../images/Chattogram/Agrabad-Jetty/agrabad-3.jpg" alt="Sunset over port" class="w-full h-44 object-cover rounded-lg shadow">
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-12 bg-gray-100 fade-in">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-semibold text-center mb-4">মানচিত্র</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg">
+          <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9!2d91.8135!3d22.3378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b0a1a2b3c5%3A0xabcdef1234567890!2sAgrabad%20Jetty!5e0!3m2!1sbn!2sbd!4v1690000000000!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Agrabad Jetty map"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t">
+    &copy; 2025 ExploreBangla — Agrabad Jetty
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const ifr = document.querySelector('iframe[data-src]');
+      if(ifr && !ifr.src){ ifr.src = ifr.dataset.src; }
+    });
+  </script>
+</body>
+</html>

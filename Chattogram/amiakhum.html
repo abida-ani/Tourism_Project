@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amiakhum — ExploreBangla</title>
+  <meta name="description" content="Amiakhum — বান্দরবানের পাহাড়ি অঞ্চলে অবস্থিত অপূর্ব প্রাকৃতিক জলপ্রপাত ও ট্রেকিং গন্তব্য। ভ্রমণ নির্দেশিকা, খরচ, থাকার ব্যবস্থা, সেফটি টিপস ও গ্যালারি।" />
+  <link rel="icon" href="../../images/logo/favicon.png" />
+
+  <!-- Tailwind + Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Swiper & Lightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    :root{ --accent: #FFB400; }
+    body{ font-family: 'Inter',sans-serif; scroll-behavior: smooth; }
+    .font-playfair{ font-family: 'Playfair Display', serif; }
+    .glass{ background: rgba(255,255,255,0.86); backdrop-filter: blur(6px); }
+    .card-hover{ transition: all .25s ease; }
+    .card-hover:hover{ transform: translateY(-6px); box-shadow: 0 12px 35px rgba(0,0,0,.08); }
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Amiakhum Waterfall",
+    "description": "A scenic waterfall and trekking destination in Bandarban, Bangladesh.",
+    "image": [
+      "../../images/Chattogram/Amiakhum/amiakhum1.jpg"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bandarban",
+      "addressRegion": "Chattogram Division",
+      "addressCountry": "BD"
+    }
+  }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-gray-800">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow z-50" role="navigation" aria-label="প্রধান নেভিগেশন">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="flex items-center gap-3">
+        <img src="../../images/logo/logo.png" class="h-10" alt="ExploreBangla logo" />
+        <span class="font-semibold text-lg">ExploreBangla</span>
+      </a>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="../chattogram/index.html" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-lg font-semibold text-black">⬅ ফিরে যান</a>
+        <a href="#booking" class="px-4 py-2 border border-yellow-400 rounded-lg font-medium">রিজার্ভেশন</a>
+      </div>
+      <button class="md:hidden p-2 rounded-md" aria-expanded="false" aria-controls="mobile-menu" id="mobile-toggle">
+        <span class="sr-only">মেনু খুলুন</span>
+        <!-- simple hamburger -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="../chattogram/index.html" class="block py-2">পেছনে যান</a>
+      <a href="#booking" class="block py-2">রিজার্ভেশন</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative mt-16">
+    <div class="h-[520px] rounded-b-3xl bg-cover bg-center" style="background-image:url('../../images/Chattogram/Amiakhum/amiakhum1.jpg')" role="img" aria-label="Amiakhum waterfall">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center text-white h-full px-6">
+        <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">Amiakhum — বান্দরবানের লুকানো খাসিয়া খুম</h1>
+        <p class="mt-4 text-base md:text-lg max-w-2xl">রোমাঞ্চকর ট্রেক, পরম প্রাকৃতিক দৃশ্য এবং স্থানীয় সংস্কৃতির সংমিশ্রণ — একবার ঘুরে দেখলেই মুগ্ধ হবেন।</p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#itinerary" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-3 rounded-lg font-semibold">প্ল্যান দেখুন</a>
+          <a href="#gallery" class="inline-block bg-white/30 backdrop-blur px-5 py-3 rounded-lg font-medium">গ্যালারি দেখুন</a>
+        </div>
+
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-sm text-white/80">সর্বোত্তম সময়: জুলাই-মে (নগদ: স্থানীয় আবহাওয়া ও পথের অবস্থা যাচাই করুন)</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-10">
+
+    <!-- Quick facts + CTA -->
+    <section class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 items-start">
+      <div class="glass p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold text-yellow-600 mb-3">Quick facts</h3>
+        <ul class="text-gray-700 space-y-2">
+          <li><strong>অবস্থান:</strong> থানচি, বান্দরবান</li>
+          <li><strong>প্রবেশাধিকার:</strong> নৌকা + ট্রেক</li>
+          <li><strong>ট্রেকিং সময়:</strong> ৩–৪ ঘণ্টা (একজন প্রকারভেদে)</li>
+          <li><strong>কঠিনতা:</strong> মাঝারি — সঠিক জুতা ও গাইড প্রয়োজন</li>
+        </ul>
+      </div>
+
+      <div class="glass p-6 rounded-2xl md:col-span-2">
+        <h3 class="text-xl font-semibold text-yellow-600 mb-3">সংক্ষিপ্ত বিবরণ</h3>
+        <p class="text-gray-700 leading-relaxed">Amiakhum একটি পাহাড়ি খুম/জলপ্রপাত যেখানে আপনি ট্রেক, নৌকাযাত্রা ও স্থানীয় সংস্কৃতির সংস্পর্শে আসতে পারবেন। নির্বিঘ্ন ভ্রমণের জন্য স্থানীয় গাইড নেবেন এবং সেফটি গিয়ার সঙ্গে রাখবেন।</p>
+      </div>
+    </section>
+
+    <!-- About & Importance -->
+    <section class="py-10 bg-white">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+        <article class="glass p-8 rounded-3xl">
+          <h2 class="text-2xl font-bold text-yellow-600 mb-4">ইতিহাস</h2>
+          <p class="text-gray-700 leading-relaxed">Amiakhum জলপ্রপাত থানচির পাহাড়ি অঞ্চলে অবস্থিত। স্থানীয় জনজীবনে এটি রহস্যময়ভাবে মিশে আছে—খুমের সৃষ্টি ও লোককথা অঞ্চলের মানুষের মুখে মুখে চলে আসে।</p>
+        </article>
+        <aside class="glass p-8 rounded-3xl">
+          <h2 class="text-2xl font-bold text-yellow-600 mb-4">গুরুত্ব</h2>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>উত্তেজনাপূর্ণ ট্রেকিং রুট ও অ্যাডভেঞ্চার।</li>
+            <li>সামাজিক ও ইকোনমিক কাজে স্থানীয়দের সহায়তা করে।</li>
+            <li>প্রকৃতিপ্রেমীদের জন্য আদর্শ ফটোগ্রাফিক লোকেশন।</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Gallery (improved) -->
+    <section id="gallery" class="py-12 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-yellow-600 mb-6">📸 গ্যালারি</h2>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="../../images/Chattogram/Amiakhum/amiakhum1.jpg" class="glightbox" data-gallery="amiakhum"><img src="../../images/Chattogram/Amiakhum/amiakhum1.jpg" alt="Amiakhum view 1" class="rounded-2xl w-full h-64 object-cover" loading="lazy" srcset="../../images/Chattogram/Amiakhum/amiakhum1.jpg 800w" /></a></div>
+            <div class="swiper-slide"><a href="../../images/Chattogram/Amiakhum/amiakhum2.jpg" class="glightbox" data-gallery="amiakhum"><img src="../../images/Chattogram/Amiakhum/amiakhum2.jpg" alt="Amiakhum view 2" class="rounded-2xl w-full h-64 object-cover" loading="lazy" /></a></div>
+            <div class="swiper-slide"><a href="../../images/Chattogram/Amiakhum/amiakhum3.jpg" class="glightbox" data-gallery="amiakhum"><img src="../../images/Chattogram/Amiakhum/amiakhum3.jpg" alt="Amiakhum view 3" class="rounded-2xl w-full h-64 object-cover" loading="lazy" /></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-4">
+          <img src="../../images/Chattogram/Amiakhum/amiakhum1.jpg" alt="thumb1" class="w-full h-24 object-cover rounded-lg cursor-pointer" loading="lazy" onclick="openSlide(0)" />
+          <img src="../../images/Chattogram/Amiakhum/amiakhum2.jpg" alt="thumb2" class="w-full h-24 object-cover rounded-lg cursor-pointer" loading="lazy" onclick="openSlide(1)" />
+          <img src="../../images/Chattogram/Amiakhum/amiakhum3.jpg" alt="thumb3" class="w-full h-24 object-cover rounded-lg cursor-pointer" loading="lazy" onclick="openSlide(2)" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Must eat & Local Tips -->
+    <section class="py-10 bg-white">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div class="glass p-6 rounded-2xl card-hover">
+          <h3 class="text-xl font-semibold mb-2">🍛 স্থানীয় খাবার</h3>
+          <ul class="text-gray-700 space-y-2">
+            <li>হিল চিকেন ভাত — পাহাড়ি মসলা দিয়ে প্রস্তুত</li>
+            <li>বান্দরবান বাঁশের ভর্তা — মৌসুম অনুযায়ী পাওয়া যায়</li>
+            <li>চা ও ঝাল মুড়ি — ট্রেক শেষে উপভোগ করার জন্য সেরা</li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-2xl card-hover">
+          <h3 class="text-xl font-semibold mb-2">🔎 লোকাল টিপস</h3>
+          <p class="text-gray-700">গাইড সাথেই ট্রেক করুন, রাতে ছুটে বেড়াবেন না, এবং সবসময় পানি ও জরুরি ওষুধ সঙ্গে রাখুন। মোবাইল নেটওয়ার্ক সীমিত হতে পারে।</p>
+        </div>
+
+        <div class="glass p-6 rounded-2xl card-hover">
+          <h3 class="text-xl font-semibold mb-2">🧳 প্যাকিং চেকলিস্ট</h3>
+          <ul class="text-gray-700 space-y-1">
+            <li>ট্রেকিং বুট/স্ট্র্যাপ স্যান্ডেল</li>
+            <li>রেইনকোট/পানিরোধী ব্যাগ</li>
+            <li>প্রাথমিক চিকিৎসার কিট ও সানস্ক্রিন</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary & Cost Breakdown -->
+    <section id="itinerary" class="py-12 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-yellow-600 mb-8">🗺️ ট্যুর পরিকল্পনা ও খরচ (আনুমানিক)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="glass p-6 rounded-2xl">
+            <h3 class="text-xl font-semibold mb-3">নমুনা ইটিনারারি (১ দিন)</h3>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+              <li>সকাল: বান্দরবানে পৌঁছে স্থানীয় সেবা গ্রহণ</li>
+              <li>দুপুর: থানচি জীপে যাত্রা</li>
+              <li>বিকেল: নৌকা + ট্রেক শুরু</li>
+              <li>সন্ধ্যা: অ্যারো ফিরে এসে গেস্টহাউসে বিশ্রাম</li>
+            </ol>
+          </div>
+
+          <div class="glass p-6 rounded-2xl">
+            <h3 class="text-xl font-semibold mb-3">খরচ (একজন, আনুমানিক)</h3>
+            <table class="w-full text-left text-gray-700">
+              <tbody>
+                <tr><td>বাস (ঢাকা→বান্দরবান)</td><td class="text-right">৯০০–১২০০ টাকা</td></tr>
+                <tr><td>জীপ (বান্দরবান→থানচি)</td><td class="text-right">৬০০–৮০০ টাকা</td></tr>
+                <tr><td>নৌকা (থানচি→রেমাক্রি)</td><td class="text-right">৮০০–১০০০ টাকা</td></tr>
+                <tr class="font-semibold"><td>মোট (প্রায়)</td><td class="text-right">~৬০০০ টাকা (পর্যটনসম্ভাব্য অভিন্ন)</td></tr>
+              </tbody>
+            </table>
+            <p class="text-sm mt-3 text-gray-500">(নোট: এই খরচ সময় ও মৌসুম অনুযায়ী পরিবর্তিত হতে পারে — যাচাই করে বুকিং করুন)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotels (refreshed) -->
+    <section class="py-12 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-yellow-600 mb-8">🏨 থাকার ব্যবস্থা</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">Hotel Bandarban Hill Resort</h3>
+            <p class="text-gray-600 mb-2">ভাড়া: প্রতি রাত ৬৫০০–৭৫০০ টাকা</p>
+            <p class="text-gray-500 mb-4">পাহাড়ি পরিবেশ, সুসজ্জিত রুম।</p>
+            <a href="https://www.booking.com/hotel/bd/bandarban-hill-resort.html" target="_blank" class="text-yellow-600 hover:underline">Book</a>
+          </article>
+
+          <article class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">Hill View Hotel</h3>
+            <p class="text-gray-600 mb-2">ভাড়া: প্রতি রাত ২৫০০–৩৫০০ টাকা</p>
+            <p class="text-gray-500 mb-4">কনভেনিয়েন্ট লোকেশন ও খাওয়া দাওয়ার সুবিধা।</p>
+            <a href="https://www.agoda.com/hill-view-hotel-bandarban/hotel/bandarban.html" target="_blank" class="text-yellow-600 hover:underline">Book</a>
+          </article>
+
+          <article class="glass p-6 rounded-2xl card-hover">
+            <h3 class="text-xl font-semibold mb-2">Budget Guesthouses</h3>
+            <p class="text-gray-600 mb-2">ভাড়া: প্রতি রাত ৬০০–৯০০ টাকা</p>
+            <p class="text-gray-500 mb-4">সাশ্রয়ী ও নিরাপদ বিকল্প।</p>
+            <a href="https://www.booking.com/city/bd/bandarban.html" target="_blank" class="text-yellow-600 hover:underline">Search</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby spots -->
+    <section class="py-10 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-yellow-600 mb-6">🌄 নিকটবর্তী দর্শনীয় স্থান</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="font-semibold">Debotakhum</h3>
+            <p class="text-gray-600">নৌকায় ভ্রমণের জন্য জনপ্রিয় খুম।</p>
+            <a href="debotakhum.html" class="text-yellow-600 hover:underline">আরও দেখুন →</a>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="font-semibold">Nafakhum</h3>
+            <p class="text-gray-600">বাংলাদেশের অন্যতম বড় জলপ্রপাত।</p>
+            <a href="#" class="text-yellow-600 hover:underline">আরও দেখুন →</a>
+          </div>
+          <div class="glass p-6 rounded-2xl card-hover">
+            <h3 class="font-semibold">Remakri River</h3>
+            <p class="text-gray-600">নৌকায় যাত্রা মনোমুগ্ধকর।</p>
+            <a href="#" class="text-yellow-600 hover:underline">আরও দেখুন →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map + Accessibility -->
+    <section class="py-12 bg-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-2xl font-semibold mb-4 text-yellow-600">📍 মানচিত্র</h2>
+        <div class="rounded-3xl overflow-hidden shadow-lg">
+          <iframe title="Amiakhum location map" src="https://www.google.com/maps?q=Amiakhum%20Waterfall%20Bandarban&output=embed" width="100%" height="450" class="border-0" loading="lazy" aria-label="Google map showing Amiakhum"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-10 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-yellow-600 mb-6">❓ সাধারণ প্রশ্ন</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <details class="glass p-5 rounded-2xl"><summary class="font-semibold">টার্মস এবং গাইড কি প্রয়োজন?</summary><p class="mt-3 text-gray-700">হ্যাঁ — পথ অপরিচিত হওয়ায় স্থানীয় গাইড নেওয়া উচিৎ।</p></details>
+          <details class="glass p-5 rounded-2xl"><summary class="font-semibold">শিশু বা বয়স্করা কি যেতে পারবে?</summary><p class="mt-3 text-gray-700">সামান্য হাঁটা বেশি; বয়স্ক বা শিশুদের জন্য সতর্কতা মেনে পরিকল্পনা করুন।</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section id="booking" class="py-12 bg-white">
+      <div class="max-w-3xl mx-auto px-6 text-center glass p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold text-yellow-600 mb-3">রিজার্ভেশন / কনট্যাক্ট</h2>
+        <p class="text-gray-700 mb-4">কিন্তু আপনি চান — গ্রুপ বুকিং, গাইড বা কাস্টম ট্যুর? নিচের ফর্মটি ব্যবহার করুন বা ইমেইল করুন।</p>
+        <form action="#" method="post" class="grid gap-3 md:grid-cols-2">
+          <input aria-label="নাম" name="name" placeholder="নাম" class="p-3 rounded border" required />
+          <input aria-label="ইমেইল" name="email" type="email" placeholder="ইমেইল" class="p-3 rounded border" required />
+          <input aria-label="ফোন" name="phone" placeholder="ফোন" class="p-3 rounded border" />
+          <select name="service" aria-label="সেবা" class="p-3 rounded border">
+            <option>গাইড প্রয়োজন</option>
+            <option>গ্রুপ বুকিং</option>
+            <option>কাস্টম অ্যারেঞ্জমেন্ট</option>
+          </select>
+          <textarea name="message" aria-label="বিবরণ" placeholder="আপনার বার্তা" class="p-3 rounded border md:col-span-2"></textarea>
+          <button type="submit" class="md:col-span-2 bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded font-semibold">পাঠান</button>
+        </form>
+        <p class="text-sm text-gray-500 mt-3">অথবা: <a href="mailto:info@explorebangla.com" class="underline text-yellow-600">info@explorebangla.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-500 border-t mt-10">
+    © 2025 ExploreBangla — Amiakhum | প্রাকৃতিক সৌন্দর্য সংরক্ষণ করুন 🌿
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('mobile-toggle');
+    const mobile = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', ()=>{
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      mobile.classList.toggle('hidden');
+    });
+
+    // Swiper & Lightbox
+    const swiper = new Swiper('.mySwiper', { slidesPerView: 1, loop: true, autoplay: { delay: 3000, disableOnInteraction: false }, pagination: { el: '.swiper-pagination', clickable: true }, a11y: true });
+    const lightbox = GLightbox({ selector: '.glightbox' });
+
+    // thumbnail -> open slide
+    function openSlide(idx){
+      swiper.slideToLoop(idx);
+      // open lightbox on that slide (if glightbox supports open)
+      const links = document.querySelectorAll('.glightbox');
+      if(links[idx]) links[idx].click();
+    }
+
+    // Simple accessibility: focus outlines for keyboard users
+    document.body.addEventListener('keyup', (e)=>{ if(e.key === 'Tab') document.documentElement.classList.add('show-focus'); });
+  </script>
+</body>
+</html>
